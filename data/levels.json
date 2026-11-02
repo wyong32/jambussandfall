@@ -1,0 +1,642 @@
+[
+  {
+    "id": "1",
+    "title": "Jam Bus:Sandfall Level 1 Walkthrough",
+    "difficulty": "Easy",
+    "thumbnail": "/levels/1/cover.webp",
+    "coverImage": "/levels/1/cover.webp",
+    "guideImages": [
+      "/levels/1/steps/step-1.webp",
+      "/levels/1/steps/step-2.webp",
+      "/levels/1/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Clear the five-color layered sand slope while learning the bus queue and route rules.",
+    "guide": [],
+    "tips": [
+      "Keep one road space available."
+    ],
+    "tags": [
+      "layered sand",
+      "starter",
+      "five colors"
+    ],
+    "completionTime": "3:10",
+    "videoId": "OL0GtyqPpP0",
+    "videoUrl": "https://www.youtube.com/embed/OL0GtyqPpP0",
+    "videoThumbnail": "https://i.ytimg.com/vi/OL0GtyqPpP0/hqdefault.jpg",
+    "videoDuration": "3:10",
+    "videoTitle": "Jam Bus Sandfall Level 1 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT3M10S",
+    "assetVersion": 2
+  },
+  {
+    "id": "2",
+    "title": "Jam Bus:Sandfall Level 2 Walkthrough",
+    "difficulty": "Easy",
+    "thumbnail": "/levels/2/cover.webp",
+    "coverImage": "/levels/2/cover.webp",
+    "guideImages": [
+      "/levels/2/steps/step-1.webp",
+      "/levels/2/steps/step-2.webp",
+      "/levels/2/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Route a larger mixed bus field to uncover the blue, yellow, white, and red toucan picture.",
+    "guide": [],
+    "tips": [
+      "Do not fill all visible road spaces at once."
+    ],
+    "tags": [
+      "toucan",
+      "mixed routes",
+      "large queue"
+    ],
+    "completionTime": "6:20",
+    "videoId": "1tRQLyzO6W4",
+    "videoUrl": "https://www.youtube.com/embed/1tRQLyzO6W4",
+    "videoThumbnail": "https://i.ytimg.com/vi/1tRQLyzO6W4/hqdefault.jpg",
+    "videoDuration": "6:20",
+    "videoTitle": "Jam Bus Sandfall Level 2 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT6M20S",
+    "assetVersion": 2
+  },
+  {
+    "id": "3",
+    "title": "Jam Bus:Sandfall Level 3 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/3/cover.webp",
+    "coverImage": "/levels/3/cover.webp",
+    "guideImages": [
+      "/levels/3/steps/step-1.webp",
+      "/levels/3/steps/step-2.webp",
+      "/levels/3/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Work through the long burger board without trapping the red, yellow, green, or blue routes.",
+    "guide": [],
+    "tips": [
+      "Recheck the lower center after every bus leaves."
+    ],
+    "tags": [
+      "burger",
+      "dense board",
+      "route planning"
+    ],
+    "completionTime": "14:14",
+    "videoId": "iH9syjNDEEg",
+    "videoUrl": "https://www.youtube.com/embed/iH9syjNDEEg",
+    "videoThumbnail": "https://i.ytimg.com/vi/iH9syjNDEEg/hqdefault.jpg",
+    "videoDuration": "14:14",
+    "videoTitle": "Jam Bus Sandfall Level 3 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT14M14S",
+    "assetVersion": 2
+  },
+  {
+    "id": "4",
+    "title": "Jam Bus:Sandfall Level 4 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/4/cover.webp",
+    "coverImage": "/levels/4/cover.webp",
+    "guideImages": [
+      "/levels/4/steps/step-1.webp",
+      "/levels/4/steps/step-2.webp",
+      "/levels/4/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Match cyan, yellow, red, and white sand while clearing the crown-shaped board.",
+    "guide": [],
+    "tips": [
+      "Use the exposed cyan and yellow groups to open the middle."
+    ],
+    "tags": [
+      "crown",
+      "cyan",
+      "yellow"
+    ],
+    "completionTime": "6:32",
+    "videoId": "zX-NdJbhm6A",
+    "videoUrl": "https://www.youtube.com/embed/zX-NdJbhm6A",
+    "videoThumbnail": "https://i.ytimg.com/vi/zX-NdJbhm6A/hqdefault.jpg",
+    "videoDuration": "6:32",
+    "videoTitle": "Jam Bus Sandfall Level 4 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT6M32S",
+    "assetVersion": 2
+  },
+  {
+    "id": "5",
+    "title": "Jam Bus:Sandfall Level 5 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/5/cover.webp",
+    "coverImage": "/levels/5/cover.webp",
+    "guideImages": [
+      "/levels/5/steps/step-1.webp",
+      "/levels/5/steps/step-2.webp",
+      "/levels/5/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Clear a sneaker picture with red, green, cyan, white, orange, yellow, and blue sand sections.",
+    "guide": [],
+    "tips": [
+      "Keep the green route open for the late board."
+    ],
+    "tags": [
+      "sneaker",
+      "seven colors",
+      "parking"
+    ],
+    "completionTime": "9:08",
+    "videoId": "G9LwtPEsigc",
+    "videoUrl": "https://www.youtube.com/embed/G9LwtPEsigc",
+    "videoThumbnail": "https://i.ytimg.com/vi/G9LwtPEsigc/hqdefault.jpg",
+    "videoDuration": "9:08",
+    "videoTitle": "Jam Bus Sandfall Level 5 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT9M8S",
+    "assetVersion": 2
+  },
+  {
+    "id": "6",
+    "title": "Jam Bus:Sandfall Level 6 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/6/cover.webp",
+    "coverImage": "/levels/6/cover.webp",
+    "guideImages": [
+      "/levels/6/steps/step-1.webp",
+      "/levels/6/steps/step-2.webp",
+      "/levels/6/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Uncover the teddy bear while managing repeated cyan, orange, red, and white buses.",
+    "guide": [],
+    "tips": [
+      "Clear repeated colors in controlled groups."
+    ],
+    "tags": [
+      "teddy bear",
+      "repeated colors",
+      "medium"
+    ],
+    "completionTime": "7:10",
+    "videoId": "zXU0kvURRkM",
+    "videoUrl": "https://www.youtube.com/embed/zXU0kvURRkM",
+    "videoThumbnail": "https://i.ytimg.com/vi/zXU0kvURRkM/hqdefault.jpg",
+    "videoDuration": "7:10",
+    "videoTitle": "Jam Bus Sandfall Level 6 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT7M10S",
+    "assetVersion": 2
+  },
+  {
+    "id": "7",
+    "title": "Jam Bus:Sandfall Level 7 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/7/cover.webp",
+    "coverImage": "/levels/7/cover.webp",
+    "guideImages": [
+      "/levels/7/steps/step-1.webp",
+      "/levels/7/steps/step-2.webp",
+      "/levels/7/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Clear the red rose bouquet and protect the narrow paths through the crowded center.",
+    "guide": [],
+    "tips": [
+      "Avoid releasing several red buses together."
+    ],
+    "tags": [
+      "rose bouquet",
+      "red sand",
+      "crowded center"
+    ],
+    "completionTime": "5:38",
+    "videoId": "o113B25kqNo",
+    "videoUrl": "https://www.youtube.com/embed/o113B25kqNo",
+    "videoThumbnail": "https://i.ytimg.com/vi/o113B25kqNo/hqdefault.jpg",
+    "videoDuration": "5:38",
+    "videoTitle": "Jam Bus Sandfall Level 7 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT5M38S",
+    "assetVersion": 2
+  },
+  {
+    "id": "8",
+    "title": "Jam Bus:Sandfall Level 8 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/8/cover.webp",
+    "coverImage": "/levels/8/cover.webp",
+    "guideImages": [
+      "/levels/8/steps/step-1.webp",
+      "/levels/8/steps/step-2.webp",
+      "/levels/8/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Remove the cyan water and green shell layers around the sea turtle artwork.",
+    "guide": [],
+    "tips": [
+      "Keep cyan buses moving before the lower pool closes."
+    ],
+    "tags": [
+      "sea turtle",
+      "cyan",
+      "green"
+    ],
+    "completionTime": "6:55",
+    "videoId": "EpGIYAJ5p_4",
+    "videoUrl": "https://www.youtube.com/embed/EpGIYAJ5p_4",
+    "videoThumbnail": "https://i.ytimg.com/vi/EpGIYAJ5p_4/hqdefault.jpg",
+    "videoDuration": "6:55",
+    "videoTitle": "Jam Bus Sandfall Level 8 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT6M55S",
+    "assetVersion": 2
+  },
+  {
+    "id": "9",
+    "title": "Jam Bus:Sandfall Level 9 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/9/cover.webp",
+    "coverImage": "/levels/9/cover.webp",
+    "guideImages": [
+      "/levels/9/steps/step-1.webp",
+      "/levels/9/steps/step-2.webp",
+      "/levels/9/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Clear the red lotus petals, yellow center, green leaves, and cyan background.",
+    "guide": [],
+    "tips": [
+      "Do not leave the central red groups until every lane is occupied."
+    ],
+    "tags": [
+      "lotus",
+      "red petals",
+      "green leaves"
+    ],
+    "completionTime": "6:16",
+    "videoId": "du4e4kXYLnU",
+    "videoUrl": "https://www.youtube.com/embed/du4e4kXYLnU",
+    "videoThumbnail": "https://i.ytimg.com/vi/du4e4kXYLnU/hqdefault.jpg",
+    "videoDuration": "6:16",
+    "videoTitle": "Jam Bus Sandfall Level 9 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT6M16S",
+    "assetVersion": 2
+  },
+  {
+    "id": "10",
+    "title": "Jam Bus:Sandfall Level 10 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/10/cover.webp",
+    "coverImage": "/levels/10/cover.webp",
+    "guideImages": [
+      "/levels/10/steps/step-1.webp",
+      "/levels/10/steps/step-2.webp",
+      "/levels/10/steps/step-3.webp"
+    ],
+    "category": "Levels 1-10",
+    "description": "Solve the first large six-color board and reveal the small house without exhausting parking capacity.",
+    "guide": [],
+    "tips": [
+      "Treat every extra parking-space unlock as part of the solution."
+    ],
+    "tags": [
+      "house",
+      "six colors",
+      "parking expansion"
+    ],
+    "completionTime": "10:46",
+    "videoId": "s1DvZCMBy00",
+    "videoUrl": "https://www.youtube.com/embed/s1DvZCMBy00",
+    "videoThumbnail": "https://i.ytimg.com/vi/s1DvZCMBy00/hqdefault.jpg",
+    "videoDuration": "10:46",
+    "videoTitle": "Jam Bus Sandfall Level 10 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT10M46S",
+    "assetVersion": 2
+  },
+  {
+    "id": "11",
+    "title": "Jam Bus:Sandfall Level 11 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/11/cover.webp",
+    "coverImage": "/levels/11/cover.webp",
+    "guideImages": [
+      "/levels/11/steps/step-1.webp",
+      "/levels/11/steps/step-2.webp",
+      "/levels/11/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Route a dense bus field through the red, yellow, green, blue, orange, and white tropical fish board.",
+    "guide": [],
+    "tips": [
+      "Use the open lower routes before clearing isolated upper buses."
+    ],
+    "tags": [
+      "tropical fish",
+      "dense field",
+      "six colors"
+    ],
+    "completionTime": "9:04",
+    "videoId": "0Bxzcr3v_2I",
+    "videoUrl": "https://www.youtube.com/embed/0Bxzcr3v_2I",
+    "videoThumbnail": "https://i.ytimg.com/vi/0Bxzcr3v_2I/hqdefault.jpg",
+    "videoDuration": "9:04",
+    "videoTitle": "Jam Bus Sandfall Level 11 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT9M4S",
+    "assetVersion": 2
+  },
+  {
+    "id": "12",
+    "title": "Jam Bus:Sandfall Level 12 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/12/cover.webp",
+    "coverImage": "/levels/12/cover.webp",
+    "guideImages": [
+      "/levels/12/steps/step-1.webp",
+      "/levels/12/steps/step-2.webp",
+      "/levels/12/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Clear the layered food bowl while balancing green, yellow, red, blue, orange, and white routes.",
+    "guide": [],
+    "tips": [
+      "Watch the long horizontal blue buses in the middle."
+    ],
+    "tags": [
+      "food bowl",
+      "horizontal buses",
+      "layered board"
+    ],
+    "completionTime": "8:40",
+    "videoId": "AU-6Rep5EfQ",
+    "videoUrl": "https://www.youtube.com/embed/AU-6Rep5EfQ",
+    "videoThumbnail": "https://i.ytimg.com/vi/AU-6Rep5EfQ/hqdefault.jpg",
+    "videoDuration": "8:40",
+    "videoTitle": "Jam Bus Sandfall Level 12 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT8M40S",
+    "assetVersion": 2
+  },
+  {
+    "id": "13",
+    "title": "Jam Bus:Sandfall Level 13 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/13/cover.webp",
+    "coverImage": "/levels/13/cover.webp",
+    "guideImages": [
+      "/levels/13/steps/step-1.webp",
+      "/levels/13/steps/step-2.webp",
+      "/levels/13/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Work through the large pizza picture and keep the red and yellow layers from consuming every parking space.",
+    "guide": [],
+    "tips": [
+      "Keep room for the long yellow bus on the right."
+    ],
+    "tags": [
+      "pizza",
+      "long buses",
+      "hard"
+    ],
+    "completionTime": "8:09",
+    "videoId": "4pXuwuSbp6U",
+    "videoUrl": "https://www.youtube.com/embed/4pXuwuSbp6U",
+    "videoThumbnail": "https://i.ytimg.com/vi/4pXuwuSbp6U/hqdefault.jpg",
+    "videoDuration": "8:09",
+    "videoTitle": "Jam Bus Sandfall Level 13 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT8M9S",
+    "assetVersion": 2
+  },
+  {
+    "id": "14",
+    "title": "Jam Bus:Sandfall Level 14 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/14/cover.webp",
+    "coverImage": "/levels/14/cover.webp",
+    "guideImages": [
+      "/levels/14/steps/step-1.webp",
+      "/levels/14/steps/step-2.webp",
+      "/levels/14/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Uncover the fruit bowl across a wide parking field with many white and orange vehicles.",
+    "guide": [],
+    "tips": [
+      "Clear short white routes before releasing long center buses."
+    ],
+    "tags": [
+      "fruit bowl",
+      "wide board",
+      "white buses"
+    ],
+    "completionTime": "12:08",
+    "videoId": "ZBkPT9avLUw",
+    "videoUrl": "https://www.youtube.com/embed/ZBkPT9avLUw",
+    "videoThumbnail": "https://i.ytimg.com/vi/ZBkPT9avLUw/hqdefault.jpg",
+    "videoDuration": "12:08",
+    "videoTitle": "Jam Bus Sandfall Level 14 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT12M8S",
+    "assetVersion": 2
+  },
+  {
+    "id": "15",
+    "title": "Jam Bus:Sandfall Level 15 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/15/cover.webp",
+    "coverImage": "/levels/15/cover.webp",
+    "guideImages": [
+      "/levels/15/steps/step-1.webp",
+      "/levels/15/steps/step-2.webp",
+      "/levels/15/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Clear the globe artwork from a diagonal vehicle layout with blue, green, pink, orange, yellow, white, and red groups.",
+    "guide": [],
+    "tips": [
+      "Preserve both diagonal exits until the center opens."
+    ],
+    "tags": [
+      "globe",
+      "diagonal layout",
+      "seven colors"
+    ],
+    "completionTime": "9:54",
+    "videoId": "v5bI4HtdPOg",
+    "videoUrl": "https://www.youtube.com/embed/v5bI4HtdPOg",
+    "videoThumbnail": "https://i.ytimg.com/vi/v5bI4HtdPOg/hqdefault.jpg",
+    "videoDuration": "9:54",
+    "videoTitle": "Jam Bus Sandfall Level 15 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT9M54S",
+    "assetVersion": 2
+  },
+  {
+    "id": "16",
+    "title": "Jam Bus:Sandfall Level 16 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/16/cover.webp",
+    "coverImage": "/levels/16/cover.webp",
+    "guideImages": [
+      "/levels/16/steps/step-1.webp",
+      "/levels/16/steps/step-2.webp",
+      "/levels/16/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Clear the washing machine picture with a compact set of cyan, orange, blue, red, yellow, and white buses.",
+    "guide": [],
+    "tips": [
+      "Open the left cluster before the final cyan route."
+    ],
+    "tags": [
+      "washing machine",
+      "compact field",
+      "cyan"
+    ],
+    "completionTime": "5:44",
+    "videoId": "HYN434V6vh4",
+    "videoUrl": "https://www.youtube.com/embed/HYN434V6vh4",
+    "videoThumbnail": "https://i.ytimg.com/vi/HYN434V6vh4/hqdefault.jpg",
+    "videoDuration": "5:44",
+    "videoTitle": "Jam Bus Sandfall Level 16 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT5M44S",
+    "assetVersion": 2
+  },
+  {
+    "id": "17",
+    "title": "Jam Bus:Sandfall Level 17 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/17/cover.webp",
+    "coverImage": "/levels/17/cover.webp",
+    "guideImages": [
+      "/levels/17/steps/step-1.webp",
+      "/levels/17/steps/step-2.webp",
+      "/levels/17/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Reveal the airplane artwork while managing a large cyan, blue, red, white, and yellow vehicle field.",
+    "guide": [],
+    "tips": [
+      "The long horizontal red buses need clear side exits."
+    ],
+    "tags": [
+      "airplane",
+      "long red buses",
+      "cyan field"
+    ],
+    "completionTime": "8:35",
+    "videoId": "RPMj5bTm4uY",
+    "videoUrl": "https://www.youtube.com/embed/RPMj5bTm4uY",
+    "videoThumbnail": "https://i.ytimg.com/vi/RPMj5bTm4uY/hqdefault.jpg",
+    "videoDuration": "8:35",
+    "videoTitle": "Jam Bus Sandfall Level 17 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT8M35S",
+    "assetVersion": 2
+  },
+  {
+    "id": "18",
+    "title": "Jam Bus:Sandfall Level 18 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/18/cover.webp",
+    "coverImage": "/levels/18/cover.webp",
+    "guideImages": [
+      "/levels/18/steps/step-1.webp",
+      "/levels/18/steps/step-2.webp",
+      "/levels/18/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Clear the alarm clock image from a field dominated by white buses and narrow colored routes.",
+    "guide": [],
+    "tips": [
+      "Do not crowd the road with white buses before yellow opens."
+    ],
+    "tags": [
+      "alarm clock",
+      "white buses",
+      "narrow routes"
+    ],
+    "completionTime": "7:05",
+    "videoId": "bZGj1O8DP68",
+    "videoUrl": "https://www.youtube.com/embed/bZGj1O8DP68",
+    "videoThumbnail": "https://i.ytimg.com/vi/bZGj1O8DP68/hqdefault.jpg",
+    "videoDuration": "7:05",
+    "videoTitle": "Jam Bus Sandfall Level 18 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT7M5S",
+    "assetVersion": 2
+  },
+  {
+    "id": "19",
+    "title": "Jam Bus:Sandfall Level 19 Walkthrough",
+    "difficulty": "Medium",
+    "thumbnail": "/levels/19/cover.webp",
+    "coverImage": "/levels/19/cover.webp",
+    "guideImages": [
+      "/levels/19/steps/step-1.webp",
+      "/levels/19/steps/step-2.webp",
+      "/levels/19/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Clear the cactus and desert layers while controlling white, orange, green, yellow, red, blue, and cyan buses.",
+    "guide": [],
+    "tips": [
+      "Keep the central vertical column open."
+    ],
+    "tags": [
+      "cactus",
+      "desert",
+      "vertical routes"
+    ],
+    "completionTime": "8:57",
+    "videoId": "f0Zaj3hz_yA",
+    "videoUrl": "https://www.youtube.com/embed/f0Zaj3hz_yA",
+    "videoThumbnail": "https://i.ytimg.com/vi/f0Zaj3hz_yA/hqdefault.jpg",
+    "videoDuration": "8:57",
+    "videoTitle": "Jam Bus Sandfall Level 19 Walkthrough Solution",
+    "videoUploadDate": "2026-10-16T00:00:00Z",
+    "videoDurationIso": "PT8M57S",
+    "assetVersion": 2
+  },
+  {
+    "id": "20",
+    "title": "Jam Bus:Sandfall Level 20 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/20/cover.webp",
+    "coverImage": "/levels/20/cover.webp",
+    "guideImages": [
+      "/levels/20/steps/step-1.webp",
+      "/levels/20/steps/step-2.webp",
+      "/levels/20/steps/step-3.webp"
+    ],
+    "category": "Levels 11-20",
+    "description": "Complete the flamingo board with dense white groups, several pink routes, and limited early parking.",
+    "guide": [],
+    "tips": [
+      "Make room for the long pink buses before the white center closes."
+    ],
+    "tags": [
+      "flamingo",
+      "pink buses",
+      "dense white groups"
+    ],
+    "completionTime": "10:39",
+    "videoId": "DxbYfZE7hsc",
+    "videoUrl": "https://www.youtube.com/embed/DxbYfZE7hsc",
+    "videoThumbnail": "https://i.ytimg.com/vi/DxbYfZE7hsc/hqdefault.jpg",
+    "videoDuration": "10:39",
+    "videoTitle": "Jam Bus Sandfall Level 20 Walkthrough Solution",
+    "videoUploadDate": "2026-10-17T00:00:00Z",
+    "videoDurationIso": "PT10M39S",
+    "assetVersion": 2
+  }
+]
