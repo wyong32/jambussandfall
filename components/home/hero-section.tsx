@@ -3,14 +3,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { FormEvent, useState } from "react";
-import { ArrowRight, BusFront, ScanSearch, Search, Waypoints } from "lucide-react";
+import { FormEvent, useEffect, useState } from "react";
+import { ArrowRight, BusFront, ChevronLeft, ChevronRight, ScanSearch, Search, Waypoints } from "lucide-react";
 import { getLevelById } from "@/lib/data";
 import { MAX_LEVEL } from "@/lib/level-utils";
 
+const gameplayImages = [
+  {
+    src: "/images/store/gameplay-1.webp",
+    alt: "Jam Bus Sandfall gameplay with a chick sand picture and a spiral vehicle board",
+  },
+  {
+    src: "/images/store/gameplay-2.webp",
+    alt: "Jam Bus Sandfall gameplay showing a colorful sand picture and directional buses",
+  },
+  {
+    src: "/images/store/gameplay-3.webp",
+    alt: "Jam Bus Sandfall gameplay showing another complete puzzle and parking interface",
+  },
+];
+
 export function HeroSection() {
   const [level, setLevel] = useState("");
+  const [activeGameplay, setActiveGameplay] = useState(0);
+  const [carouselPaused, setCarouselPaused] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reducedMotion.matches || carouselPaused) return;
+
+    const interval = window.setInterval(() => {
+      setActiveGameplay((current) => (current + 1) % gameplayImages.length);
+    }, 4500);
+
+    return () => window.clearInterval(interval);
+  }, [carouselPaused]);
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -20,7 +48,7 @@ export function HeroSection() {
 
   return (
     <section className="border-b border-border bg-[#eaf8fb]">
-      <div className="container mx-auto grid min-h-[520px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_440px] lg:items-center">
+      <div className="container mx-auto grid gap-10 px-4 py-12 sm:px-6 lg:min-h-[640px] lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center">
         <div className="max-w-3xl">
           <p className="text-sm font-bold uppercase text-[#0b7285]">Video and screenshot walkthroughs</p>
           <h1 className="mt-3 text-4xl font-bold leading-tight text-[#17313a] sm:text-6xl">Jam Bus:Sandfall Level Guides</h1>
@@ -57,15 +85,59 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[440px] overflow-hidden rounded-lg border border-[#9fcbd3] bg-white shadow-lg">
-          <Image
-            src="/images/store/gameplay-1.webp"
-            alt="Jam Bus Sandfall official gameplay showing colored buses and layered sand"
-            width={576}
-            height={1246}
-            className="h-[430px] w-full object-cover object-top"
-            priority
-          />
+        <div
+          className="mx-auto flex w-full max-w-[320px] flex-col items-center gap-3"
+          onMouseEnter={() => setCarouselPaused(true)}
+          onMouseLeave={() => setCarouselPaused(false)}
+          onFocusCapture={() => setCarouselPaused(true)}
+          onBlurCapture={() => setCarouselPaused(false)}
+        >
+          <div className="relative aspect-[576/1246] w-full max-w-[250px] overflow-hidden rounded-lg border border-[#9fcbd3] bg-white shadow-lg sm:max-w-[280px] lg:max-w-[290px]" role="region" aria-label="Jam Bus gameplay screenshots">
+            {gameplayImages.map((image, index) => (
+              <Image
+                key={image.src}
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 640px) 250px, 290px"
+                className={`object-contain transition-opacity duration-700 motion-reduce:transition-none ${index === activeGameplay ? "opacity-100" : "pointer-events-none opacity-0"}`}
+                priority={index === 0}
+                aria-hidden={index !== activeGameplay}
+              />
+            ))}
+            <button
+              type="button"
+              onClick={() => setActiveGameplay((current) => (current - 1 + gameplayImages.length) % gameplayImages.length)}
+              className="absolute left-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-[#9fcbd3] bg-white/90 text-[#17313a] shadow-sm hover:bg-white"
+              aria-label="Previous gameplay screenshot"
+              title="Previous screenshot"
+            >
+              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveGameplay((current) => (current + 1) % gameplayImages.length)}
+              className="absolute right-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-[#9fcbd3] bg-white/90 text-[#17313a] shadow-sm hover:bg-white"
+              aria-label="Next gameplay screenshot"
+              title="Next screenshot"
+            >
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="flex items-center gap-1" role="group" aria-label="Choose gameplay screenshot">
+            {gameplayImages.map((image, index) => (
+              <button
+                key={image.src}
+                type="button"
+                onClick={() => setActiveGameplay(index)}
+                className="inline-flex h-8 w-8 items-center justify-center"
+                aria-label={`Show gameplay screenshot ${index + 1}`}
+                aria-current={index === activeGameplay ? "true" : undefined}
+              >
+                <span className={`h-2.5 w-2.5 rounded-full border border-[#0b7285] ${index === activeGameplay ? "bg-[#0b7285]" : "bg-white"}`} aria-hidden="true" />
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>

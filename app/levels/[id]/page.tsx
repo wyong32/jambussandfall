@@ -137,6 +137,34 @@ export default async function LevelDetailPage({ params }: Props) {
               </p>
             </section>
 
+            {guide ? (
+              <section className="mt-12" aria-labelledby="level-glance">
+                <h2 id="level-glance" className="text-3xl font-bold text-foreground">Level {id} at a Glance</h2>
+                <dl className="mt-6 grid border border-border sm:grid-cols-2 lg:grid-cols-4">
+                  <div className="border-b border-border p-5 sm:border-r lg:border-b-0">
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Parking capacity</dt>
+                    <dd className="mt-2 text-lg font-bold text-foreground">{guide.stats.parkingCapacity} spaces</dd>
+                  </div>
+                  <div className="border-b border-border p-5 lg:border-b-0 lg:border-r">
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Verified checkpoints</dt>
+                    <dd className="mt-2 text-lg font-bold text-foreground">{guide.stats.verifiedMoveCount} moves</dd>
+                  </div>
+                  <div className="border-b border-border p-5 sm:border-b-0 sm:border-r">
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Colors in this guide</dt>
+                    <dd className="mt-2 text-lg font-bold text-foreground">{guide.stats.colorCount} colors</dd>
+                  </div>
+                  <div className="p-5">
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Full video length</dt>
+                    <dd className="mt-2 text-lg font-bold text-foreground">{guide.stats.solutionDuration}</dd>
+                  </div>
+                  <div className="border-t border-border p-5 sm:col-span-2 lg:col-span-4">
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Critical route</dt>
+                    <dd className="mt-2 font-semibold leading-6 text-foreground">{guide.stats.criticalRoute}</dd>
+                  </div>
+                </dl>
+              </section>
+            ) : null}
+
             <section className="mt-12" aria-labelledby="overall-strategy">
               <h2 id="overall-strategy" className="text-3xl font-bold text-foreground">Overall Strategy</h2>
               <div className="mt-5 space-y-4 leading-7 text-muted-foreground">
@@ -158,6 +186,76 @@ export default async function LevelDetailPage({ params }: Props) {
                 </p>
               </div>
             </section>
+
+            {guide ? (
+              <section className="mt-14" aria-labelledby="move-checkpoints">
+                <h2 id="move-checkpoints" className="text-3xl font-bold text-foreground">Verified Move Checkpoints</h2>
+                <p className="mt-4 max-w-3xl leading-7 text-muted-foreground">
+                  Positions use the complete portrait screen. Rows run from top to bottom, columns run from left to right, and x/y values are percentages of the full image.
+                </p>
+                <div className="mt-6 overflow-x-auto border border-border">
+                  <table className="w-full min-w-[820px] table-fixed text-left text-sm">
+                    <caption className="sr-only">Verified vehicle positions and moves for Jam Bus:Sandfall Level {id}</caption>
+                    <thead className="bg-muted/60 text-foreground">
+                      <tr>
+                        <th scope="col" className="w-14 px-3 py-3 font-bold">Move</th>
+                        <th scope="col" className="w-28 px-3 py-3 font-bold">Vehicle</th>
+                        <th scope="col" className="w-44 px-3 py-3 font-bold">Position</th>
+                        <th scope="col" className="w-64 px-3 py-3 font-bold">Action and purpose</th>
+                        <th scope="col" className="w-56 px-3 py-3 font-bold">Parking check</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border">
+                      {guide.moveCheckpoints.map((move) => (
+                        <tr key={move.order} className="align-top">
+                          <td className="px-3 py-4 font-bold text-primary">{move.order}</td>
+                          <td className="px-3 py-4 font-semibold capitalize text-foreground">{move.vehicle}</td>
+                          <td className="px-3 py-4 leading-6 text-muted-foreground">
+                            <span className="block font-semibold capitalize text-foreground">Row {move.row}, column {move.column}</span>
+                            <span className="block capitalize">{move.region}</span>
+                            <span className="block">x {move.xPercent}% · y {move.yPercent}%</span>
+                          </td>
+                          <td className="px-3 py-4 leading-6 text-muted-foreground">
+                            <span className="mb-1 block font-semibold capitalize text-foreground">Move {move.direction.replace("-", " ")}</span>
+                            {move.purpose}
+                          </td>
+                          <td className="px-3 py-4 leading-6 text-muted-foreground">{move.parkingCheck}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            ) : null}
+
+            {guide ? (
+              <section className="mt-14" aria-labelledby="board-phases">
+                <h2 id="board-phases" className="text-3xl font-bold text-foreground">Board State by Phase</h2>
+                <div className="mt-6 overflow-x-auto border border-border">
+                  <table className="min-w-[760px] table-fixed text-left text-sm">
+                    <caption className="sr-only">Board and parking checks for each Level {id} solution phase</caption>
+                    <thead className="bg-muted/60 text-foreground">
+                      <tr>
+                        <th scope="col" className="w-56 px-4 py-3 font-bold">Phase</th>
+                        <th scope="col" className="w-36 px-4 py-3 font-bold">Checkpoints</th>
+                        <th scope="col" className="w-80 px-4 py-3 font-bold">Expected board state</th>
+                        <th scope="col" className="w-64 px-4 py-3 font-bold">Parking rule</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border">
+                      {guide.phaseMetrics.map((phase) => (
+                        <tr key={phase.phase} className="align-top">
+                          <th scope="row" className="px-4 py-4 font-semibold text-foreground">{phase.phase}</th>
+                          <td className="px-4 py-4 text-muted-foreground">{phase.moveRange}</td>
+                          <td className="px-4 py-4 leading-6 text-muted-foreground">{phase.boardState}</td>
+                          <td className="px-4 py-4 leading-6 text-muted-foreground">{phase.parkingRule}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            ) : null}
 
 
             <section className="mt-14" aria-labelledby="step-solution">

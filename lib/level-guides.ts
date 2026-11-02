@@ -12,12 +12,54 @@ export interface LevelGuideFaq {
   answer: string;
 }
 
+export type LevelMoveDirection =
+  | "up"
+  | "up-right"
+  | "right"
+  | "down-right"
+  | "down"
+  | "down-left"
+  | "left"
+  | "up-left";
+
+export interface LevelGuideStats {
+  parkingCapacity: number;
+  verifiedMoveCount: number;
+  colorCount: number;
+  solutionDuration: string;
+  criticalRoute: string;
+}
+
+export interface LevelMoveCheckpoint {
+  order: number;
+  color: string;
+  vehicle: string;
+  direction: LevelMoveDirection;
+  row: number;
+  column: number;
+  region: string;
+  xPercent: number;
+  yPercent: number;
+  purpose: string;
+  parkingCheck: string;
+}
+
+export interface LevelPhaseMetric {
+  phase: string;
+  moveRange: string;
+  boardState: string;
+  parkingRule: string;
+}
+
 export interface VerifiedLevelGuide {
   objective: string;
   keyChallenge: string;
   quickAnswer: string;
   overallStrategy: string[];
   startingBoard: string;
+  stats: LevelGuideStats;
+  moveCheckpoints: LevelMoveCheckpoint[];
+  phaseMetrics: LevelPhaseMetric[];
   steps: LevelGuideStep[];
   beforeMove: string[];
   stuckPoint: string;

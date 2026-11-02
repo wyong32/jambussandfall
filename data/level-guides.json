@@ -3,400 +3,3240 @@
     "objective": "Clear the full five-band sand slope with the bus routes still open.",
     "keyChallenge": "The first board teaches how quickly five parking spaces can fill.",
     "quickAnswer": "Match the cyan, white, yellow, orange, and dark-red bands with the same-color buses shown in the video. Send one useful bus at a time, let it collect sand, and keep at least one parking space open before starting the next color.",
-    "overallStrategy": ["Level 1 is a queue-control lesson. The sand is arranged in broad vertical bands, but the buses below face several directions, so an available color is not always an available route.", "Use the road as a checkpoint. When a bus leaves the holding area, confirm that its color is being removed before adding another vehicle."],
+    "overallStrategy": [
+      "Level 1 is a queue-control lesson. The sand is arranged in broad vertical bands, but the buses below face several directions, so an available color is not always an available route.",
+      "Use the road as a checkpoint. When a bus leaves the holding area, confirm that its color is being removed before adding another vehicle."
+    ],
     "startingBoard": "The opening picture is a layered slope with cyan on the left, then white, yellow, orange, and dark red on the right. Five parking spaces sit directly below the road.",
     "steps": [
-      {"title": "Open the outer color bands", "instruction": "Start from the full slope and copy the video's first bus choices. Use buses with a clear path to the road; do not release a blocked vehicle just because its color is visible.", "image": "/levels/1/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 1 opening board and bus field"},
-      {"title": "Keep the center moving", "instruction": "As the outer sand recedes, continue through the white and yellow center without filling all five spaces. Wait for each active bus to remove its matching band.", "image": "/levels/1/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 1 middle board state"},
-      {"title": "Finish the remaining yellow and orange sand", "instruction": "The late board contains fewer buses but less room for a wrong color. Follow the same route order until the last yellow and orange pockets disappear.", "image": "/levels/1/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 1 final sand groups"}
+      {
+        "title": "Open the outer color bands",
+        "instruction": "Start from the full slope and copy the video's first bus choices. Use buses with a clear path to the road; do not release a blocked vehicle just because its color is visible.",
+        "image": "/levels/1/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 1 opening board and bus field"
+      },
+      {
+        "title": "Keep the center moving",
+        "instruction": "As the outer sand recedes, continue through the white and yellow center without filling all five spaces. Wait for each active bus to remove its matching band.",
+        "image": "/levels/1/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 1 middle board state"
+      },
+      {
+        "title": "Finish the remaining yellow and orange sand",
+        "instruction": "The late board contains fewer buses but less room for a wrong color. Follow the same route order until the last yellow and orange pockets disappear.",
+        "image": "/levels/1/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 1 final sand groups"
+      }
     ],
-    "beforeMove": ["The bus has a clear route to the road.", "Its color is exposed in the sand picture.", "At least one parking space will remain available.", "The board still matches the walkthrough."],
+    "beforeMove": [
+      "The bus has a clear route to the road.",
+      "Its color is exposed in the sand picture.",
+      "At least one parking space will remain available.",
+      "The board still matches the walkthrough."
+    ],
     "stuckPoint": "The usual mistake is sending several visible buses before the first color finishes. That fills the parking row and leaves no place for the bus needed by the next exposed band.",
     "faqs": [
-      {"question": "How do I beat Jam Bus:Sandfall Level 1?", "answer": "Copy the successful video order and keep one of the five parking spaces open while clearing the five color bands."},
-      {"question": "Which colors appear in Level 1?", "answer": "The opening sand picture shows cyan, white, yellow, orange, and dark red."},
-      {"question": "Why does my parking row fill?", "answer": "You released a bus before its matching sand was available or before an earlier bus finished collecting."},
-      {"question": "What should the late board look like?", "answer": "Most cyan, white, and dark-red sand is gone, with smaller yellow and orange pockets left to clear."}
+      {
+        "question": "How do I beat Jam Bus:Sandfall Level 1?",
+        "answer": "Copy the successful video order and keep one of the five parking spaces open while clearing the five color bands."
+      },
+      {
+        "question": "Which colors appear in Level 1?",
+        "answer": "The opening sand picture shows cyan, white, yellow, orange, and dark red."
+      },
+      {
+        "question": "Why does my parking row fill?",
+        "answer": "You released a bus before its matching sand was available or before an earlier bus finished collecting."
+      },
+      {
+        "question": "What should the late board look like?",
+        "answer": "Most cyan, white, and dark-red sand is gone, with smaller yellow and orange pockets left to clear."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 5,
+      "solutionDuration": "3:10",
+      "criticalRoute": "The first board teaches how quickly five parking spaces can fill."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "right",
+        "row": 5,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 72,
+        "yPercent": 81,
+        "purpose": "Send this orange vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "right",
+        "row": 5,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 75,
+        "yPercent": 78,
+        "purpose": "Send this red vehicle right from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 4,
+        "column": 5,
+        "region": "middle-right",
+        "xPercent": 72,
+        "yPercent": 74,
+        "purpose": "Send this white vehicle down from the middle-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 3,
+        "column": 5,
+        "region": "middle-right",
+        "xPercent": 72,
+        "yPercent": 67,
+        "purpose": "Send this cyan vehicle down from the middle-right before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "right",
+        "row": 3,
+        "column": 4,
+        "region": "middle-center",
+        "xPercent": 63,
+        "yPercent": 63,
+        "purpose": "Send this orange vehicle right from the middle-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 2,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 56,
+        "yPercent": 59,
+        "purpose": "Send this cyan vehicle up from the upper-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the outer color bands",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Start from the full slope and copy the video's first bus choices. Use buses with a clear path to the road; do not release a blocked vehicle just because its color is visible.",
+        "parkingRule": "The bus has a clear route to the road."
+      },
+      {
+        "phase": "Keep the center moving",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As the outer sand recedes, continue through the white and yellow center without filling all five spaces. Wait for each active bus to remove its matching band.",
+        "parkingRule": "Its color is exposed in the sand picture."
+      },
+      {
+        "phase": "Finish the remaining yellow and orange sand",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board contains fewer buses but less room for a wrong color. Follow the same route order until the last yellow and orange pockets disappear.",
+        "parkingRule": "At least one parking space will remain available."
+      }
     ]
   },
   "2": {
     "objective": "Clear the toucan picture and route every bus out of the crowded grid.",
     "keyChallenge": "White buses dominate the center while colored buses need side exits.",
     "quickAnswer": "Level 2 needs slower queue management than Level 1. Clear available colored sand around the toucan, then use the newly opened lanes to release the central white buses. Do not load the road with several white vehicles before the matching white region is exposed.",
-    "overallStrategy": ["The toucan board uses blue, cyan, yellow, white, orange, red, and brown sections. The bus field is much denser than the first level.", "Work from open edge routes toward the white center. A cleared side lane is valuable because it releases several vehicles behind it."],
+    "overallStrategy": [
+      "The toucan board uses blue, cyan, yellow, white, orange, red, and brown sections. The bus field is much denser than the first level.",
+      "Work from open edge routes toward the white center. A cleared side lane is valuable because it releases several vehicles behind it."
+    ],
     "startingBoard": "A toucan fills the sand panel. Most white buses are packed into the middle, with colored buses around all four edges.",
     "steps": [
-      {"title": "Use the open edge routes", "instruction": "Release the colored buses that can reach the road without crossing another vehicle. This starts clearing the outer toucan colors and opens the grid.", "image": "/levels/2/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 2 toucan opening board"},
-      {"title": "Break up the white center", "instruction": "When white sand is exposed, move the white buses that now have direct exits. Keep colored buses in reserve for the beak and body sections.", "image": "/levels/2/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 2 midgame bus grid"},
-      {"title": "Clear the final blue and red pockets", "instruction": "The endgame is less crowded but still route-dependent. Copy the video order for the last blue, cyan, red, and white vehicles.", "image": "/levels/2/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 2 final toucan colors"}
+      {
+        "title": "Use the open edge routes",
+        "instruction": "Release the colored buses that can reach the road without crossing another vehicle. This starts clearing the outer toucan colors and opens the grid.",
+        "image": "/levels/2/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 2 toucan opening board"
+      },
+      {
+        "title": "Break up the white center",
+        "instruction": "When white sand is exposed, move the white buses that now have direct exits. Keep colored buses in reserve for the beak and body sections.",
+        "image": "/levels/2/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 2 midgame bus grid"
+      },
+      {
+        "title": "Clear the final blue and red pockets",
+        "instruction": "The endgame is less crowded but still route-dependent. Copy the video order for the last blue, cyan, red, and white vehicles.",
+        "image": "/levels/2/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 2 final toucan colors"
+      }
     ],
-    "beforeMove": ["The selected vehicle can reach the road.", "Matching sand is exposed.", "The move opens or preserves another exit.", "The parking row has capacity."],
+    "beforeMove": [
+      "The selected vehicle can reach the road.",
+      "Matching sand is exposed.",
+      "The move opens or preserves another exit.",
+      "The parking row has capacity."
+    ],
     "stuckPoint": "Players often clear easy white buses too early. The road fills while a side bus still blocks the colored vehicle needed for the toucan's remaining section.",
     "faqs": [
-      {"question": "What picture is in Level 2?", "answer": "The completed sand picture is a toucan with blue, cyan, yellow, white, orange, red, and brown details."},
-      {"question": "Why are so many white buses left?", "answer": "Several white buses begin inside the grid and only gain an exit after edge vehicles move."},
-      {"question": "Should I tap every bus with an open path?", "answer": "No. Only release a bus when matching sand is exposed and the parking row has room."},
-      {"question": "Can I use the screenshot finder for Level 2?", "answer": "Yes. Upload the opening board if your in-game level number does not match this toucan layout."}
+      {
+        "question": "What picture is in Level 2?",
+        "answer": "The completed sand picture is a toucan with blue, cyan, yellow, white, orange, red, and brown details."
+      },
+      {
+        "question": "Why are so many white buses left?",
+        "answer": "Several white buses begin inside the grid and only gain an exit after edge vehicles move."
+      },
+      {
+        "question": "Should I tap every bus with an open path?",
+        "answer": "No. Only release a bus when matching sand is exposed and the parking row has room."
+      },
+      {
+        "question": "Can I use the screenshot finder for Level 2?",
+        "answer": "Yes. Upload the opening board if your in-game level number does not match this toucan layout."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "6:20",
+      "criticalRoute": "White buses dominate the center while colored buses need side exits."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 17,
+        "yPercent": 73,
+        "purpose": "Send this red vehicle left from the middle-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "left",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 85,
+        "yPercent": 60,
+        "purpose": "Send this cyan vehicle left from the upper-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 17,
+        "yPercent": 69,
+        "purpose": "Send this cyan vehicle left from the middle-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 21,
+        "yPercent": 82,
+        "purpose": "Send this white vehicle down from the lower-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 36,
+        "yPercent": 54,
+        "purpose": "Send this cyan vehicle up from the upper-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 3,
+        "region": "middle-center",
+        "xPercent": 36,
+        "yPercent": 69,
+        "purpose": "Send this white vehicle left from the middle-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Use the open edge routes",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Release the colored buses that can reach the road without crossing another vehicle. This starts clearing the outer toucan colors and opens the grid.",
+        "parkingRule": "The selected vehicle can reach the road."
+      },
+      {
+        "phase": "Break up the white center",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When white sand is exposed, move the white buses that now have direct exits. Keep colored buses in reserve for the beak and body sections.",
+        "parkingRule": "Matching sand is exposed."
+      },
+      {
+        "phase": "Clear the final blue and red pockets",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The endgame is less crowded but still route-dependent. Copy the video order for the last blue, cyan, red, and white vehicles.",
+        "parkingRule": "The move opens or preserves another exit."
+      }
     ]
   },
   "3": {
     "objective": "Remove every burger layer without locking the long central routes.",
     "keyChallenge": "This is the first long solution and the bus grid changes slowly.",
     "quickAnswer": "Treat the burger as separate color layers instead of one picture. Follow the video through the outer white and blue areas, then clear red, green, yellow, orange, and brown groups as they become exposed. Preserve a free parking space during every transition.",
-    "overallStrategy": ["Level 3 lasts longer because the burger uses repeated color bands and the vehicle field has several nested blockers.", "Do not rush when the center appears open. Some long buses still depend on shorter vehicles leaving first."],
+    "overallStrategy": [
+      "Level 3 lasts longer because the burger uses repeated color bands and the vehicle field has several nested blockers.",
+      "Do not rush when the center appears open. Some long buses still depend on shorter vehicles leaving first."
+    ],
     "startingBoard": "The sand picture is a hamburger with an orange bun, red filling, green lettuce, yellow cheese, a dark patty, and blue and white background sections.",
     "steps": [
-      {"title": "Clear the background around the burger", "instruction": "Use the verified opening order to remove accessible white, blue, and outer colored sand. Each departure should create a route for a bus behind it.", "image": "/levels/3/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 3 burger opening"},
-      {"title": "Work through the burger layers", "instruction": "Move red, green, yellow, orange, and brown buses only when their matching stripe is exposed. Keep the road from holding five unfinished colors.", "image": "/levels/3/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 3 burger middle state"},
-      {"title": "Release the last isolated buses", "instruction": "When the board is small, several vehicles remain far apart. Follow the video for the final white, blue, red, and brown routes.", "image": "/levels/3/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 3 final vehicle groups"}
+      {
+        "title": "Clear the background around the burger",
+        "instruction": "Use the verified opening order to remove accessible white, blue, and outer colored sand. Each departure should create a route for a bus behind it.",
+        "image": "/levels/3/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 3 burger opening"
+      },
+      {
+        "title": "Work through the burger layers",
+        "instruction": "Move red, green, yellow, orange, and brown buses only when their matching stripe is exposed. Keep the road from holding five unfinished colors.",
+        "image": "/levels/3/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 3 burger middle state"
+      },
+      {
+        "title": "Release the last isolated buses",
+        "instruction": "When the board is small, several vehicles remain far apart. Follow the video for the final white, blue, red, and brown routes.",
+        "image": "/levels/3/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 3 final vehicle groups"
+      }
     ],
-    "beforeMove": ["The next burger color is exposed.", "The bus can exit without crossing another route.", "Parking still has a spare position.", "A blocked long bus will gain space."],
+    "beforeMove": [
+      "The next burger color is exposed.",
+      "The bus can exit without crossing another route.",
+      "Parking still has a spare position.",
+      "A blocked long bus will gain space."
+    ],
     "stuckPoint": "The hard section begins after the burger's outer colors disappear. Releasing unrelated visible buses can block the repeated red and white groups needed in the middle.",
     "faqs": [
-      {"question": "Why is Level 3 longer?", "answer": "The burger has repeated color layers and the bus field contains more nested routes than Levels 1 and 2."},
-      {"question": "What is the safest strategy?", "answer": "Clear one exposed color group, wait for collection, and use each opened lane before starting another group."},
-      {"question": "What picture does Level 3 reveal?", "answer": "It reveals a layered hamburger."},
-      {"question": "What causes a failed run?", "answer": "Most failures come from filling parking with colors that are not yet exposed."}
+      {
+        "question": "Why is Level 3 longer?",
+        "answer": "The burger has repeated color layers and the bus field contains more nested routes than Levels 1 and 2."
+      },
+      {
+        "question": "What is the safest strategy?",
+        "answer": "Clear one exposed color group, wait for collection, and use each opened lane before starting another group."
+      },
+      {
+        "question": "What picture does Level 3 reveal?",
+        "answer": "It reveals a layered hamburger."
+      },
+      {
+        "question": "What causes a failed run?",
+        "answer": "Most failures come from filling parking with colors that are not yet exposed."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "14:14",
+      "criticalRoute": "This is the first long solution and the bus grid changes slowly."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 3,
+        "region": "middle-center",
+        "xPercent": 38,
+        "yPercent": 64,
+        "purpose": "Send this white vehicle left from the middle-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 9,
+        "yPercent": 64,
+        "purpose": "Send this white vehicle left from the middle-left before selecting the next yellow vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "up",
+        "row": 4,
+        "column": 3,
+        "region": "middle-center",
+        "xPercent": 38,
+        "yPercent": 69,
+        "purpose": "Send this yellow vehicle up from the middle-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 30,
+        "yPercent": 63,
+        "purpose": "Send this white vehicle left from the middle-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 4,
+        "column": 4,
+        "region": "middle-center",
+        "xPercent": 60,
+        "yPercent": 69,
+        "purpose": "Send this white vehicle up from the middle-center before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 90,
+        "yPercent": 84,
+        "purpose": "Send this orange vehicle down from the lower-right to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Clear the background around the burger",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use the verified opening order to remove accessible white, blue, and outer colored sand. Each departure should create a route for a bus behind it.",
+        "parkingRule": "The next burger color is exposed."
+      },
+      {
+        "phase": "Work through the burger layers",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Move red, green, yellow, orange, and brown buses only when their matching stripe is exposed. Keep the road from holding five unfinished colors.",
+        "parkingRule": "The bus can exit without crossing another route."
+      },
+      {
+        "phase": "Release the last isolated buses",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "When the board is small, several vehicles remain far apart. Follow the video for the final white, blue, red, and brown routes.",
+        "parkingRule": "Parking still has a spare position."
+      }
     ]
   },
   "4": {
     "objective": "Clear the crown picture while preserving routes through a dense cyan field.",
     "keyChallenge": "Cyan buses are numerous, but the crown also needs timed yellow and red groups.",
     "quickAnswer": "Start by using buses with open routes around the cyan background, then alternate into yellow, red, white, and orange as the crown layers appear. The successful run keeps parking flexible instead of sending every cyan bus together.",
-    "overallStrategy": ["The crown has a broad cyan background and strong yellow and red features. The vehicle field mirrors that color imbalance.", "Clear enough cyan to expose the crown, but preserve side lanes for the smaller yellow, red, and white groups."],
+    "overallStrategy": [
+      "The crown has a broad cyan background and strong yellow and red features. The vehicle field mirrors that color imbalance.",
+      "Clear enough cyan to expose the crown, but preserve side lanes for the smaller yellow, red, and white groups."
+    ],
     "startingBoard": "A yellow crown with red jewels sits on a cyan background. The lower field contains many cyan vehicles mixed with red, yellow, orange, and white buses.",
     "steps": [
-      {"title": "Open the cyan background", "instruction": "Use the video's first open routes to reduce the cyan sand and create space inside the vehicle grid.", "image": "/levels/4/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 4 crown opening"},
-      {"title": "Switch into crown colors", "instruction": "As yellow and red become exposed, route those buses before cyan fills the road. Keep one space ready for white or orange.", "image": "/levels/4/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 4 middle crown state"},
-      {"title": "Clear the last jewels and outline", "instruction": "Finish the remaining yellow, red, cyan, and white pockets in the video order. The final buses are separated, so confirm each route before tapping.", "image": "/levels/4/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 4 final crown groups"}
+      {
+        "title": "Open the cyan background",
+        "instruction": "Use the video's first open routes to reduce the cyan sand and create space inside the vehicle grid.",
+        "image": "/levels/4/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 4 crown opening"
+      },
+      {
+        "title": "Switch into crown colors",
+        "instruction": "As yellow and red become exposed, route those buses before cyan fills the road. Keep one space ready for white or orange.",
+        "image": "/levels/4/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 4 middle crown state"
+      },
+      {
+        "title": "Clear the last jewels and outline",
+        "instruction": "Finish the remaining yellow, red, cyan, and white pockets in the video order. The final buses are separated, so confirm each route before tapping.",
+        "image": "/levels/4/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 4 final crown groups"
+      }
     ],
-    "beforeMove": ["The bus route is clear.", "Its color is visible in the crown.", "Parking is not full of cyan buses.", "The move does not close a side exit."],
+    "beforeMove": [
+      "The bus route is clear.",
+      "Its color is visible in the crown.",
+      "Parking is not full of cyan buses.",
+      "The move does not close a side exit."
+    ],
     "stuckPoint": "Sending too many cyan vehicles early is the main trap. The yellow and red crown layers then open while every parking space is already occupied.",
     "faqs": [
-      {"question": "What picture is Level 4?", "answer": "Level 4 reveals a yellow crown with red jewels on a cyan background."},
-      {"question": "Should I clear all cyan first?", "answer": "No. Alternate with newly exposed crown colors so the parking row stays usable."},
-      {"question": "Why is a yellow bus blocked?", "answer": "A neighboring vehicle must leave before that yellow route reaches the road."},
-      {"question": "How many screenshots are included?", "answer": "The guide shows the opening, middle, and late board states from the successful run."}
+      {
+        "question": "What picture is Level 4?",
+        "answer": "Level 4 reveals a yellow crown with red jewels on a cyan background."
+      },
+      {
+        "question": "Should I clear all cyan first?",
+        "answer": "No. Alternate with newly exposed crown colors so the parking row stays usable."
+      },
+      {
+        "question": "Why is a yellow bus blocked?",
+        "answer": "A neighboring vehicle must leave before that yellow route reaches the road."
+      },
+      {
+        "question": "How many screenshots are included?",
+        "answer": "The guide shows the opening, middle, and late board states from the successful run."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 5,
+      "solutionDuration": "6:32",
+      "criticalRoute": "Cyan buses are numerous, but the crown also needs timed yellow and red groups."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 85,
+        "yPercent": 86,
+        "purpose": "Send this cyan vehicle right from the lower-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 5,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 88,
+        "yPercent": 80,
+        "purpose": "Send this cyan vehicle down from the lower-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 17,
+        "yPercent": 52,
+        "purpose": "Send this cyan vehicle left from the upper-left before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 22,
+        "yPercent": 52,
+        "purpose": "Send this blue vehicle left from the upper-left before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 15,
+        "yPercent": 68,
+        "purpose": "Send this red vehicle left from the middle-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 10,
+        "yPercent": 60,
+        "purpose": "Send this cyan vehicle up from the upper-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the cyan background",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use the video's first open routes to reduce the cyan sand and create space inside the vehicle grid.",
+        "parkingRule": "The bus route is clear."
+      },
+      {
+        "phase": "Switch into crown colors",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As yellow and red become exposed, route those buses before cyan fills the road. Keep one space ready for white or orange.",
+        "parkingRule": "Its color is visible in the crown."
+      },
+      {
+        "phase": "Clear the last jewels and outline",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "Finish the remaining yellow, red, cyan, and white pockets in the video order. The final buses are separated, so confirm each route before tapping.",
+        "parkingRule": "Parking is not full of cyan buses."
+      }
     ]
   },
   "5": {
     "objective": "Clear the multicolor sneaker and route every vehicle out of the packed field.",
     "keyChallenge": "Green buses remain important late even when easier white routes are available.",
     "quickAnswer": "Follow the video through the sneaker's cyan, white, red, orange, blue, yellow, and green regions. Use open short routes to free the center, but reserve room for the long green vehicles that remain after most of the picture has cleared.",
-    "overallStrategy": ["This board introduces more color changes and a larger mix of bus lengths.", "The green section survives into the late board, so do not strand green vehicles behind white and red blockers."],
+    "overallStrategy": [
+      "This board introduces more color changes and a larger mix of bus lengths.",
+      "The green section survives into the late board, so do not strand green vehicles behind white and red blockers."
+    ],
     "startingBoard": "The opening picture is a colorful high-top sneaker. Green, cyan, red, white, orange, yellow, and blue buses fill the field below.",
     "steps": [
-      {"title": "Open routes around the sneaker", "instruction": "Start with buses that can exit cleanly and match the outer cyan, white, red, or orange sand shown in the video.", "image": "/levels/5/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 5 sneaker opening"},
-      {"title": "Protect the green lanes", "instruction": "As the board shrinks, avoid parking unrelated colors in front of the green groups. Use each newly opened lane immediately.", "image": "/levels/5/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 5 middle sneaker board"},
-      {"title": "Finish the green and red base", "instruction": "The last section contains isolated green, red, white, blue, and yellow buses. Copy the late video order to clear the remaining sole and outline.", "image": "/levels/5/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 5 late green groups"}
+      {
+        "title": "Open routes around the sneaker",
+        "instruction": "Start with buses that can exit cleanly and match the outer cyan, white, red, or orange sand shown in the video.",
+        "image": "/levels/5/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 5 sneaker opening"
+      },
+      {
+        "title": "Protect the green lanes",
+        "instruction": "As the board shrinks, avoid parking unrelated colors in front of the green groups. Use each newly opened lane immediately.",
+        "image": "/levels/5/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 5 middle sneaker board"
+      },
+      {
+        "title": "Finish the green and red base",
+        "instruction": "The last section contains isolated green, red, white, blue, and yellow buses. Copy the late video order to clear the remaining sole and outline.",
+        "image": "/levels/5/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 5 late green groups"
+      }
     ],
-    "beforeMove": ["The matching sneaker color is exposed.", "The bus can reach the road.", "A green exit remains usable.", "One parking space stays free."],
+    "beforeMove": [
+      "The matching sneaker color is exposed.",
+      "The bus can reach the road.",
+      "A green exit remains usable.",
+      "One parking space stays free."
+    ],
     "stuckPoint": "The late green section causes most failures. If green buses are left behind blocked white vehicles, the remaining sand cannot be collected in time.",
     "faqs": [
-      {"question": "What image does Level 5 reveal?", "answer": "It reveals a multicolor high-top sneaker."},
-      {"question": "Which color needs special planning?", "answer": "Green remains on the board late and its buses need preserved exits."},
-      {"question": "Why does parking expand near the end?", "answer": "The successful run unlocks more spaces as progression rewards are reached."},
-      {"question": "Can I recover after blocking green?", "answer": "Usually a restart is faster because the remaining route order no longer matches the verified solution."}
+      {
+        "question": "What image does Level 5 reveal?",
+        "answer": "It reveals a multicolor high-top sneaker."
+      },
+      {
+        "question": "Which color needs special planning?",
+        "answer": "Green remains on the board late and its buses need preserved exits."
+      },
+      {
+        "question": "Why does parking expand near the end?",
+        "answer": "The successful run unlocks more spaces as progression rewards are reached."
+      },
+      {
+        "question": "Can I recover after blocking green?",
+        "answer": "Usually a restart is faster because the remaining route order no longer matches the verified solution."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "9:08",
+      "criticalRoute": "Green buses remain important late even when easier white routes are available."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 90,
+        "yPercent": 84,
+        "purpose": "Send this white vehicle down from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "right",
+        "row": 5,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 91,
+        "yPercent": 81,
+        "purpose": "Send this red vehicle right from the lower-right before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 88,
+        "yPercent": 53,
+        "purpose": "Send this orange vehicle up from the upper-right before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "right",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 75,
+        "yPercent": 51,
+        "purpose": "Send this blue vehicle right from the upper-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 9,
+        "yPercent": 87,
+        "purpose": "Send this white vehicle down from the lower-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 11,
+        "yPercent": 81,
+        "purpose": "Send this white vehicle left from the lower-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open routes around the sneaker",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Start with buses that can exit cleanly and match the outer cyan, white, red, or orange sand shown in the video.",
+        "parkingRule": "The matching sneaker color is exposed."
+      },
+      {
+        "phase": "Protect the green lanes",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As the board shrinks, avoid parking unrelated colors in front of the green groups. Use each newly opened lane immediately.",
+        "parkingRule": "The bus can reach the road."
+      },
+      {
+        "phase": "Finish the green and red base",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The last section contains isolated green, red, white, blue, and yellow buses. Copy the late video order to clear the remaining sole and outline.",
+        "parkingRule": "A green exit remains usable."
+      }
     ]
   },
   "6": {
     "objective": "Remove the teddy bear picture and clear the repeated cyan and orange routes.",
     "keyChallenge": "Several same-color buses are separated by blockers in different rows.",
     "quickAnswer": "Clear the teddy bear from its outer cyan and orange regions toward the red bow and white center. The important move is not a single tap: it is keeping same-color buses in a useful sequence so one departure opens the next route.",
-    "overallStrategy": ["The bear board looks simple, but repeated cyan, orange, red, and white vehicles are distributed across the grid.", "Favor moves that both match exposed sand and free a bus directly behind or beside the selected vehicle."],
+    "overallStrategy": [
+      "The bear board looks simple, but repeated cyan, orange, red, and white vehicles are distributed across the grid.",
+      "Favor moves that both match exposed sand and free a bus directly behind or beside the selected vehicle."
+    ],
     "startingBoard": "A teddy bear with a red bow sits inside a cyan background. The vehicle field contains repeated cyan and orange routes plus white, red, blue, and yellow buses.",
     "steps": [
-      {"title": "Reduce the cyan background", "instruction": "Send the open cyan and orange buses shown at the start. Their exits create the first usable paths through the center.", "image": "/levels/6/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 6 teddy bear opening"},
-      {"title": "Clear the bow and body colors", "instruction": "Move red, white, and orange groups as those areas become exposed. Do not hold duplicate cyan buses on the road without active cyan sand.", "image": "/levels/6/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 6 middle bear state"},
-      {"title": "Use the last opened lanes", "instruction": "The final buses are widely spaced. Follow the late video sequence through white, blue, orange, and cyan until the board clears.", "image": "/levels/6/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 6 late board"}
+      {
+        "title": "Reduce the cyan background",
+        "instruction": "Send the open cyan and orange buses shown at the start. Their exits create the first usable paths through the center.",
+        "image": "/levels/6/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 6 teddy bear opening"
+      },
+      {
+        "title": "Clear the bow and body colors",
+        "instruction": "Move red, white, and orange groups as those areas become exposed. Do not hold duplicate cyan buses on the road without active cyan sand.",
+        "image": "/levels/6/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 6 middle bear state"
+      },
+      {
+        "title": "Use the last opened lanes",
+        "instruction": "The final buses are widely spaced. Follow the late video sequence through white, blue, orange, and cyan until the board clears.",
+        "image": "/levels/6/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 6 late board"
+      }
     ],
-    "beforeMove": ["Matching bear color is visible.", "The bus opens another lane.", "Duplicate colors will not fill parking.", "The road path is clear."],
+    "beforeMove": [
+      "Matching bear color is visible.",
+      "The bus opens another lane.",
+      "Duplicate colors will not fill parking.",
+      "The road path is clear."
+    ],
     "stuckPoint": "The center can look open while two same-color buses still block each other. Use the video order instead of tapping the nearer vehicle automatically.",
     "faqs": [
-      {"question": "What picture is Level 6?", "answer": "Level 6 reveals a teddy bear with a red bow."},
-      {"question": "Why are duplicate colors difficult?", "answer": "They can occupy several parking spaces before enough matching sand is exposed."},
-      {"question": "Which areas clear first?", "answer": "The successful run reduces the outer cyan and orange regions before the central body finishes."},
-      {"question": "Do I need a booster?", "answer": "The source video completes the level without relying on a guessed alternate route."}
+      {
+        "question": "What picture is Level 6?",
+        "answer": "Level 6 reveals a teddy bear with a red bow."
+      },
+      {
+        "question": "Why are duplicate colors difficult?",
+        "answer": "They can occupy several parking spaces before enough matching sand is exposed."
+      },
+      {
+        "question": "Which areas clear first?",
+        "answer": "The successful run reduces the outer cyan and orange regions before the central body finishes."
+      },
+      {
+        "question": "Do I need a booster?",
+        "answer": "The source video completes the level without relying on a guessed alternate route."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "7:10",
+      "criticalRoute": "Several same-color buses are separated by blockers in different rows."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "down",
+        "row": 4,
+        "column": 5,
+        "region": "middle-right",
+        "xPercent": 69,
+        "yPercent": 73,
+        "purpose": "Send this blue vehicle down from the middle-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "right",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 86,
+        "yPercent": 52,
+        "purpose": "Send this cyan vehicle right from the upper-right before selecting the next yellow vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 82,
+        "yPercent": 82,
+        "purpose": "Send this yellow vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 45,
+        "yPercent": 84,
+        "purpose": "Send this red vehicle down from the lower-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 4,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 33,
+        "yPercent": 75,
+        "purpose": "Send this cyan vehicle down from the middle-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 51,
+        "yPercent": 86,
+        "purpose": "Send this cyan vehicle down from the lower-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Reduce the cyan background",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Send the open cyan and orange buses shown at the start. Their exits create the first usable paths through the center.",
+        "parkingRule": "Matching bear color is visible."
+      },
+      {
+        "phase": "Clear the bow and body colors",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Move red, white, and orange groups as those areas become exposed. Do not hold duplicate cyan buses on the road without active cyan sand.",
+        "parkingRule": "The bus opens another lane."
+      },
+      {
+        "phase": "Use the last opened lanes",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The final buses are widely spaced. Follow the late video sequence through white, blue, orange, and cyan until the board clears.",
+        "parkingRule": "Duplicate colors will not fill parking."
+      }
     ]
   },
   "7": {
     "objective": "Clear the red rose bouquet without blocking the narrow central vehicle lanes.",
     "keyChallenge": "Large red sections encourage too many red buses to enter parking together.",
     "quickAnswer": "Use the opening side routes to reduce the bouquet's red and blue background, then alternate red with cyan, white, orange, and yellow as the ribbon and flower centers appear. Keep the parking row from becoming a red-only queue.",
-    "overallStrategy": ["The artwork is dominated by red roses, but the sand layers still expose other colors between red phases.", "A red bus is useful only while red sand is actively exposed. Hold later red vehicles until the next rose section opens."],
+    "overallStrategy": [
+      "The artwork is dominated by red roses, but the sand layers still expose other colors between red phases.",
+      "A red bus is useful only while red sand is actively exposed. Hold later red vehicles until the next rose section opens."
+    ],
     "startingBoard": "A bouquet of red roses with yellow centers and an orange ribbon sits against blue and white areas. Red buses fill much of the lower field.",
     "steps": [
-      {"title": "Open the bouquet edges", "instruction": "Clear the accessible outer colors and the first red groups using buses with direct paths to the road.", "image": "/levels/7/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 7 rose bouquet opening"},
-      {"title": "Alternate red with support colors", "instruction": "When cyan, white, orange, or yellow appears, release those buses before adding another red vehicle to parking.", "image": "/levels/7/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 7 middle bouquet"},
-      {"title": "Finish the ribbon and remaining roses", "instruction": "Use the final red, cyan, blue, white, yellow, and orange routes in the recorded order. The late board has little room for an unnecessary color.", "image": "/levels/7/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 7 late groups"}
+      {
+        "title": "Open the bouquet edges",
+        "instruction": "Clear the accessible outer colors and the first red groups using buses with direct paths to the road.",
+        "image": "/levels/7/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 7 rose bouquet opening"
+      },
+      {
+        "title": "Alternate red with support colors",
+        "instruction": "When cyan, white, orange, or yellow appears, release those buses before adding another red vehicle to parking.",
+        "image": "/levels/7/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 7 middle bouquet"
+      },
+      {
+        "title": "Finish the ribbon and remaining roses",
+        "instruction": "Use the final red, cyan, blue, white, yellow, and orange routes in the recorded order. The late board has little room for an unnecessary color.",
+        "image": "/levels/7/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 7 late groups"
+      }
     ],
-    "beforeMove": ["Red sand is currently exposed.", "A support color is not waiting.", "The bus path reaches the road.", "Parking keeps one free space."],
+    "beforeMove": [
+      "Red sand is currently exposed.",
+      "A support color is not waiting.",
+      "The bus path reaches the road.",
+      "Parking keeps one free space."
+    ],
     "stuckPoint": "The bouquet contains several separate red phases. Sending every available red bus during the first phase fills parking before the yellow centers and orange ribbon become available.",
     "faqs": [
-      {"question": "What picture is Level 7?", "answer": "It reveals a bouquet of red roses tied with an orange ribbon."},
-      {"question": "Should all red buses move first?", "answer": "No. Red appears in several phases, with other colors needed between them."},
-      {"question": "What is the main failure condition?", "answer": "Parking fills with red buses while another exposed color has no space."},
-      {"question": "How can I identify this board?", "answer": "Use the red rose bouquet opening image in the level finder."}
+      {
+        "question": "What picture is Level 7?",
+        "answer": "It reveals a bouquet of red roses tied with an orange ribbon."
+      },
+      {
+        "question": "Should all red buses move first?",
+        "answer": "No. Red appears in several phases, with other colors needed between them."
+      },
+      {
+        "question": "What is the main failure condition?",
+        "answer": "Parking fills with red buses while another exposed color has no space."
+      },
+      {
+        "question": "How can I identify this board?",
+        "answer": "Use the red rose bouquet opening image in the level finder."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "5:38",
+      "criticalRoute": "Large red sections encourage too many red buses to enter parking together."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 37,
+        "yPercent": 86,
+        "purpose": "Send this white vehicle down from the lower-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 11,
+        "yPercent": 51,
+        "purpose": "Send this white vehicle up from the upper-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 18,
+        "yPercent": 85,
+        "purpose": "Send this orange vehicle down from the lower-left before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 27,
+        "yPercent": 85,
+        "purpose": "Send this blue vehicle down from the lower-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 10,
+        "yPercent": 84,
+        "purpose": "Send this cyan vehicle down from the lower-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "down",
+        "row": 4,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 11,
+        "yPercent": 75,
+        "purpose": "Send this orange vehicle down from the middle-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the bouquet edges",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Clear the accessible outer colors and the first red groups using buses with direct paths to the road.",
+        "parkingRule": "Red sand is currently exposed."
+      },
+      {
+        "phase": "Alternate red with support colors",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When cyan, white, orange, or yellow appears, release those buses before adding another red vehicle to parking.",
+        "parkingRule": "A support color is not waiting."
+      },
+      {
+        "phase": "Finish the ribbon and remaining roses",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "Use the final red, cyan, blue, white, yellow, and orange routes in the recorded order. The late board has little room for an unnecessary color.",
+        "parkingRule": "The bus path reaches the road."
+      }
     ]
   },
   "8": {
     "objective": "Clear the sea turtle and its cyan water background.",
     "keyChallenge": "Many cyan and green buses share the same crowded lower routes.",
     "quickAnswer": "Start with open cyan routes around the sea turtle, then work green, orange, white, blue, and red buses into the queue as the shell and body become exposed. Keep the long vertical cyan lanes clear until the late board.",
-    "overallStrategy": ["The turtle board is cyan-heavy, but its shell and body introduce green, orange, white, blue, and red checkpoints.", "Do not treat all cyan vehicles as interchangeable. Direction matters because several long buses need the same central exit."],
+    "overallStrategy": [
+      "The turtle board is cyan-heavy, but its shell and body introduce green, orange, white, blue, and red checkpoints.",
+      "Do not treat all cyan vehicles as interchangeable. Direction matters because several long buses need the same central exit."
+    ],
     "startingBoard": "A green and orange sea turtle swims in cyan water. The lower field is dominated by cyan and green buses with smaller orange, white, red, and blue groups.",
     "steps": [
-      {"title": "Clear water around the turtle", "instruction": "Use cyan buses with open routes and follow each with the matching support color shown in the successful run.", "image": "/levels/8/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 8 sea turtle opening"},
-      {"title": "Open the shell and body", "instruction": "When green and orange layers become available, route those buses before another cyan wave fills parking.", "image": "/levels/8/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 8 turtle middle state"},
-      {"title": "Finish the last water channels", "instruction": "The late board keeps a few green, cyan, orange, blue, red, and white buses. Preserve the central vertical route until those groups clear.", "image": "/levels/8/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 8 final water channels"}
+      {
+        "title": "Clear water around the turtle",
+        "instruction": "Use cyan buses with open routes and follow each with the matching support color shown in the successful run.",
+        "image": "/levels/8/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 8 sea turtle opening"
+      },
+      {
+        "title": "Open the shell and body",
+        "instruction": "When green and orange layers become available, route those buses before another cyan wave fills parking.",
+        "image": "/levels/8/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 8 turtle middle state"
+      },
+      {
+        "title": "Finish the last water channels",
+        "instruction": "The late board keeps a few green, cyan, orange, blue, red, and white buses. Preserve the central vertical route until those groups clear.",
+        "image": "/levels/8/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 8 final water channels"
+      }
     ],
-    "beforeMove": ["The vehicle direction matches an open lane.", "Its sand color is exposed.", "The central cyan route stays open.", "Parking has spare capacity."],
+    "beforeMove": [
+      "The vehicle direction matches an open lane.",
+      "Its sand color is exposed.",
+      "The central cyan route stays open.",
+      "Parking has spare capacity."
+    ],
     "stuckPoint": "A long cyan bus can block the same vertical lane needed by green and orange vehicles. Copy the midgame order instead of clearing cyan continuously.",
     "faqs": [
-      {"question": "What image is in Level 8?", "answer": "Level 8 reveals a sea turtle in cyan water."},
-      {"question": "Which colors dominate?", "answer": "Cyan and green dominate, with orange, white, blue, and red details."},
-      {"question": "Why does my center lane close?", "answer": "A long bus entered before the vehicle using the same route had left."},
-      {"question": "What should I preserve?", "answer": "Keep a vertical path through the central cyan group until the late board."}
+      {
+        "question": "What image is in Level 8?",
+        "answer": "Level 8 reveals a sea turtle in cyan water."
+      },
+      {
+        "question": "Which colors dominate?",
+        "answer": "Cyan and green dominate, with orange, white, blue, and red details."
+      },
+      {
+        "question": "Why does my center lane close?",
+        "answer": "A long bus entered before the vehicle using the same route had left."
+      },
+      {
+        "question": "What should I preserve?",
+        "answer": "Keep a vertical path through the central cyan group until the late board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "6:55",
+      "criticalRoute": "Many cyan and green buses share the same crowded lower routes."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "left",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 17,
+        "yPercent": 86,
+        "purpose": "Send this red vehicle left from the lower-left before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 36,
+        "yPercent": 86,
+        "purpose": "Send this cyan vehicle down from the lower-center before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 79,
+        "yPercent": 86,
+        "purpose": "Send this blue vehicle right from the lower-right before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 43,
+        "yPercent": 86,
+        "purpose": "Send this blue vehicle down from the lower-center before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "down",
+        "row": 5,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 43,
+        "yPercent": 76,
+        "purpose": "Send this red vehicle down from the lower-center before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 16,
+        "yPercent": 56,
+        "purpose": "Send this blue vehicle left from the upper-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Clear water around the turtle",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use cyan buses with open routes and follow each with the matching support color shown in the successful run.",
+        "parkingRule": "The vehicle direction matches an open lane."
+      },
+      {
+        "phase": "Open the shell and body",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When green and orange layers become available, route those buses before another cyan wave fills parking.",
+        "parkingRule": "Its sand color is exposed."
+      },
+      {
+        "phase": "Finish the last water channels",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board keeps a few green, cyan, orange, blue, red, and white buses. Preserve the central vertical route until those groups clear.",
+        "parkingRule": "The central cyan route stays open."
+      }
     ]
   },
   "9": {
     "objective": "Clear the lotus flower from the red petals to the green leaves.",
     "keyChallenge": "Red petals repeat on both sides while cyan and green routes cross the center.",
     "quickAnswer": "Clear the exposed outer colors, then work through the lotus's red petals and yellow center in the same sequence as the video. Alternate with cyan, green, white, blue, and orange buses so repeated red groups do not occupy every parking space.",
-    "overallStrategy": ["The lotus is symmetrical, but the bus grid is not. A safe route on one side does not imply the matching vehicle on the other side can leave.", "Use the current exposed sand, vehicle direction, and next opened lane together when choosing a bus."],
+    "overallStrategy": [
+      "The lotus is symmetrical, but the bus grid is not. A safe route on one side does not imply the matching vehicle on the other side can leave.",
+      "Use the current exposed sand, vehicle direction, and next opened lane together when choosing a bus."
+    ],
     "startingBoard": "A red lotus with a yellow center and green leaves sits over cyan water. Red, cyan, green, white, blue, yellow, and orange buses fill the field.",
     "steps": [
-      {"title": "Reduce the outer water and petals", "instruction": "Use open cyan, red, green, and white routes to start shrinking the picture and break up the lower grid.", "image": "/levels/9/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 9 lotus opening"},
-      {"title": "Clear the flower center", "instruction": "As yellow and central red sections appear, send those colors without abandoning the green and cyan routes that remain open.", "image": "/levels/9/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 9 lotus middle state"},
-      {"title": "Finish the leaves and last petals", "instruction": "Follow the late order through the final red, green, blue, cyan, white, and yellow vehicles.", "image": "/levels/9/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 9 late lotus groups"}
+      {
+        "title": "Reduce the outer water and petals",
+        "instruction": "Use open cyan, red, green, and white routes to start shrinking the picture and break up the lower grid.",
+        "image": "/levels/9/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 9 lotus opening"
+      },
+      {
+        "title": "Clear the flower center",
+        "instruction": "As yellow and central red sections appear, send those colors without abandoning the green and cyan routes that remain open.",
+        "image": "/levels/9/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 9 lotus middle state"
+      },
+      {
+        "title": "Finish the leaves and last petals",
+        "instruction": "Follow the late order through the final red, green, blue, cyan, white, and yellow vehicles.",
+        "image": "/levels/9/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 9 late lotus groups"
+      }
     ],
-    "beforeMove": ["The selected side has an exit.", "Matching lotus sand is exposed.", "Repeated red buses will not fill parking.", "The next green or cyan lane stays open."],
+    "beforeMove": [
+      "The selected side has an exit.",
+      "Matching lotus sand is exposed.",
+      "Repeated red buses will not fill parking.",
+      "The next green or cyan lane stays open."
+    ],
     "stuckPoint": "The symmetrical flower encourages mirrored moves, but the lower routes are different. One side may be blocked even when the same color left safely on the other side.",
     "faqs": [
-      {"question": "What picture is Level 9?", "answer": "Level 9 reveals a red lotus with a yellow center and green leaves."},
-      {"question": "Is the solution symmetrical?", "answer": "No. The picture is balanced, but the bus directions and blockers are not."},
-      {"question": "Which color repeats most?", "answer": "Red appears across several petal phases."},
-      {"question": "What should I do if the board differs?", "answer": "Use the screenshot finder because game updates can move this layout to another number."}
+      {
+        "question": "What picture is Level 9?",
+        "answer": "Level 9 reveals a red lotus with a yellow center and green leaves."
+      },
+      {
+        "question": "Is the solution symmetrical?",
+        "answer": "No. The picture is balanced, but the bus directions and blockers are not."
+      },
+      {
+        "question": "Which color repeats most?",
+        "answer": "Red appears across several petal phases."
+      },
+      {
+        "question": "What should I do if the board differs?",
+        "answer": "Use the screenshot finder because game updates can move this layout to another number."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "6:16",
+      "criticalRoute": "Red petals repeat on both sides while cyan and green routes cross the center."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 50,
+        "yPercent": 85,
+        "purpose": "Send this white vehicle down from the lower-center before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "left",
+        "row": 2,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 17,
+        "yPercent": 59,
+        "purpose": "Send this green vehicle left from the upper-left before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 5,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 22,
+        "yPercent": 77,
+        "purpose": "Send this blue vehicle left from the lower-left before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "up",
+        "row": 2,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 70,
+        "yPercent": 57,
+        "purpose": "Send this blue vehicle up from the upper-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 65,
+        "yPercent": 56,
+        "purpose": "Send this cyan vehicle up from the upper-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 81,
+        "yPercent": 86,
+        "purpose": "Send this cyan vehicle right from the lower-right to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Reduce the outer water and petals",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use open cyan, red, green, and white routes to start shrinking the picture and break up the lower grid.",
+        "parkingRule": "The selected side has an exit."
+      },
+      {
+        "phase": "Clear the flower center",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As yellow and central red sections appear, send those colors without abandoning the green and cyan routes that remain open.",
+        "parkingRule": "Matching lotus sand is exposed."
+      },
+      {
+        "phase": "Finish the leaves and last petals",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "Follow the late order through the final red, green, blue, cyan, white, and yellow vehicles.",
+        "parkingRule": "Repeated red buses will not fill parking."
+      }
     ]
   },
   "10": {
     "objective": "Clear the house picture and use the expanding parking row correctly.",
     "keyChallenge": "The board adds purple and pink while parking capacity changes during the run.",
     "quickAnswer": "Follow the full video because Level 10 combines a dense route grid with parking-space upgrades. Clear available blue, purple, pink, red, orange, yellow, green, and white sand in controlled groups, and treat each newly unlocked space as temporary flexibility rather than permission to queue every bus.",
-    "overallStrategy": ["The house uses more colors than earlier boards, and long horizontal blue buses split the lower field.", "The successful run expands parking during play. Continue leaving spare capacity even after an upgrade."],
+    "overallStrategy": [
+      "The house uses more colors than earlier boards, and long horizontal blue buses split the lower field.",
+      "The successful run expands parking during play. Continue leaving spare capacity even after an upgrade."
+    ],
     "startingBoard": "A small house with a blue door, orange walls, red roof, and purple background appears above a dense eight-color vehicle grid.",
     "steps": [
-      {"title": "Create lanes through the large grid", "instruction": "Start with vehicles that have direct exits and match the exposed house background. Use each departure to open a neighboring long route.", "image": "/levels/10/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 10 house opening"},
-      {"title": "Use parking upgrades carefully", "instruction": "When capacity increases, keep at least one new space unused. Continue alternating colors as the roof, walls, and door become exposed.", "image": "/levels/10/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 10 expanded parking"},
-      {"title": "Clear the final house sections", "instruction": "The late board still has blue, purple, red, orange, yellow, green, and white buses. Follow the recorded order rather than relying on the larger parking row.", "image": "/levels/10/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 10 late house state"}
+      {
+        "title": "Create lanes through the large grid",
+        "instruction": "Start with vehicles that have direct exits and match the exposed house background. Use each departure to open a neighboring long route.",
+        "image": "/levels/10/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 10 house opening"
+      },
+      {
+        "title": "Use parking upgrades carefully",
+        "instruction": "When capacity increases, keep at least one new space unused. Continue alternating colors as the roof, walls, and door become exposed.",
+        "image": "/levels/10/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 10 expanded parking"
+      },
+      {
+        "title": "Clear the final house sections",
+        "instruction": "The late board still has blue, purple, red, orange, yellow, green, and white buses. Follow the recorded order rather than relying on the larger parking row.",
+        "image": "/levels/10/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 10 late house state"
+      }
     ],
-    "beforeMove": ["The bus has a verified exit.", "Matching house color is exposed.", "An upgraded parking space stays free.", "A long horizontal lane remains usable."],
+    "beforeMove": [
+      "The bus has a verified exit.",
+      "Matching house color is exposed.",
+      "An upgraded parking space stays free.",
+      "A long horizontal lane remains usable."
+    ],
     "stuckPoint": "The upgrade can cause overconfidence. Filling every new parking space creates the same lock as before, only later in the solution.",
     "faqs": [
-      {"question": "Why is Level 10 harder?", "answer": "It adds more colors, a denser route grid, long buses, and changing parking capacity."},
-      {"question": "What picture does Level 10 reveal?", "answer": "It reveals a small colorful house."},
-      {"question": "Should I fill newly unlocked parking spaces?", "answer": "No. Keep at least one space free for the next exposed color."},
-      {"question": "How many colors appear?", "answer": "The board uses blue, purple, pink, red, orange, yellow, green, and white."}
+      {
+        "question": "Why is Level 10 harder?",
+        "answer": "It adds more colors, a denser route grid, long buses, and changing parking capacity."
+      },
+      {
+        "question": "What picture does Level 10 reveal?",
+        "answer": "It reveals a small colorful house."
+      },
+      {
+        "question": "Should I fill newly unlocked parking spaces?",
+        "answer": "No. Keep at least one space free for the next exposed color."
+      },
+      {
+        "question": "How many colors appear?",
+        "answer": "The board uses blue, purple, pink, red, orange, yellow, green, and white."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "10:46",
+      "criticalRoute": "The board adds purple and pink while parking capacity changes during the run."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 8,
+        "yPercent": 50,
+        "purpose": "Send this blue vehicle left from the upper-left before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 88,
+        "yPercent": 61,
+        "purpose": "Send this green vehicle right from the upper-right before selecting the next pink vehicle.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "pink",
+        "vehicle": "pink vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 88,
+        "yPercent": 86,
+        "purpose": "Send this pink vehicle right from the lower-right before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the pink vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 71,
+        "yPercent": 86,
+        "purpose": "Send this green vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "right",
+        "row": 2,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 72,
+        "yPercent": 61,
+        "purpose": "Send this red vehicle right from the upper-right before selecting the next pink vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "pink",
+        "vehicle": "pink vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 56,
+        "yPercent": 86,
+        "purpose": "Send this pink vehicle down from the lower-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the pink vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Create lanes through the large grid",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Start with vehicles that have direct exits and match the exposed house background. Use each departure to open a neighboring long route.",
+        "parkingRule": "The bus has a verified exit."
+      },
+      {
+        "phase": "Use parking upgrades carefully",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When capacity increases, keep at least one new space unused. Continue alternating colors as the roof, walls, and door become exposed.",
+        "parkingRule": "Matching house color is exposed."
+      },
+      {
+        "phase": "Clear the final house sections",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board still has blue, purple, red, orange, yellow, green, and white buses. Follow the recorded order rather than relying on the larger parking row.",
+        "parkingRule": "An upgraded parking space stays free."
+      }
     ]
   },
   "11": {
     "objective": "Clear the tropical fish and route a dense six-color field.",
     "keyChallenge": "Long red and blue buses divide the grid into separate route zones.",
     "quickAnswer": "Work from the open edges toward the tropical fish's yellow, red, green, blue, orange, and white center. Move short buses that free long horizontal routes, and avoid parking several red vehicles before the next red sand section is exposed.",
-    "overallStrategy": ["Level 11 has a compact picture but a large field. Route clearance matters more than the apparent size of the remaining sand.", "Use short edge vehicles to unlock long red and blue buses, then switch colors as the fish body changes."],
+    "overallStrategy": [
+      "Level 11 has a compact picture but a large field. Route clearance matters more than the apparent size of the remaining sand.",
+      "Use short edge vehicles to unlock long red and blue buses, then switch colors as the fish body changes."
+    ],
     "startingBoard": "A bright tropical fish fills the panel. Red and blue long buses cross a field of orange, green, white, and yellow vehicles.",
     "steps": [
-      {"title": "Open the outer routes", "instruction": "Release short buses with direct paths and matching exposed sand. Focus on moves that uncover long red or blue vehicles.", "image": "/levels/11/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 11 tropical fish opening"},
-      {"title": "Clear the fish body", "instruction": "Alternate yellow, red, green, blue, orange, and white buses as the body sections appear. Keep one road position open.", "image": "/levels/11/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 11 middle fish state"},
-      {"title": "Finish isolated color groups", "instruction": "The final board leaves separated vehicles. Follow the late video order to clear the remaining red, green, orange, blue, yellow, and white sand.", "image": "/levels/11/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 11 late groups"}
+      {
+        "title": "Open the outer routes",
+        "instruction": "Release short buses with direct paths and matching exposed sand. Focus on moves that uncover long red or blue vehicles.",
+        "image": "/levels/11/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 11 tropical fish opening"
+      },
+      {
+        "title": "Clear the fish body",
+        "instruction": "Alternate yellow, red, green, blue, orange, and white buses as the body sections appear. Keep one road position open.",
+        "image": "/levels/11/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 11 middle fish state"
+      },
+      {
+        "title": "Finish isolated color groups",
+        "instruction": "The final board leaves separated vehicles. Follow the late video order to clear the remaining red, green, orange, blue, yellow, and white sand.",
+        "image": "/levels/11/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 11 late groups"
+      }
     ],
-    "beforeMove": ["The move opens a long route.", "Matching fish color is exposed.", "Red buses will not overfill parking.", "The next lane remains accessible."],
+    "beforeMove": [
+      "The move opens a long route.",
+      "Matching fish color is exposed.",
+      "Red buses will not overfill parking.",
+      "The next lane remains accessible."
+    ],
     "stuckPoint": "The long red buses can look ready while a short blocker still occupies their exit. Moving them out of sequence closes the central route.",
     "faqs": [
-      {"question": "What image is in Level 11?", "answer": "Level 11 reveals a tropical fish."},
-      {"question": "Which routes matter most?", "answer": "The long red and blue horizontal routes divide the lower grid."},
-      {"question": "Why should short buses move first?", "answer": "They often free the exit needed by a longer bus behind them."},
-      {"question": "What colors appear?", "answer": "Yellow, red, green, blue, orange, and white are visible in the fish board."}
+      {
+        "question": "What image is in Level 11?",
+        "answer": "Level 11 reveals a tropical fish."
+      },
+      {
+        "question": "Which routes matter most?",
+        "answer": "The long red and blue horizontal routes divide the lower grid."
+      },
+      {
+        "question": "Why should short buses move first?",
+        "answer": "They often free the exit needed by a longer bus behind them."
+      },
+      {
+        "question": "What colors appear?",
+        "answer": "Yellow, red, green, blue, orange, and white are visible in the fish board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "9:04",
+      "criticalRoute": "Long red and blue buses divide the grid into separate route zones."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 15,
+        "yPercent": 52,
+        "purpose": "Send this white vehicle left from the upper-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 10,
+        "yPercent": 58,
+        "purpose": "Send this white vehicle up from the upper-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 19,
+        "yPercent": 63,
+        "purpose": "Send this white vehicle left from the middle-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 12,
+        "yPercent": 67,
+        "purpose": "Send this white vehicle left from the middle-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 29,
+        "yPercent": 67,
+        "purpose": "Send this orange vehicle left from the middle-left before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 52,
+        "yPercent": 53,
+        "purpose": "Send this green vehicle up from the upper-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the outer routes",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Release short buses with direct paths and matching exposed sand. Focus on moves that uncover long red or blue vehicles.",
+        "parkingRule": "The move opens a long route."
+      },
+      {
+        "phase": "Clear the fish body",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Alternate yellow, red, green, blue, orange, and white buses as the body sections appear. Keep one road position open.",
+        "parkingRule": "Matching fish color is exposed."
+      },
+      {
+        "phase": "Finish isolated color groups",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The final board leaves separated vehicles. Follow the late video order to clear the remaining red, green, orange, blue, yellow, and white sand.",
+        "parkingRule": "Red buses will not overfill parking."
+      }
     ]
   },
   "12": {
     "objective": "Clear the layered food bowl without trapping the long blue routes.",
     "keyChallenge": "The center has several horizontal buses under scattered diagonal blockers.",
     "quickAnswer": "Use the video to open the scattered top vehicles, then clear the bowl's green, red, yellow, blue, orange, and white layers. Preserve the long horizontal blue lanes through the middle until their blockers and matching sand are both ready.",
-    "overallStrategy": ["The vehicle field is arranged in bands and diagonals rather than a simple grid.", "A bus can have matching sand but still lack a safe route. Check both conditions before committing a parking space."],
+    "overallStrategy": [
+      "The vehicle field is arranged in bands and diagonals rather than a simple grid.",
+      "A bus can have matching sand but still lack a safe route. Check both conditions before committing a parking space."
+    ],
     "startingBoard": "A colorful food bowl sits inside a round blue border. Green, red, yellow, orange, white, and blue vehicles form several horizontal bands below.",
     "steps": [
-      {"title": "Open scattered top routes", "instruction": "Move the exposed green, blue, red, and white buses shown at the start to make space above the central bands.", "image": "/levels/12/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 12 food bowl opening"},
-      {"title": "Release the middle bands", "instruction": "As the bowl layers change, use yellow, orange, blue, red, green, and white buses without occupying every road position.", "image": "/levels/12/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 12 middle bands"},
-      {"title": "Finish the orange and red base", "instruction": "The final picture contracts to orange, red, yellow, green, and blue pockets. Copy the video order for the last separated buses.", "image": "/levels/12/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 12 late bowl colors"}
+      {
+        "title": "Open scattered top routes",
+        "instruction": "Move the exposed green, blue, red, and white buses shown at the start to make space above the central bands.",
+        "image": "/levels/12/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 12 food bowl opening"
+      },
+      {
+        "title": "Release the middle bands",
+        "instruction": "As the bowl layers change, use yellow, orange, blue, red, green, and white buses without occupying every road position.",
+        "image": "/levels/12/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 12 middle bands"
+      },
+      {
+        "title": "Finish the orange and red base",
+        "instruction": "The final picture contracts to orange, red, yellow, green, and blue pockets. Copy the video order for the last separated buses.",
+        "image": "/levels/12/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 12 late bowl colors"
+      }
     ],
-    "beforeMove": ["Matching bowl color is open.", "The route is not blocked diagonally.", "A blue horizontal exit remains.", "Parking has a spare slot."],
+    "beforeMove": [
+      "Matching bowl color is open.",
+      "The route is not blocked diagonally.",
+      "A blue horizontal exit remains.",
+      "Parking has a spare slot."
+    ],
     "stuckPoint": "A long blue bus may appear to have a clear horizontal path while a diagonal blocker still controls the exit. Move the blocker first as shown.",
     "faqs": [
-      {"question": "What picture is Level 12?", "answer": "It shows a layered food bowl inside a blue border."},
-      {"question": "What is the main route risk?", "answer": "Long blue horizontal buses can be trapped by diagonal blockers."},
-      {"question": "Should matching color always move?", "answer": "No. The vehicle also needs a complete path to the road."},
-      {"question": "Which colors remain late?", "answer": "Orange, red, yellow, green, and blue pockets remain near the end."}
+      {
+        "question": "What picture is Level 12?",
+        "answer": "It shows a layered food bowl inside a blue border."
+      },
+      {
+        "question": "What is the main route risk?",
+        "answer": "Long blue horizontal buses can be trapped by diagonal blockers."
+      },
+      {
+        "question": "Should matching color always move?",
+        "answer": "No. The vehicle also needs a complete path to the road."
+      },
+      {
+        "question": "Which colors remain late?",
+        "answer": "Orange, red, yellow, green, and blue pockets remain near the end."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "8:40",
+      "criticalRoute": "The center has several horizontal buses under scattered diagonal blockers."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "up-right",
+        "row": 2,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 29,
+        "yPercent": 60,
+        "purpose": "Send this green vehicle up-right from the upper-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "up",
+        "row": 2,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 44,
+        "yPercent": 62,
+        "purpose": "Send this orange vehicle up from the upper-center before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "up-right",
+        "row": 2,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 59,
+        "yPercent": 57,
+        "purpose": "Send this blue vehicle up-right from the upper-center before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "right",
+        "row": 3,
+        "column": 5,
+        "region": "middle-right",
+        "xPercent": 69,
+        "yPercent": 63,
+        "purpose": "Send this orange vehicle right from the middle-right before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "up-right",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 67,
+        "yPercent": 55,
+        "purpose": "Send this blue vehicle up-right from the upper-right before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "right",
+        "row": 1,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 59,
+        "yPercent": 52,
+        "purpose": "Send this blue vehicle right from the upper-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open scattered top routes",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Move the exposed green, blue, red, and white buses shown at the start to make space above the central bands.",
+        "parkingRule": "Matching bowl color is open."
+      },
+      {
+        "phase": "Release the middle bands",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As the bowl layers change, use yellow, orange, blue, red, green, and white buses without occupying every road position.",
+        "parkingRule": "The route is not blocked diagonally."
+      },
+      {
+        "phase": "Finish the orange and red base",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The final picture contracts to orange, red, yellow, green, and blue pockets. Copy the video order for the last separated buses.",
+        "parkingRule": "A blue horizontal exit remains."
+      }
     ]
   },
   "13": {
     "objective": "Clear the pizza slice and keep the long yellow route available.",
     "keyChallenge": "Repeated red and yellow layers compete for limited parking.",
     "quickAnswer": "Clear the pizza's outer background first, then alternate red pepperoni, yellow cheese, green topping, blue plate, orange crust, and white sections. Keep the long yellow bus on the right from being boxed in by short red vehicles.",
-    "overallStrategy": ["The pizza picture has large red and yellow areas, but the vehicle grid contains many smaller support-color routes.", "Open the center gradually and preserve the right-side lane needed by the longest yellow bus."],
+    "overallStrategy": [
+      "The pizza picture has large red and yellow areas, but the vehicle grid contains many smaller support-color routes.",
+      "Open the center gradually and preserve the right-side lane needed by the longest yellow bus."
+    ],
     "startingBoard": "A pepperoni pizza slice sits on a blue plate with an orange crust and green topping. The lower field is broad and tightly interlocked.",
     "steps": [
-      {"title": "Clear the outer pizza background", "instruction": "Use open white, blue, red, orange, and yellow routes to shrink the surrounding sand and expose more of the slice.", "image": "/levels/13/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 13 pizza opening"},
-      {"title": "Work through cheese and pepperoni", "instruction": "Alternate yellow and red with green, blue, orange, and white. Do not let short red buses close the right edge.", "image": "/levels/13/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 13 middle pizza"},
-      {"title": "Release the final long yellow bus", "instruction": "When the field opens, follow the recorded order through the remaining red, green, blue, orange, yellow, and white groups.", "image": "/levels/13/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 13 late routes"}
+      {
+        "title": "Clear the outer pizza background",
+        "instruction": "Use open white, blue, red, orange, and yellow routes to shrink the surrounding sand and expose more of the slice.",
+        "image": "/levels/13/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 13 pizza opening"
+      },
+      {
+        "title": "Work through cheese and pepperoni",
+        "instruction": "Alternate yellow and red with green, blue, orange, and white. Do not let short red buses close the right edge.",
+        "image": "/levels/13/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 13 middle pizza"
+      },
+      {
+        "title": "Release the final long yellow bus",
+        "instruction": "When the field opens, follow the recorded order through the remaining red, green, blue, orange, yellow, and white groups.",
+        "image": "/levels/13/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 13 late routes"
+      }
     ],
-    "beforeMove": ["The pizza color is exposed.", "The right-side yellow lane stays clear.", "Parking is not holding duplicate red buses.", "The move opens another route."],
+    "beforeMove": [
+      "The pizza color is exposed.",
+      "The right-side yellow lane stays clear.",
+      "Parking is not holding duplicate red buses.",
+      "The move opens another route."
+    ],
     "stuckPoint": "The long yellow bus can remain blocked until late. Filling its side lane with short red or white buses prevents the cheese layer from clearing.",
     "faqs": [
-      {"question": "What picture is Level 13?", "answer": "Level 13 reveals a pepperoni pizza slice."},
-      {"question": "Which bus needs a protected route?", "answer": "The long yellow bus on the right needs its side lane kept open."},
-      {"question": "Which colors repeat?", "answer": "Red and yellow repeat across the pepperoni and cheese layers."},
-      {"question": "Why does parking fill?", "answer": "Too many repeated red or yellow buses were released before the next matching layer opened."}
+      {
+        "question": "What picture is Level 13?",
+        "answer": "Level 13 reveals a pepperoni pizza slice."
+      },
+      {
+        "question": "Which bus needs a protected route?",
+        "answer": "The long yellow bus on the right needs its side lane kept open."
+      },
+      {
+        "question": "Which colors repeat?",
+        "answer": "Red and yellow repeat across the pepperoni and cheese layers."
+      },
+      {
+        "question": "Why does parking fill?",
+        "answer": "Too many repeated red or yellow buses were released before the next matching layer opened."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "8:09",
+      "criticalRoute": "Repeated red and yellow layers compete for limited parking."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 42,
+        "yPercent": 86,
+        "purpose": "Send this blue vehicle down from the lower-center before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 38,
+        "yPercent": 81,
+        "purpose": "Send this orange vehicle down from the lower-center before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 84,
+        "yPercent": 83,
+        "purpose": "Send this red vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 73,
+        "yPercent": 83,
+        "purpose": "Send this red vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 27,
+        "yPercent": 86,
+        "purpose": "Send this red vehicle down from the lower-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 11,
+        "yPercent": 78,
+        "purpose": "Send this white vehicle down from the lower-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Clear the outer pizza background",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use open white, blue, red, orange, and yellow routes to shrink the surrounding sand and expose more of the slice.",
+        "parkingRule": "The pizza color is exposed."
+      },
+      {
+        "phase": "Work through cheese and pepperoni",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Alternate yellow and red with green, blue, orange, and white. Do not let short red buses close the right edge.",
+        "parkingRule": "The right-side yellow lane stays clear."
+      },
+      {
+        "phase": "Release the final long yellow bus",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "When the field opens, follow the recorded order through the remaining red, green, blue, orange, yellow, and white groups.",
+        "parkingRule": "Parking is not holding duplicate red buses."
+      }
     ]
   },
   "14": {
     "objective": "Clear the fruit bowl across a wide field of white and orange vehicles.",
     "keyChallenge": "Many white buses look interchangeable but leave through different routes.",
     "quickAnswer": "Start with short edge routes, then use the opened lanes to process the fruit bowl's orange, red, green, yellow, cyan, blue, brown, and white sections. Check vehicle direction carefully; the large white group cannot be cleared in any order.",
-    "overallStrategy": ["Level 14 is wide and lasts longer because the white bus cluster contains several directional dependencies.", "Choose white buses by the route they open, not simply because white sand is visible."],
+    "overallStrategy": [
+      "Level 14 is wide and lasts longer because the white bus cluster contains several directional dependencies.",
+      "Choose white buses by the route they open, not simply because white sand is visible."
+    ],
     "startingBoard": "A fruit bowl with orange, red, green, yellow, and brown pieces sits over a blue and cyan rim. White and orange buses dominate the lower field.",
     "steps": [
-      {"title": "Open the wide edge lanes", "instruction": "Use short buses along both sides to reduce the outer sand and create exits into the white center.", "image": "/levels/14/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 14 fruit bowl opening"},
-      {"title": "Break apart the white cluster", "instruction": "Move white vehicles only when their direction opens another bus. Alternate with orange, red, green, yellow, cyan, and blue as those fruit colors appear.", "image": "/levels/14/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 14 middle fruit bowl"},
-      {"title": "Finish the green and white edge", "instruction": "The late board leaves a small mixed group. Copy the video's final white, green, brown, yellow, cyan, orange, and red sequence.", "image": "/levels/14/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 14 late bus group"}
+      {
+        "title": "Open the wide edge lanes",
+        "instruction": "Use short buses along both sides to reduce the outer sand and create exits into the white center.",
+        "image": "/levels/14/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 14 fruit bowl opening"
+      },
+      {
+        "title": "Break apart the white cluster",
+        "instruction": "Move white vehicles only when their direction opens another bus. Alternate with orange, red, green, yellow, cyan, and blue as those fruit colors appear.",
+        "image": "/levels/14/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 14 middle fruit bowl"
+      },
+      {
+        "title": "Finish the green and white edge",
+        "instruction": "The late board leaves a small mixed group. Copy the video's final white, green, brown, yellow, cyan, orange, and red sequence.",
+        "image": "/levels/14/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 14 late bus group"
+      }
     ],
-    "beforeMove": ["The bus direction has a complete exit.", "Its fruit color is exposed.", "A white move opens another route.", "Parking keeps reserve capacity."],
+    "beforeMove": [
+      "The bus direction has a complete exit.",
+      "Its fruit color is exposed.",
+      "A white move opens another route.",
+      "Parking keeps reserve capacity."
+    ],
     "stuckPoint": "The central white cluster is the main trap. A visually open white bus may leave into a lane that another required vehicle still needs.",
     "faqs": [
-      {"question": "What does Level 14 reveal?", "answer": "It reveals a colorful fruit bowl."},
-      {"question": "Why is the level long?", "answer": "The wide vehicle field and directional white cluster require many controlled moves."},
-      {"question": "Can white buses move in any order?", "answer": "No. Their exit directions determine which routes open next."},
-      {"question": "What should I compare with the video?", "answer": "Compare both the exposed fruit colors and the shape of the remaining white cluster."}
+      {
+        "question": "What does Level 14 reveal?",
+        "answer": "It reveals a colorful fruit bowl."
+      },
+      {
+        "question": "Why is the level long?",
+        "answer": "The wide vehicle field and directional white cluster require many controlled moves."
+      },
+      {
+        "question": "Can white buses move in any order?",
+        "answer": "No. Their exit directions determine which routes open next."
+      },
+      {
+        "question": "What should I compare with the video?",
+        "answer": "Compare both the exposed fruit colors and the shape of the remaining white cluster."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "12:08",
+      "criticalRoute": "Many white buses look interchangeable but leave through different routes."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 75,
+        "yPercent": 87,
+        "purpose": "Send this yellow vehicle down from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 90,
+        "yPercent": 84,
+        "purpose": "Send this white vehicle down from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 84,
+        "yPercent": 86,
+        "purpose": "Send this white vehicle down from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 5,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 85,
+        "yPercent": 80,
+        "purpose": "Send this white vehicle right from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 85,
+        "yPercent": 54,
+        "purpose": "Send this white vehicle right from the upper-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 67,
+        "yPercent": 50,
+        "purpose": "Send this white vehicle up from the upper-right to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the wide edge lanes",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use short buses along both sides to reduce the outer sand and create exits into the white center.",
+        "parkingRule": "The bus direction has a complete exit."
+      },
+      {
+        "phase": "Break apart the white cluster",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Move white vehicles only when their direction opens another bus. Alternate with orange, red, green, yellow, cyan, and blue as those fruit colors appear.",
+        "parkingRule": "Its fruit color is exposed."
+      },
+      {
+        "phase": "Finish the green and white edge",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board leaves a small mixed group. Copy the video's final white, green, brown, yellow, cyan, orange, and red sequence.",
+        "parkingRule": "A white move opens another route."
+      }
     ]
   },
   "15": {
     "objective": "Clear the globe picture from a diagonal vehicle layout.",
     "keyChallenge": "Diagonal rows share exits, and parking expands during the solution.",
     "quickAnswer": "Use the diagonal lanes in the order shown to clear blue, green, pink, red, orange, yellow, and white parts of the globe. When extra parking unlocks, keep capacity in reserve because the final diagonal still contains mixed colors.",
-    "overallStrategy": ["The diagonal layout makes side clearance more important than distance from the road.", "Open one diagonal chain at a time. Moving a bus from the wrong chain can occupy the exit needed by the next verified group."],
+    "overallStrategy": [
+      "The diagonal layout makes side clearance more important than distance from the road.",
+      "Open one diagonal chain at a time. Moving a bus from the wrong chain can occupy the exit needed by the next verified group."
+    ],
     "startingBoard": "A blue and green globe with pink and red land areas sits above diagonal lines of blue, white, green, pink, orange, yellow, and red vehicles.",
     "steps": [
-      {"title": "Open the first diagonal chains", "instruction": "Use the video's first blue, white, green, pink, and orange routes to create clear diagonals through the field.", "image": "/levels/15/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 15 globe opening"},
-      {"title": "Use added parking without overfilling", "instruction": "As the globe shrinks and capacity grows, alternate colors instead of stacking one diagonal's buses on the road.", "image": "/levels/15/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 15 expanded parking"},
-      {"title": "Finish the last diagonal", "instruction": "The final group still includes blue, green, pink, orange, yellow, and white. Keep the open diagonal clear until each matching sand pocket disappears.", "image": "/levels/15/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 15 late diagonal"}
+      {
+        "title": "Open the first diagonal chains",
+        "instruction": "Use the video's first blue, white, green, pink, and orange routes to create clear diagonals through the field.",
+        "image": "/levels/15/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 15 globe opening"
+      },
+      {
+        "title": "Use added parking without overfilling",
+        "instruction": "As the globe shrinks and capacity grows, alternate colors instead of stacking one diagonal's buses on the road.",
+        "image": "/levels/15/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 15 expanded parking"
+      },
+      {
+        "title": "Finish the last diagonal",
+        "instruction": "The final group still includes blue, green, pink, orange, yellow, and white. Keep the open diagonal clear until each matching sand pocket disappears.",
+        "image": "/levels/15/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 15 late diagonal"
+      }
     ],
-    "beforeMove": ["The diagonal exit is clear.", "Matching globe color is exposed.", "Parking remains below capacity.", "The next vehicle in the chain can move."],
+    "beforeMove": [
+      "The diagonal exit is clear.",
+      "Matching globe color is exposed.",
+      "Parking remains below capacity.",
+      "The next vehicle in the chain can move."
+    ],
     "stuckPoint": "Extra parking can hide a route error. A wrong-color bus may fit on the road but still block the diagonal needed for the next matching group.",
     "faqs": [
-      {"question": "What picture appears in Level 15?", "answer": "Level 15 reveals a stylized globe."},
-      {"question": "What is unusual about the bus layout?", "answer": "The vehicles form diagonal chains that share exits."},
-      {"question": "Does parking expand?", "answer": "Yes, but the added spaces should still be used selectively."},
-      {"question": "What is the late-game risk?", "answer": "Mixing the remaining colors on the road before their sand is exposed can lock the final diagonal."}
+      {
+        "question": "What picture appears in Level 15?",
+        "answer": "Level 15 reveals a stylized globe."
+      },
+      {
+        "question": "What is unusual about the bus layout?",
+        "answer": "The vehicles form diagonal chains that share exits."
+      },
+      {
+        "question": "Does parking expand?",
+        "answer": "Yes, but the added spaces should still be used selectively."
+      },
+      {
+        "question": "What is the late-game risk?",
+        "answer": "Mixing the remaining colors on the road before their sand is exposed can lock the final diagonal."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "9:54",
+      "criticalRoute": "Diagonal rows share exits, and parking expands during the solution."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "up-right",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 13,
+        "yPercent": 51,
+        "purpose": "Send this blue vehicle up-right from the upper-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "up-left",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 24,
+        "yPercent": 54,
+        "purpose": "Send this orange vehicle up-left from the upper-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up-left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 10,
+        "yPercent": 53,
+        "purpose": "Send this white vehicle up-left from the upper-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down-right",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 65,
+        "yPercent": 86,
+        "purpose": "Send this white vehicle down-right from the lower-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up-left",
+        "row": 2,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 36,
+        "yPercent": 61,
+        "purpose": "Send this white vehicle up-left from the upper-center before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "up-left",
+        "row": 6,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 17,
+        "yPercent": 86,
+        "purpose": "Send this blue vehicle up-left from the lower-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the first diagonal chains",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use the video's first blue, white, green, pink, and orange routes to create clear diagonals through the field.",
+        "parkingRule": "The diagonal exit is clear."
+      },
+      {
+        "phase": "Use added parking without overfilling",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As the globe shrinks and capacity grows, alternate colors instead of stacking one diagonal's buses on the road.",
+        "parkingRule": "Matching globe color is exposed."
+      },
+      {
+        "phase": "Finish the last diagonal",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The final group still includes blue, green, pink, orange, yellow, and white. Keep the open diagonal clear until each matching sand pocket disappears.",
+        "parkingRule": "Parking remains below capacity."
+      }
     ]
   },
   "16": {
     "objective": "Clear the washing machine picture from a compact vehicle field.",
     "keyChallenge": "The small field contains several white buses with different exit directions.",
     "quickAnswer": "Open the left side of the compact grid, then alternate cyan, orange, blue, red, yellow, and white as the washing machine outline and window clear. Save the right-side cyan route until its blockers have left.",
-    "overallStrategy": ["Level 16 has fewer vehicles than the previous boards, but each blocker controls a larger portion of the grid.", "Use moves that open the central white cluster and preserve the right cyan lane."],
+    "overallStrategy": [
+      "Level 16 has fewer vehicles than the previous boards, but each blocker controls a larger portion of the grid.",
+      "Use moves that open the central white cluster and preserve the right cyan lane."
+    ],
     "startingBoard": "An orange washing machine with a cyan window sits above a compact mix of white, orange, blue, red, yellow, and cyan buses.",
     "steps": [
-      {"title": "Open the left cluster", "instruction": "Use the verified white, blue, orange, and red exits on the left to make room around the center.", "image": "/levels/16/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 16 washing machine opening"},
-      {"title": "Clear the machine body and window", "instruction": "Alternate orange, white, cyan, blue, red, and yellow as those sections become exposed. Keep the right cyan lane open.", "image": "/levels/16/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 16 middle machine"},
-      {"title": "Finish the remaining outline", "instruction": "Follow the final cyan, white, orange, red, blue, and yellow routes after the center has opened.", "image": "/levels/16/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 16 late outline"}
+      {
+        "title": "Open the left cluster",
+        "instruction": "Use the verified white, blue, orange, and red exits on the left to make room around the center.",
+        "image": "/levels/16/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 16 washing machine opening"
+      },
+      {
+        "title": "Clear the machine body and window",
+        "instruction": "Alternate orange, white, cyan, blue, red, and yellow as those sections become exposed. Keep the right cyan lane open.",
+        "image": "/levels/16/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 16 middle machine"
+      },
+      {
+        "title": "Finish the remaining outline",
+        "instruction": "Follow the final cyan, white, orange, red, blue, and yellow routes after the center has opened.",
+        "image": "/levels/16/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 16 late outline"
+      }
     ],
-    "beforeMove": ["The compact route is clear.", "Matching machine color is exposed.", "The right cyan lane stays open.", "A central white bus gains space."],
+    "beforeMove": [
+      "The compact route is clear.",
+      "Matching machine color is exposed.",
+      "The right cyan lane stays open.",
+      "A central white bus gains space."
+    ],
     "stuckPoint": "The right-side cyan bus is easy to trap behind white and orange vehicles. Do not use that lane for an unrelated bus before the window layer clears.",
     "faqs": [
-      {"question": "What picture is Level 16?", "answer": "Level 16 reveals a washing machine with a cyan window."},
-      {"question": "Why is a compact level still difficult?", "answer": "Each bus blocks several neighbors, so one route mistake affects much of the field."},
-      {"question": "Which lane should stay open?", "answer": "Preserve the right-side cyan route until late."},
-      {"question": "Which colors appear?", "answer": "Cyan, orange, blue, red, yellow, and white appear in the board."}
+      {
+        "question": "What picture is Level 16?",
+        "answer": "Level 16 reveals a washing machine with a cyan window."
+      },
+      {
+        "question": "Why is a compact level still difficult?",
+        "answer": "Each bus blocks several neighbors, so one route mistake affects much of the field."
+      },
+      {
+        "question": "Which lane should stay open?",
+        "answer": "Preserve the right-side cyan route until late."
+      },
+      {
+        "question": "Which colors appear?",
+        "answer": "Cyan, orange, blue, red, yellow, and white appear in the board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "5:44",
+      "criticalRoute": "The small field contains several white buses with different exit directions."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 31,
+        "yPercent": 51,
+        "purpose": "Send this white vehicle up from the upper-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 12,
+        "yPercent": 70,
+        "purpose": "Send this white vehicle left from the middle-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 5,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 57,
+        "yPercent": 78,
+        "purpose": "Send this white vehicle up from the lower-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 6,
+        "region": "middle-right",
+        "xPercent": 89,
+        "yPercent": 75,
+        "purpose": "Send this white vehicle left from the middle-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 84,
+        "yPercent": 60,
+        "purpose": "Send this white vehicle right from the upper-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 40,
+        "yPercent": 54,
+        "purpose": "Send this white vehicle up from the upper-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the left cluster",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use the verified white, blue, orange, and red exits on the left to make room around the center.",
+        "parkingRule": "The compact route is clear."
+      },
+      {
+        "phase": "Clear the machine body and window",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Alternate orange, white, cyan, blue, red, and yellow as those sections become exposed. Keep the right cyan lane open.",
+        "parkingRule": "Matching machine color is exposed."
+      },
+      {
+        "phase": "Finish the remaining outline",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "Follow the final cyan, white, orange, red, blue, and yellow routes after the center has opened.",
+        "parkingRule": "The right cyan lane stays open."
+      }
     ]
   },
   "17": {
     "objective": "Clear the airplane and protect the long horizontal red routes.",
     "keyChallenge": "Cyan buses dominate the field while long red vehicles need side exits.",
     "quickAnswer": "Reduce the airplane's cyan and blue background with buses that have direct exits, then alternate red, white, yellow, and orange when the fuselage and accents appear. Keep both side lanes open for the long red buses in the middle rows.",
-    "overallStrategy": ["The plane board is cyan-heavy, but its red and white sections control the critical long vehicles.", "Do not clear cyan continuously. Switch to red or white whenever the matching plane section opens and a long route is ready."],
+    "overallStrategy": [
+      "The plane board is cyan-heavy, but its red and white sections control the critical long vehicles.",
+      "Do not clear cyan continuously. Switch to red or white whenever the matching plane section opens and a long route is ready."
+    ],
     "startingBoard": "A blue and white airplane with red accents flies through a cyan sky. Cyan buses fill much of the field, crossed by long red and blue routes.",
     "steps": [
-      {"title": "Clear the sky and open side lanes", "instruction": "Use open cyan, blue, white, red, and yellow buses to reduce the background and free both sides of the grid.", "image": "/levels/17/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 17 airplane opening"},
-      {"title": "Release the long red routes", "instruction": "When red sand is exposed, move the long red buses before another cyan group occupies their side exits.", "image": "/levels/17/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 17 middle airplane"},
-      {"title": "Finish the fuselage and tail", "instruction": "Use the final white, blue, cyan, red, orange, and yellow vehicles in the successful order until the remaining plane colors clear.", "image": "/levels/17/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 17 late fuselage"}
+      {
+        "title": "Clear the sky and open side lanes",
+        "instruction": "Use open cyan, blue, white, red, and yellow buses to reduce the background and free both sides of the grid.",
+        "image": "/levels/17/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 17 airplane opening"
+      },
+      {
+        "title": "Release the long red routes",
+        "instruction": "When red sand is exposed, move the long red buses before another cyan group occupies their side exits.",
+        "image": "/levels/17/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 17 middle airplane"
+      },
+      {
+        "title": "Finish the fuselage and tail",
+        "instruction": "Use the final white, blue, cyan, red, orange, and yellow vehicles in the successful order until the remaining plane colors clear.",
+        "image": "/levels/17/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 17 late fuselage"
+      }
     ],
-    "beforeMove": ["The plane color is exposed.", "A side exit stays clear.", "Long red buses are not blocked.", "Parking has one open position."],
+    "beforeMove": [
+      "The plane color is exposed.",
+      "A side exit stays clear.",
+      "Long red buses are not blocked.",
+      "Parking has one open position."
+    ],
     "stuckPoint": "The center looks open after several cyan buses leave, but a long red bus may still need the right or left edge. Filling that edge causes the late lock.",
     "faqs": [
-      {"question": "What picture is Level 17?", "answer": "Level 17 reveals an airplane flying through a cyan sky."},
-      {"question": "Which buses need planning?", "answer": "The long horizontal red buses need their side exits protected."},
-      {"question": "Should cyan clear first?", "answer": "No. Alternate into red and white as the airplane body becomes exposed."},
-      {"question": "What is the endgame?", "answer": "The last groups clear the fuselage and tail with white, blue, cyan, red, orange, and yellow buses."}
+      {
+        "question": "What picture is Level 17?",
+        "answer": "Level 17 reveals an airplane flying through a cyan sky."
+      },
+      {
+        "question": "Which buses need planning?",
+        "answer": "The long horizontal red buses need their side exits protected."
+      },
+      {
+        "question": "Should cyan clear first?",
+        "answer": "No. Alternate into red and white as the airplane body becomes exposed."
+      },
+      {
+        "question": "What is the endgame?",
+        "answer": "The last groups clear the fuselage and tail with white, blue, cyan, red, orange, and yellow buses."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "8:35",
+      "criticalRoute": "Cyan buses dominate the field while long red vehicles need side exits."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 4,
+        "region": "middle-center",
+        "xPercent": 56,
+        "yPercent": 68,
+        "purpose": "Send this white vehicle left from the middle-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "left",
+        "row": 2,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 51,
+        "yPercent": 57,
+        "purpose": "Send this cyan vehicle left from the upper-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "right",
+        "row": 2,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 47,
+        "yPercent": 58,
+        "purpose": "Send this cyan vehicle right from the upper-center before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 35,
+        "yPercent": 56,
+        "purpose": "Send this cyan vehicle up from the upper-center before selecting the next yellow vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 85,
+        "yPercent": 59,
+        "purpose": "Send this yellow vehicle right from the upper-right before selecting the next yellow vehicle.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 48,
+        "yPercent": 86,
+        "purpose": "Send this yellow vehicle down from the lower-center to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Clear the sky and open side lanes",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use open cyan, blue, white, red, and yellow buses to reduce the background and free both sides of the grid.",
+        "parkingRule": "The plane color is exposed."
+      },
+      {
+        "phase": "Release the long red routes",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When red sand is exposed, move the long red buses before another cyan group occupies their side exits.",
+        "parkingRule": "A side exit stays clear."
+      },
+      {
+        "phase": "Finish the fuselage and tail",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "Use the final white, blue, cyan, red, orange, and yellow vehicles in the successful order until the remaining plane colors clear.",
+        "parkingRule": "Long red buses are not blocked."
+      }
     ]
   },
   "18": {
     "objective": "Clear the alarm clock through a white-heavy vehicle field.",
     "keyChallenge": "White buses fill most rows, but the yellow clock face must open in stages.",
     "quickAnswer": "Use colored edge buses to open the white cluster, then process white only when the clock background is exposed. Keep yellow, red, blue, cyan, and orange routes available for the clock face, hands, bells, and outline.",
-    "overallStrategy": ["The high number of white vehicles makes the board look simpler than it is. Their directions create several separate chains.", "Clear white by chain, not by proximity to the road, and insert colored buses whenever their clock section appears."],
+    "overallStrategy": [
+      "The high number of white vehicles makes the board look simpler than it is. Their directions create several separate chains.",
+      "Clear white by chain, not by proximity to the road, and insert colored buses whenever their clock section appears."
+    ],
     "startingBoard": "A yellow alarm clock with red bells and a cyan rim sits above a field dominated by white vehicles, with smaller yellow, red, blue, orange, and cyan groups.",
     "steps": [
-      {"title": "Use edge colors to open white chains", "instruction": "Move the available colored buses and the first verified white routes to create space in the center.", "image": "/levels/18/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 18 alarm clock opening"},
-      {"title": "Clear the face and bells", "instruction": "Alternate yellow and red with white, blue, cyan, and orange. Do not queue several white buses without active white sand.", "image": "/levels/18/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 18 middle clock"},
-      {"title": "Finish the white outline", "instruction": "The late board leaves white chains with a few yellow, red, blue, cyan, and orange vehicles. Follow the video order to release them.", "image": "/levels/18/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 18 late white chains"}
+      {
+        "title": "Use edge colors to open white chains",
+        "instruction": "Move the available colored buses and the first verified white routes to create space in the center.",
+        "image": "/levels/18/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 18 alarm clock opening"
+      },
+      {
+        "title": "Clear the face and bells",
+        "instruction": "Alternate yellow and red with white, blue, cyan, and orange. Do not queue several white buses without active white sand.",
+        "image": "/levels/18/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 18 middle clock"
+      },
+      {
+        "title": "Finish the white outline",
+        "instruction": "The late board leaves white chains with a few yellow, red, blue, cyan, and orange vehicles. Follow the video order to release them.",
+        "image": "/levels/18/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 18 late white chains"
+      }
     ],
-    "beforeMove": ["The correct white chain is open.", "Matching clock color is exposed.", "Yellow remains reachable.", "Parking is not filled with white buses."],
+    "beforeMove": [
+      "The correct white chain is open.",
+      "Matching clock color is exposed.",
+      "Yellow remains reachable.",
+      "Parking is not filled with white buses."
+    ],
     "stuckPoint": "Players often release white buses whenever possible. That fills parking before the yellow clock face or red bells expose their next group.",
     "faqs": [
-      {"question": "What picture is Level 18?", "answer": "Level 18 reveals a yellow alarm clock with red bells."},
-      {"question": "Why are white buses risky?", "answer": "They belong to different route chains and can fill parking before matching white sand opens."},
-      {"question": "Which colors must remain reachable?", "answer": "Yellow, red, blue, cyan, and orange support the white clock outline."},
-      {"question": "What is the safest white move?", "answer": "Choose the white bus that opens another verified route, not simply the closest one."}
+      {
+        "question": "What picture is Level 18?",
+        "answer": "Level 18 reveals a yellow alarm clock with red bells."
+      },
+      {
+        "question": "Why are white buses risky?",
+        "answer": "They belong to different route chains and can fill parking before matching white sand opens."
+      },
+      {
+        "question": "Which colors must remain reachable?",
+        "answer": "Yellow, red, blue, cyan, and orange support the white clock outline."
+      },
+      {
+        "question": "What is the safest white move?",
+        "answer": "Choose the white bus that opens another verified route, not simply the closest one."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "7:05",
+      "criticalRoute": "White buses fill most rows, but the yellow clock face must open in stages."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 3,
+        "region": "lower-center",
+        "xPercent": 41,
+        "yPercent": 85,
+        "purpose": "Send this blue vehicle down from the lower-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 8,
+        "yPercent": 80,
+        "purpose": "Send this white vehicle down from the lower-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 87,
+        "yPercent": 86,
+        "purpose": "Send this white vehicle right from the lower-right before selecting the next red vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "left",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 13,
+        "yPercent": 85,
+        "purpose": "Send this red vehicle left from the lower-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the red vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "down",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 71,
+        "yPercent": 87,
+        "purpose": "Send this white vehicle down from the lower-right before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 90,
+        "yPercent": 52,
+        "purpose": "Send this white vehicle up from the upper-right to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Use edge colors to open white chains",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Move the available colored buses and the first verified white routes to create space in the center.",
+        "parkingRule": "The correct white chain is open."
+      },
+      {
+        "phase": "Clear the face and bells",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Alternate yellow and red with white, blue, cyan, and orange. Do not queue several white buses without active white sand.",
+        "parkingRule": "Matching clock color is exposed."
+      },
+      {
+        "phase": "Finish the white outline",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board leaves white chains with a few yellow, red, blue, cyan, and orange vehicles. Follow the video order to release them.",
+        "parkingRule": "Yellow remains reachable."
+      }
     ]
   },
   "19": {
     "objective": "Clear the cactus and desert while keeping the central vertical lane open.",
     "keyChallenge": "White vertical buses split the grid and control access to both sides.",
     "quickAnswer": "Clear the desert background around the cactus, using orange, white, yellow, cyan, blue, red, and green groups as they appear. Preserve the vertical corridor through the center so the white and green buses can leave in the verified order.",
-    "overallStrategy": ["The cactus board has a clear green center, but most route work occurs in the white and orange vehicle columns below.", "Open the center gradually. A bus placed in the vertical corridor can block both sides at once."],
+    "overallStrategy": [
+      "The cactus board has a clear green center, but most route work occurs in the white and orange vehicle columns below.",
+      "Open the center gradually. A bus placed in the vertical corridor can block both sides at once."
+    ],
     "startingBoard": "A green cactus with red flowers stands in a yellow, orange, cyan, and blue desert. White vertical buses form the center of the vehicle field.",
     "steps": [
-      {"title": "Open both sides of the desert", "instruction": "Use available orange, white, yellow, cyan, blue, red, and green buses to reduce the background without closing the center.", "image": "/levels/19/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 19 cactus opening"},
-      {"title": "Clear around the cactus", "instruction": "When green and red become active, route those buses while the central white column still has a path to the road.", "image": "/levels/19/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 19 middle cactus"},
-      {"title": "Finish the central columns", "instruction": "The final group is compact but direction-sensitive. Copy the late order through white, orange, green, red, yellow, cyan, and blue.", "image": "/levels/19/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 19 late columns"}
+      {
+        "title": "Open both sides of the desert",
+        "instruction": "Use available orange, white, yellow, cyan, blue, red, and green buses to reduce the background without closing the center.",
+        "image": "/levels/19/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 19 cactus opening"
+      },
+      {
+        "title": "Clear around the cactus",
+        "instruction": "When green and red become active, route those buses while the central white column still has a path to the road.",
+        "image": "/levels/19/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 19 middle cactus"
+      },
+      {
+        "title": "Finish the central columns",
+        "instruction": "The final group is compact but direction-sensitive. Copy the late order through white, orange, green, red, yellow, cyan, and blue.",
+        "image": "/levels/19/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 19 late columns"
+      }
     ],
-    "beforeMove": ["The central vertical corridor stays open.", "Matching desert color is exposed.", "The bus leaves a path on both sides.", "Parking has reserve space."],
+    "beforeMove": [
+      "The central vertical corridor stays open.",
+      "Matching desert color is exposed.",
+      "The bus leaves a path on both sides.",
+      "Parking has reserve space."
+    ],
     "stuckPoint": "A white bus in the center can block routes on both sides. Move the surrounding blockers in the video order before committing that vehicle.",
     "faqs": [
-      {"question": "What picture is Level 19?", "answer": "Level 19 reveals a cactus with red flowers in a colorful desert."},
-      {"question": "Which route is most important?", "answer": "The central vertical corridor controls access to both sides of the field."},
-      {"question": "Which colors appear?", "answer": "Green, red, yellow, orange, cyan, blue, and white appear."},
-      {"question": "Why does one white bus cause a lock?", "answer": "Its vertical route intersects the exits used by vehicles on both sides."}
+      {
+        "question": "What picture is Level 19?",
+        "answer": "Level 19 reveals a cactus with red flowers in a colorful desert."
+      },
+      {
+        "question": "Which route is most important?",
+        "answer": "The central vertical corridor controls access to both sides of the field."
+      },
+      {
+        "question": "Which colors appear?",
+        "answer": "Green, red, yellow, orange, cyan, blue, and white appear."
+      },
+      {
+        "question": "Why does one white bus cause a lock?",
+        "answer": "Its vertical route intersects the exits used by vehicles on both sides."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "8:57",
+      "criticalRoute": "White vertical buses split the grid and control access to both sides."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 90,
+        "yPercent": 53,
+        "purpose": "Send this white vehicle up from the upper-right before selecting the next cyan vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan vehicle",
+        "direction": "up",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 76,
+        "yPercent": 55,
+        "purpose": "Send this cyan vehicle up from the upper-right before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the cyan vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 11,
+        "yPercent": 51,
+        "purpose": "Send this orange vehicle left from the upper-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "left",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 13,
+        "yPercent": 58,
+        "purpose": "Send this orange vehicle left from the upper-left before selecting the next yellow vehicle.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "yellow",
+        "vehicle": "yellow vehicle",
+        "direction": "left",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 14,
+        "yPercent": 76,
+        "purpose": "Send this yellow vehicle left from the lower-left before selecting the next orange vehicle.",
+        "parkingCheck": "Wait for the yellow vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "orange",
+        "vehicle": "orange vehicle",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 9,
+        "yPercent": 65,
+        "purpose": "Send this orange vehicle left from the middle-left to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the orange vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open both sides of the desert",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Use available orange, white, yellow, cyan, blue, red, and green buses to reduce the background without closing the center.",
+        "parkingRule": "The central vertical corridor stays open."
+      },
+      {
+        "phase": "Clear around the cactus",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "When green and red become active, route those buses while the central white column still has a path to the road.",
+        "parkingRule": "Matching desert color is exposed."
+      },
+      {
+        "phase": "Finish the central columns",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The final group is compact but direction-sensitive. Copy the late order through white, orange, green, red, yellow, cyan, and blue.",
+        "parkingRule": "The bus leaves a path on both sides."
+      }
     ]
   },
   "20": {
     "objective": "Clear the flamingo picture through dense white and pink vehicle groups.",
     "keyChallenge": "Long pink buses and many white blockers share the same central exits.",
     "quickAnswer": "Open the flamingo's blue, green, red, and white background routes, then work the pink body in stages. Keep space for the long pink buses and do not clear white vehicles indiscriminately; their directions determine when the central pink chain can move.",
-    "overallStrategy": ["The flamingo is pink-heavy, but the vehicle field is dominated by directional white buses.", "Treat white as route preparation and pink as the main collection sequence. Each white departure should create space for a specific colored bus."],
+    "overallStrategy": [
+      "The flamingo is pink-heavy, but the vehicle field is dominated by directional white buses.",
+      "Treat white as route preparation and pink as the main collection sequence. Each white departure should create space for a specific colored bus."
+    ],
     "startingBoard": "A pink flamingo stands beside blue water and green grass. White buses fill most of the lower grid, with long pink, purple, red, green, yellow, and blue vehicles mixed in.",
     "steps": [
-      {"title": "Open routes around the flamingo", "instruction": "Move the verified edge colors and the first useful white blockers to create lanes into the center.", "image": "/levels/20/steps/step-1.webp", "imageAlt": "Jam Bus Sandfall Level 20 flamingo opening"},
-      {"title": "Release the pink body groups", "instruction": "As pink sand becomes exposed, move the long pink and purple buses before another white chain occupies their exits.", "image": "/levels/20/steps/step-2.webp", "imageAlt": "Jam Bus Sandfall Level 20 middle flamingo"},
-      {"title": "Finish the legs, water, and grass", "instruction": "The late board still mixes white, pink, green, yellow, blue, red, and purple. Follow the recorded route order until every section clears.", "image": "/levels/20/steps/step-3.webp", "imageAlt": "Jam Bus Sandfall Level 20 late groups"}
+      {
+        "title": "Open routes around the flamingo",
+        "instruction": "Move the verified edge colors and the first useful white blockers to create lanes into the center.",
+        "image": "/levels/20/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 20 flamingo opening"
+      },
+      {
+        "title": "Release the pink body groups",
+        "instruction": "As pink sand becomes exposed, move the long pink and purple buses before another white chain occupies their exits.",
+        "image": "/levels/20/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 20 middle flamingo"
+      },
+      {
+        "title": "Finish the legs, water, and grass",
+        "instruction": "The late board still mixes white, pink, green, yellow, blue, red, and purple. Follow the recorded route order until every section clears.",
+        "image": "/levels/20/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 20 late groups"
+      }
     ],
-    "beforeMove": ["The white move opens a specific route.", "Pink sand is exposed before a pink bus enters.", "A central exit remains clear.", "Parking keeps spare capacity."],
+    "beforeMove": [
+      "The white move opens a specific route.",
+      "Pink sand is exposed before a pink bus enters.",
+      "A central exit remains clear.",
+      "Parking keeps spare capacity."
+    ],
     "stuckPoint": "The long pink buses are easy to trap behind white vehicles. Clearing the nearest white bus is not enough; its exit direction must open the same central chain used by pink.",
     "faqs": [
-      {"question": "What picture is Level 20?", "answer": "Level 20 reveals a pink flamingo beside water and grass."},
-      {"question": "Which vehicles cause the main problem?", "answer": "Long pink buses share central exits with a large number of directional white blockers."},
-      {"question": "Should white buses move whenever possible?", "answer": "No. Move a white bus when it opens the route needed by the next exposed color."},
-      {"question": "What colors remain near the end?", "answer": "White, pink, green, yellow, blue, red, and purple remain in smaller groups."}
+      {
+        "question": "What picture is Level 20?",
+        "answer": "Level 20 reveals a pink flamingo beside water and grass."
+      },
+      {
+        "question": "Which vehicles cause the main problem?",
+        "answer": "Long pink buses share central exits with a large number of directional white blockers."
+      },
+      {
+        "question": "Should white buses move whenever possible?",
+        "answer": "No. Move a white bus when it opens the route needed by the next exposed color."
+      },
+      {
+        "question": "What colors remain near the end?",
+        "answer": "White, pink, green, yellow, blue, red, and purple remain in smaller groups."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "10:39",
+      "criticalRoute": "Long pink buses and many white blockers share the same central exits."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "up",
+        "row": 5,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 57,
+        "yPercent": 76,
+        "purpose": "Send this white vehicle up from the lower-center before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 5,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 88,
+        "yPercent": 77,
+        "purpose": "Send this white vehicle right from the lower-right before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 3,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "left",
+        "row": 4,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 11,
+        "yPercent": 74,
+        "purpose": "Send this green vehicle left from the middle-left before selecting the next blue vehicle.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 12,
+        "yPercent": 77,
+        "purpose": "Send this blue vehicle left from the lower-left before selecting the next white vehicle.",
+        "parkingCheck": "Wait for the blue vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 85,
+        "yPercent": 86,
+        "purpose": "Send this white vehicle right from the lower-right before selecting the next green vehicle.",
+        "parkingCheck": "Wait for the white vehicle to reach the road, then keep at least one of five parking spaces open."
+      },
+      {
+        "order": 6,
+        "color": "green",
+        "vehicle": "green vehicle",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 68,
+        "yPercent": 86,
+        "purpose": "Send this green vehicle right from the lower-right to enter the next board phase in the verified state.",
+        "parkingCheck": "Wait for the green vehicle to reach the road, then keep at least one of five parking spaces open."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open routes around the flamingo",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Move the verified edge colors and the first useful white blockers to create lanes into the center.",
+        "parkingRule": "The white move opens a specific route."
+      },
+      {
+        "phase": "Release the pink body groups",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "As pink sand becomes exposed, move the long pink and purple buses before another white chain occupies their exits.",
+        "parkingRule": "Pink sand is exposed before a pink bus enters."
+      },
+      {
+        "phase": "Finish the legs, water, and grass",
+        "moveRange": "Checkpoints 5-6",
+        "boardState": "The late board still mixes white, pink, green, yellow, blue, red, and purple. Follow the recorded route order until every section clears.",
+        "parkingRule": "A central exit remains clear."
+      }
     ]
   }
 }
