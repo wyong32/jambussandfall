@@ -16,10 +16,10 @@ const directions = new Set([
 const guides = JSON.parse(await readFile("data/level-guides.json", "utf8"));
 
 test("every published guide contains verified board statistics", () => {
-  assert.equal(Object.keys(guides).length, 20);
+  assert.equal(Object.keys(guides).length, 25);
 
   for (const [id, guide] of Object.entries(guides)) {
-    assert.equal(guide.stats.parkingCapacity, 5, `Level ${id} parking capacity`);
+    assert.ok(guide.stats.parkingCapacity >= 5, `Level ${id} initial parking slots`);
     assert.ok(guide.stats.verifiedMoveCount >= 6, `Level ${id} verified moves`);
     assert.ok(guide.stats.colorCount >= 2, `Level ${id} color count`);
     assert.match(guide.stats.solutionDuration, /^\d+:\d{2}$/, `Level ${id} duration`);

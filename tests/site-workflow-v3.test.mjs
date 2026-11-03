@@ -35,7 +35,7 @@ test("public app sources use current metadata without copied advertising", async
   assert.match(combined, /siteDescription/);
 });
 
-test("screenshot matching route excludes third-party site scripts", async () => {
+test("site scripts include the configured analytics tag without advertising", async () => {
   const [layout, scripts, finder] = await Promise.all([
     source("app/layout.tsx"),
     source("components/site-scripts.tsx"),
@@ -44,16 +44,19 @@ test("screenshot matching route excludes third-party site scripts", async () => 
 
   assert.match(layout, /<SiteScripts\s*\/>/);
   assert.doesNotMatch(layout, /googletagmanager|adsbygoogle|AffiliateGlobalAds/);
-  assert.match(scripts, /return null/);
-  assert.doesNotMatch(scripts, /googletagmanager|adsbygoogle|AffiliateGlobalAds|ca-pub-/);
+  assert.match(scripts, /googletagmanager/);
+  assert.match(scripts, /G-1B8QN68TBD/);
+  assert.doesNotMatch(scripts, /adsbygoogle|AffiliateGlobalAds|ca-pub-/);
   assert.doesNotMatch(finder, /AffiliateAd|adsbygoogle/);
 });
 
 test("sitemap uses stable dates and publishes the screenshot finder", async () => {
   const sitemap = await source("app/sitemap.ts");
+  const manifest = JSON.parse(await source("public/seo-manifest.json"));
 
-  assert.match(sitemap, /2026-11-02/);
-  assert.match(sitemap, /find-level/);
+  assert.match(sitemap, /seoManifest\.entries/);
+  assert.ok(manifest.entries.some((entry) => entry.path === "/find-level/"));
+  assert.ok(manifest.entries.every((entry) => entry.lastModified.startsWith("2026-11-02T16:00:00")));
   assert.doesNotMatch(sitemap, /lastModified:\s*new Date\(\)/);
 });
 

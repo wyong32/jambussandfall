@@ -638,5 +638,165 @@
     "videoUploadDate": "2026-10-17T00:00:00Z",
     "videoDurationIso": "PT10M39S",
     "assetVersion": 2
+  },
+  {
+    "id": "21",
+    "title": "Jam Bus:Sandfall Level 21 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/21/cover.webp",
+    "coverImage": "/levels/21/cover.webp",
+    "guideImages": [
+      "/levels/21/steps/step-1.webp",
+      "/levels/21/steps/step-2.webp",
+      "/levels/21/steps/step-3.webp"
+    ],
+    "category": "Levels 21-25",
+    "description": "Clear the yellow house while preserving routes for blue, orange, green, red, white, and yellow vehicles.",
+    "guide": [],
+    "tips": [
+      "Use the two exposed blue exits before the upper orange group closes their lanes."
+    ],
+    "tags": [
+      "yellow house",
+      "blue exits",
+      "expanding parking"
+    ],
+    "completionTime": "10:32",
+    "videoId": "HuVASpxkrVA",
+    "videoUrl": "https://www.youtube.com/embed/HuVASpxkrVA",
+    "videoThumbnail": "https://i.ytimg.com/vi/HuVASpxkrVA/hqdefault.jpg",
+    "videoDuration": "10:32",
+    "videoTitle": "Jam Bus Sandfall Level 21 Walkthrough Solution",
+    "videoUploadDate": "2026-10-17T00:00:00Z",
+    "videoDurationIso": "PT10M32S",
+    "assetVersion": 2
+  },
+  {
+    "id": "22",
+    "title": "Jam Bus:Sandfall Level 22 Walkthrough",
+    "difficulty": "Hard",
+    "thumbnail": "/levels/22/cover.webp",
+    "coverImage": "/levels/22/cover.webp",
+    "guideImages": [
+      "/levels/22/steps/step-1.webp",
+      "/levels/22/steps/step-2.webp",
+      "/levels/22/steps/step-3.webp"
+    ],
+    "category": "Levels 21-25",
+    "description": "Clear the fishbowl board by opening the dense cyan fleet before the smaller yellow, red, blue, orange, and white groups.",
+    "guide": [],
+    "tips": [
+      "Keep cycling cyan vehicles while the outer water layer remains exposed."
+    ],
+    "tags": [
+      "fishbowl",
+      "cyan buses",
+      "water layer"
+    ],
+    "completionTime": "9:17",
+    "videoId": "9GWZmr0ne1M",
+    "videoUrl": "https://www.youtube.com/embed/9GWZmr0ne1M",
+    "videoThumbnail": "https://i.ytimg.com/vi/9GWZmr0ne1M/hqdefault.jpg",
+    "videoDuration": "9:17",
+    "videoTitle": "Jam Bus Sandfall Level 22 Walkthrough Solution",
+    "videoUploadDate": "2026-10-17T00:00:00Z",
+    "videoDurationIso": "PT9M17S",
+    "assetVersion": 2
+  },
+  {
+    "id": "23",
+    "title": "Jam Bus:Sandfall Level 23 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/23/cover.webp",
+    "coverImage": "/levels/23/cover.webp",
+    "guideImages": [
+      "/levels/23/steps/step-1.webp",
+      "/levels/23/steps/step-2.webp",
+      "/levels/23/steps/step-3.webp"
+    ],
+    "category": "Levels 21-25",
+    "description": "Clear the retro radio through a large mixed grid led by cyan, red, blue, orange, yellow, and white vehicles.",
+    "guide": [],
+    "tips": [
+      "Open the right edge first, then preserve central lanes for the long cyan vehicles."
+    ],
+    "tags": [
+      "retro radio",
+      "dense grid",
+      "cyan routes"
+    ],
+    "completionTime": "13:26",
+    "videoId": "COpk1SKhBlo",
+    "videoUrl": "https://www.youtube.com/embed/COpk1SKhBlo",
+    "videoThumbnail": "https://i.ytimg.com/vi/COpk1SKhBlo/hqdefault.jpg",
+    "videoDuration": "13:26",
+    "videoTitle": "Jam Bus Sandfall Level 23 Walkthrough Solution",
+    "videoUploadDate": "2026-10-17T00:00:00Z",
+    "videoDurationIso": "PT13M26S",
+    "assetVersion": 2
+  },
+  {
+    "id": "24",
+    "title": "Jam Bus:Sandfall Level 24 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/24/cover.webp",
+    "coverImage": "/levels/24/cover.webp",
+    "guideImages": [
+      "/levels/24/steps/step-1.webp",
+      "/levels/24/steps/step-2.webp",
+      "/levels/24/steps/step-3.webp"
+    ],
+    "category": "Levels 21-25",
+    "description": "Clear the parrot board from a diagonal vehicle field with cyan, red, green, orange, blue, yellow, and white routes.",
+    "guide": [],
+    "tips": [
+      "Follow the diagonal opening order and use expanded parking only when the late cyan chain requires it."
+    ],
+    "tags": [
+      "parrot",
+      "diagonal routes",
+      "cyan buses"
+    ],
+    "completionTime": "10:24",
+    "videoId": "HqBksmRc9uU",
+    "videoUrl": "https://www.youtube.com/embed/HqBksmRc9uU",
+    "videoThumbnail": "https://i.ytimg.com/vi/HqBksmRc9uU/hqdefault.jpg",
+    "videoDuration": "10:24",
+    "videoTitle": "Jam Bus Sandfall Level 24 Walkthrough Solution",
+    "videoUploadDate": "2026-10-17T00:00:00Z",
+    "videoDurationIso": "PT10M24S",
+    "assetVersion": 2
+  },
+  {
+    "id": "25",
+    "title": "Jam Bus:Sandfall Level 25 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/25/cover.webp",
+    "coverImage": "/levels/25/cover.webp",
+    "guideImages": [
+      "/levels/25/steps/step-1.webp",
+      "/levels/25/steps/step-2.webp",
+      "/levels/25/steps/step-3.webp"
+    ],
+    "category": "Levels 21-25",
+    "description": "Clear the fruit bowl by sequencing blue, white, green, red, orange, purple, pink, and yellow vehicles through a dense rectangular grid.",
+    "guide": [],
+    "tips": [
+      "Clear the six verified left-edge exits before committing the central white queue."
+    ],
+    "tags": [
+      "fruit bowl",
+      "left-edge exits",
+      "dense parking"
+    ],
+    "completionTime": "8:09",
+    "videoId": "vaFkEkAAYBM",
+    "videoUrl": "https://www.youtube.com/embed/vaFkEkAAYBM",
+    "videoThumbnail": "https://i.ytimg.com/vi/vaFkEkAAYBM/hqdefault.jpg",
+    "videoDuration": "8:09",
+    "videoTitle": "Jam Bus Sandfall Level 25 Walkthrough Solution",
+    "videoUploadDate": "2026-10-21T00:00:00Z",
+    "videoDurationIso": "PT8M9S",
+    "assetVersion": 2
   }
 ]

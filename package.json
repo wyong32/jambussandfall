@@ -4,7 +4,9 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "npm run seo:prepare && next build",
+        "seo:prepare": "node scripts/generate-seo-manifest.mjs",
+        "seo:validate": "node scripts/validate-seo-manifest.mjs public/seo-manifest.json",
         "sync:levels": "node scripts/sync-level-batch.mjs",
         "assets:level": "node scripts/generate-level-assets.mjs",
         "assets:index": "node scripts/build-level-match-index.mjs",

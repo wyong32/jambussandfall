@@ -65,5 +65,5 @@ test("level schema uses normalized article, video, FAQ, and breadcrumb data", ()
   assert.match(layout, /videoDurationIso/);
   assert.match(layout, /level\.videoUrl\s*&&\s*level\.videoUploadDate\s*&&\s*level\.videoDurationIso/);
   assert.match(layout, /LAST_SITE_UPDATE/);
-  assert.match(site, /2026-11-02T00:00:00\+08:00/);
+  assert.match(site, /2026-11-03T00:00:00\+08:00/);
 });

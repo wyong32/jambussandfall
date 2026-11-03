@@ -38,7 +38,8 @@ test("find-level route has canonical metadata and visible tool documentation", (
 });
 
 test("sitemap includes the screenshot finder", () => {
-  const sitemap = fs.readFileSync("app/sitemap.ts", "utf8");
-  assert.match(sitemap, /\/find-level\//);
-  assert.match(sitemap, /priority:\s*0\.9/);
+  const manifest = JSON.parse(fs.readFileSync("public/seo-manifest.json", "utf8"));
+  const finder = manifest.entries.find((entry) => entry.path === "/find-level/");
+  assert.ok(finder);
+  assert.equal(finder.priority, 0.9);
 });

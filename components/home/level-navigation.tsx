@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Download, Route, ShieldCheck } from "lucide-react";
 import { getAllLevels } from "@/lib/data";
+import { MAX_LEVEL } from "@/lib/level-utils";
 import { APP_STORE_URL, GAME_DEVELOPER, GOOGLE_PLAY_URL } from "@/lib/site";
 import { LevelGrid } from "@/components/level/level-grid";
 
@@ -22,7 +23,7 @@ export function LevelNavigation() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-bold uppercase text-primary">Published walkthroughs</p>
-              <h2 id="latest-guides" className="mt-2 text-3xl font-bold sm:text-4xl">Jam Bus:Sandfall Levels 1-20</h2>
+              <h2 id="latest-guides" className="mt-2 text-3xl font-bold sm:text-4xl">Jam Bus:Sandfall Levels 1-{MAX_LEVEL}</h2>
               <p className="mt-3 max-w-2xl leading-7 text-muted-foreground">Each page includes the complete video, a 600×500 board image, full-interface progress screenshots, and level-specific route notes.</p>
             </div>
             <Link href="/levels/" className="inline-flex items-center gap-2 font-bold text-primary hover:underline">View all guides <ArrowRight className="h-4 w-4" /></Link>

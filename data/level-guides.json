@@ -3238,5 +3238,820 @@
         "parkingRule": "A central exit remains clear."
       }
     ]
+  },
+  "21": {
+    "objective": "Clear the yellow house, red roof, blue door, and green shrubs without blocking the lower vehicle groups.",
+    "keyChallenge": "The opening blue and orange exits share the upper lanes, while parking expands later in the run.",
+    "quickAnswer": "Send the upper-center blue car up, then the exposed blue car at the upper-right. Release the left orange bus and the two vertical orange cars before the green car on the right. This opening removes the first roof and path layers while keeping the initial five parking slots usable.",
+    "overallStrategy": [
+      "The house starts with broad red, yellow, blue, and green regions. The first useful vehicles sit along the upper edge, so the opening depends on clearing those lanes in order.",
+      "Do not treat five slots as the capacity for the full run. The recording adds parking later; before that expansion, wait for matching sand to consume parked vehicles instead of filling every space.",
+      "After the roof begins to narrow, the remaining grid forms a central column. Preserve its vertical exits for the late red, white, yellow, and orange vehicles."
+    ],
+    "startingBoard": "A yellow house with a red roof, blue door and path, green shrubs, white windows, and orange ground fills the board. The vehicle field begins with blue, orange, green, red, white, and yellow groups beneath five parking slots.",
+    "steps": [
+      {
+        "title": "Open the blue and orange roof routes",
+        "instruction": "Move the two exposed blue cars first. Follow with the left orange bus and the two vertical orange cars so the upper lanes stay aligned with the visible colors.",
+        "image": "/levels/21/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 21 house opening board"
+      },
+      {
+        "title": "Work through the roof and wall layers",
+        "instruction": "Use green, red, white, and yellow only as each matching section appears. The field is narrower here, so one early side move can block a vertical exit.",
+        "image": "/levels/21/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 21 middle house layers"
+      },
+      {
+        "title": "Finish the door, path, and lower colors",
+        "instruction": "Use the expanded parking row to stage the final blue, orange, red, yellow, white, and green vehicles. Keep the remaining central exits clear until the last path layers disappear.",
+        "image": "/levels/21/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 21 late house solution"
+      }
+    ],
+    "beforeMove": [
+      "The selected vehicle has a clear exit in its arrow direction.",
+      "Its color is visible on the current house layer or can wait safely.",
+      "At least one initial parking slot remains open before the board expands.",
+      "The central vertical lane is not being closed by a side vehicle."
+    ],
+    "stuckPoint": "The first trap is sending unrelated lower vehicles while the two blue and three orange exits are still available. That fills parking without clearing the exposed roof and path colors, leaving the upper lanes occupied when the next vertical group is needed.",
+    "faqs": [
+      {
+        "question": "What picture is Jam Bus:Sandfall Level 21?",
+        "answer": "Level 21 shows a yellow house with a red roof, blue door, green shrubs, white windows, and orange ground."
+      },
+      {
+        "question": "Which vehicle should move first in Level 21?",
+        "answer": "Move the blue vertical car near x 36%, y 56% upward, then use the exposed blue car on the upper-right."
+      },
+      {
+        "question": "Does Level 21 stay at five parking slots?",
+        "answer": "No. The recording begins with five slots and adds capacity later, so early parking control still matters."
+      },
+      {
+        "question": "Why does the late house section jam?",
+        "answer": "The remaining vehicles form a narrow central column; a side move can occupy the exit required by the next vertical vehicle."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "10:32",
+      "criticalRoute": "Clear the two upper blue exits and three orange exits before using the right-side green car."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 36,
+        "yPercent": 56,
+        "purpose": "Send the blue car upward to start removing the exposed blue path below the house.",
+        "parkingCheck": "Confirm the road accepts the blue car and the display still has open space in the initial five slots."
+      },
+      {
+        "order": 2,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "up",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 89,
+        "yPercent": 54,
+        "purpose": "Send the upper-right blue car upward while the blue section remains available.",
+        "parkingCheck": "Let the first blue group resolve before using a vehicle that does not match the visible layer."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange bus",
+        "direction": "left",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 12,
+        "yPercent": 56,
+        "purpose": "Move the long orange bus left to open the left edge for the next vertical orange car.",
+        "parkingCheck": "Check that the orange bus enters the road instead of remaining parked behind a nonmatching color."
+      },
+      {
+        "order": 4,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 20,
+        "yPercent": 55,
+        "purpose": "Send the exposed orange car upward from the left column to continue the same color phase.",
+        "parkingCheck": "Keep one slot open while the orange road group is still collecting the current layer."
+      },
+      {
+        "order": 5,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 82,
+        "yPercent": 55,
+        "purpose": "Move the second vertical orange car upward to finish the verified orange opening sequence.",
+        "parkingCheck": "Wait for an orange vehicle to leave parking before adding a new unmatched color."
+      },
+      {
+        "order": 6,
+        "color": "green",
+        "vehicle": "green car",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 87,
+        "yPercent": 60,
+        "purpose": "Send the green car right after the orange lane clears to begin removing the shrub layer.",
+        "parkingCheck": "Confirm green is exposed and keep spare capacity until the later parking expansion appears."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Blue path opening",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "Both blue edge vehicles leave and the first blue path pixels begin to clear.",
+        "parkingRule": "Use the two matching blue vehicles before introducing a third color."
+      },
+      {
+        "phase": "Orange edge sequence",
+        "moveRange": "Checkpoints 3-5",
+        "boardState": "The left bus and two vertical orange cars open the upper edge and expose the green route.",
+        "parkingRule": "Keep one of the initial five slots free until an orange group is consumed."
+      },
+      {
+        "phase": "Shrubs to central finish",
+        "moveRange": "Checkpoint 6 onward",
+        "boardState": "Green starts the shrub layer; later red, white, yellow, blue, and orange groups narrow toward the center.",
+        "parkingRule": "Use added capacity later, but preserve a central exit for the final vertical vehicles."
+      }
+    ]
+  },
+  "22": {
+    "objective": "Clear the yellow fish and layered bowl through a vehicle field dominated by cyan routes.",
+    "keyChallenge": "Many cyan vehicles point in different directions, so their exit order matters even while cyan is exposed.",
+    "quickAnswer": "Move the upper-left blue vehicle left, then send the cyan car at x 25%, y 55% upward. Continue with the lower-right cyan bus, the upper-center cyan car, the right-edge cyan bus, and the next upper cyan car. This sequence keeps the water layer moving without closing the edge lanes.",
+    "overallStrategy": [
+      "The bright cyan water around the fish makes cyan the main opening color, but a blue blocker must leave first. Use cyan vehicles whose arrows lead directly to an open edge.",
+      "The bowl introduces yellow, red, orange, blue, and white after the outer water clears. Pause between color changes and confirm the next visible layer before filling parking.",
+      "Parking expands during the long solution. Early moves still begin with five slots, so do not stage several nonmatching colors at once."
+    ],
+    "startingBoard": "A yellow fish sits inside a round cyan bowl with red, yellow, blue, orange, and white details. Cyan vehicles fill most of the compact grid, with smaller blue, red, yellow, orange, and white groups mixed between them.",
+    "steps": [
+      {
+        "title": "Open the cyan water layer",
+        "instruction": "Remove the upper-left blue blocker, then use the exposed cyan vehicles at the upper-left, lower-right, and upper-center in the recorded direction order.",
+        "image": "/levels/22/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 22 fishbowl opening"
+      },
+      {
+        "title": "Clear the bowl and fish outline",
+        "instruction": "As the water recedes, alternate cyan with yellow, red, orange, blue, and white only when those colors appear. Keep the two side exits open for long buses.",
+        "image": "/levels/22/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 22 middle fishbowl layers"
+      },
+      {
+        "title": "Finish the small center layers",
+        "instruction": "The last board is much smaller but still uses expanded parking. Release the final yellow, cyan, orange, white, and blue vehicles in visible-color order.",
+        "image": "/levels/22/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 22 late fishbowl solution"
+      }
+    ],
+    "beforeMove": [
+      "The arrow has a direct route to the closest open edge.",
+      "Cyan is still exposed before another cyan vehicle is staged.",
+      "A yellow or red vehicle is not occupying the last free early slot.",
+      "The next long cyan bus has space to leave from the right side."
+    ],
+    "stuckPoint": "The board looks safe because cyan remains visible for a long time. The actual risk is selecting a cyan vehicle whose arrow is blocked by another cyan vehicle, then using parking for yellow or red before the edge route opens.",
+    "faqs": [
+      {
+        "question": "What picture is Jam Bus:Sandfall Level 22?",
+        "answer": "Level 22 shows a yellow fish inside a round cyan fishbowl."
+      },
+      {
+        "question": "What is the first useful move in Level 22?",
+        "answer": "Move the blue vehicle at the upper-left toward the left edge, then send the newly usable cyan vehicle upward."
+      },
+      {
+        "question": "Why are cyan buses still blocked when cyan sand is visible?",
+        "answer": "Color matching does not open a route; each bus also needs a clear path in the direction of its arrow."
+      },
+      {
+        "question": "Does the parking row expand in Level 22?",
+        "answer": "Yes. The recording starts with five slots and shows additional capacity later in the solution."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "9:17",
+      "criticalRoute": "Remove the upper-left blue blocker, then clear cyan from alternating upper and right-edge exits."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 13,
+        "yPercent": 54,
+        "purpose": "Move the blue car left to remove the blocker beside the first cyan column.",
+        "parkingCheck": "Confirm the blue car reaches the road and leaves room for the cyan vehicle that follows."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 25,
+        "yPercent": 55,
+        "purpose": "Send the exposed cyan car upward to start removing the outer water layer.",
+        "parkingCheck": "Cyan should be consumed quickly; keep the remaining early slots available."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "right",
+        "row": 5,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 86,
+        "yPercent": 77,
+        "purpose": "Move the lower-right cyan bus right while its outside lane is unobstructed.",
+        "parkingCheck": "Wait for the bus to enter the road before tapping another lower-right vehicle."
+      },
+      {
+        "order": 4,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 34,
+        "yPercent": 55,
+        "purpose": "Send the upper-center cyan car up to continue the water layer from the opposite lane.",
+        "parkingCheck": "Keep at least one of the initial five slots empty while the cyan queue resolves."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "right",
+        "row": 4,
+        "column": 6,
+        "region": "middle-right",
+        "xPercent": 88,
+        "yPercent": 71,
+        "purpose": "Move the right-edge cyan bus right after the previous lane is clear.",
+        "parkingCheck": "Do not add yellow or red unless the current cyan group has opened parking."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 72,
+        "yPercent": 53,
+        "purpose": "Send the next upper cyan car up to preserve the right-side chain for later buses.",
+        "parkingCheck": "Confirm the water layer remains visible and spare capacity remains before changing color."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Open the water exits",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "The blue blocker leaves and the first cyan vehicle starts clearing the outer bowl water.",
+        "parkingRule": "Use the matching cyan route before staging yellow or red."
+      },
+      {
+        "phase": "Alternate cyan edge lanes",
+        "moveRange": "Checkpoints 3-6",
+        "boardState": "Lower-right, upper-center, right-edge, and upper-right cyan vehicles leave in a route-safe order.",
+        "parkingRule": "Keep one early slot free and wait for each road vehicle to resolve."
+      },
+      {
+        "phase": "Bowl and fish center",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Yellow, red, orange, blue, white, and remaining cyan layers shrink toward the bowl center.",
+        "parkingRule": "Use expanded parking only with a confirmed next color and clear exit."
+      }
+    ]
+  },
+  "23": {
+    "objective": "Clear the orange retro radio and its cyan background through a dense mixed vehicle grid.",
+    "keyChallenge": "The right edge opens quickly, but long cyan and red buses can block each other's central lanes later.",
+    "quickAnswer": "Send the upper-right red car right, followed by the nearby cyan car to the right. Move the lower-center blue car down, the lower-left blue vehicle left, then the right-side cyan car up and the next cyan car right. This creates the first stable route through the radio's cyan background.",
+    "overallStrategy": [
+      "The radio uses a large cyan background around orange, red, brown, yellow, white, and blue details. Open the right and lower edges before working through the crowded center.",
+      "Long cyan buses are useful only when their arrows face an open lane. Use short red and blue vehicles to create those lanes instead of filling parking with blocked cyan groups.",
+      "The late field narrows to a few red, cyan, white, orange, yellow, and blue vehicles. Keep the central vertical lane available until the radio dial and speaker layers are almost gone."
+    ],
+    "startingBoard": "An orange retro radio with a dark speaker, red dial, yellow base, and cyan background fills the board. The field contains dense cyan, red, blue, orange, yellow, and white vehicles with mixed horizontal and vertical arrows.",
+    "steps": [
+      {
+        "title": "Open the right and lower edges",
+        "instruction": "Release the red and cyan cars on the upper-right, then use the verified blue exits at the lower-center and lower-left.",
+        "image": "/levels/23/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 23 radio opening"
+      },
+      {
+        "title": "Work through the cyan background",
+        "instruction": "Alternate cyan buses with red, orange, yellow, white, and blue route-clearing vehicles. Do not send a long bus until the full arrow path is open.",
+        "image": "/levels/23/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 23 middle radio layers"
+      },
+      {
+        "title": "Finish the speaker and dial",
+        "instruction": "The last vehicles are isolated. Match each remaining radio color, but preserve the center column for the final red and white vertical vehicles.",
+        "image": "/levels/23/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 23 late radio solution"
+      }
+    ],
+    "beforeMove": [
+      "The complete arrow path is open, not only the vehicle's front edge.",
+      "The selected color is visible or has a safe parking slot.",
+      "A long cyan or red bus will not close the center lane.",
+      "The next lower-edge vehicle still has a route out."
+    ],
+    "stuckPoint": "The right side appears open after the first red and cyan cars leave, but long cyan buses still cross central exits. Moving one too early blocks the blue lower exits and forces several unmatched colors into parking.",
+    "faqs": [
+      {
+        "question": "What picture is Jam Bus:Sandfall Level 23?",
+        "answer": "Level 23 shows an orange retro radio with a speaker, dial, antenna, and cyan background."
+      },
+      {
+        "question": "What is the Level 23 opening order?",
+        "answer": "Start with red right, cyan right, blue down, blue left, cyan up, and cyan right at the verified coordinates."
+      },
+      {
+        "question": "Why can a cyan bus fail to leave?",
+        "answer": "A matching color is not enough; the long bus needs every space along its arrow path to be clear."
+      },
+      {
+        "question": "Which lane should stay open late in Level 23?",
+        "answer": "Keep the central vertical lane open for the remaining red and white vehicles."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 6,
+      "solutionDuration": "13:26",
+      "criticalRoute": "Use the upper-right red and cyan exits before releasing the two lower blue vehicles."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "red",
+        "vehicle": "red car",
+        "direction": "right",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 78,
+        "yPercent": 54,
+        "purpose": "Move the red car right to open the upper-right lane beside the cyan vehicle.",
+        "parkingCheck": "Confirm the red car reaches the road and the initial five-slot row still has recovery space."
+      },
+      {
+        "order": 2,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "right",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 86,
+        "yPercent": 50,
+        "purpose": "Send the exposed cyan car right to begin clearing the background beside the radio.",
+        "parkingCheck": "Let the cyan car match the visible background before adding another edge color."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 62,
+        "yPercent": 87,
+        "purpose": "Move the lower-center blue car down to open space beneath the central vehicle group.",
+        "parkingCheck": "Check that blue can wait or match without taking the last free early slot."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue vehicle",
+        "direction": "left",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 14,
+        "yPercent": 75,
+        "purpose": "Move the lower-left blue vehicle left to clear the side route for the cyan chain.",
+        "parkingCheck": "Wait for one blue group to resolve before using the next nonmatching vehicle."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 89,
+        "yPercent": 56,
+        "purpose": "Send the right-side cyan car upward after the blue exits have reduced congestion.",
+        "parkingCheck": "Confirm cyan remains exposed and keep one slot open for the next route-clearing color."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 87,
+        "yPercent": 60,
+        "purpose": "Move the next cyan car right to continue the background without occupying the center lane.",
+        "parkingCheck": "Let the right-edge cyan group enter the road before selecting a long central bus."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Right-edge release",
+        "moveRange": "Checkpoints 1-2",
+        "boardState": "The red and cyan cars leave the upper-right and start clearing the radio background.",
+        "parkingRule": "Use the newly opened right lane before staging a blocked central bus."
+      },
+      {
+        "phase": "Lower blue exits",
+        "moveRange": "Checkpoints 3-4",
+        "boardState": "Two blue vehicles leave through different lower routes and create space below the central grid.",
+        "parkingRule": "Do not fill the last early slot while both blue groups are resolving."
+      },
+      {
+        "phase": "Cyan background to radio details",
+        "moveRange": "Checkpoints 5-6 onward",
+        "boardState": "Right-side cyan clears first; later orange, red, white, yellow, and blue expose the speaker and dial.",
+        "parkingRule": "Preserve the central vertical exit for the late red and white vehicles."
+      }
+    ]
+  },
+  "24": {
+    "objective": "Clear the red, blue, green, yellow, and cyan parrot from the diagonal vehicle field.",
+    "keyChallenge": "Diagonal arrows control the opening, and the late cyan chain depends on parking expanding from five to eight slots.",
+    "quickAnswer": "Move the upper-right red car up-right, the lower-right orange car down-right, and the nearby green car up-right. Then use the left red car up-left, the green car up-left, and the lower orange car up-left. These diagonal exits remove the first wing and branch layers without blocking the cyan buses.",
+    "overallStrategy": [
+      "Level 24 arranges vehicles on a diagonal grid. Read the arrow angle before the color; several cars leave toward a corner rather than a straight edge.",
+      "The parrot's cyan background and blue wings require many cyan and blue vehicles later. Use the red, orange, and green opening to create those diagonal lanes.",
+      "The recording expands parking from five slots to eight. That added space supports the late cyan chain, but it does not fix a blocked arrow path."
+    ],
+    "startingBoard": "A bright parrot has a red head, white face, yellow chest, green body, blue wings, brown branch, and cyan background. Red, orange, green, cyan, blue, yellow, and white vehicles are arranged in a rotated diamond below five initial parking slots.",
+    "steps": [
+      {
+        "title": "Open the diagonal corner exits",
+        "instruction": "Use the red, orange, and green vehicles that point toward the open corners. Follow the up-right, down-right, and up-left order shown in the checkpoints.",
+        "image": "/levels/24/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 24 parrot opening"
+      },
+      {
+        "title": "Release the wing and background colors",
+        "instruction": "After the edge colors clear, work cyan and blue through the diagonal lanes. Use green, red, yellow, orange, and white only when their matching parrot layer appears.",
+        "image": "/levels/24/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 24 middle parrot layers"
+      },
+      {
+        "title": "Use the expanded row for the final cyan chain",
+        "instruction": "The late board has eight parking slots and only a few vehicles. Keep the remaining cyan route open, then clear the last branch and background pixels.",
+        "image": "/levels/24/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 24 late parrot solution"
+      }
+    ],
+    "beforeMove": [
+      "The diagonal arrow points to an open corner lane.",
+      "The selected color is visible on the parrot or can wait safely.",
+      "A cyan or blue bus is not losing its only diagonal exit.",
+      "Expanded parking is used for color timing, not for a blocked route."
+    ],
+    "stuckPoint": "Players often read the crowded diamond as a normal horizontal grid. The first six vehicles leave diagonally; choosing the correct color with the wrong corner path keeps the cyan and blue wing vehicles trapped even after parking expands.",
+    "faqs": [
+      {
+        "question": "What picture is Jam Bus:Sandfall Level 24?",
+        "answer": "Level 24 shows a colorful parrot on a branch against a cyan background."
+      },
+      {
+        "question": "What direction does the first Level 24 vehicle move?",
+        "answer": "The red car near x 82%, y 55% moves diagonally up-right."
+      },
+      {
+        "question": "How many parking slots are available in Level 24?",
+        "answer": "The level starts with five slots and the recorded run expands the row to eight later."
+      },
+      {
+        "question": "Why is the late cyan bus still blocked?",
+        "answer": "Expanded parking does not open lanes; the cyan bus still needs a clear diagonal path in its arrow direction."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "10:24",
+      "criticalRoute": "Clear the red, orange, and green diagonal exits before committing the dense cyan and blue groups."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "red",
+        "vehicle": "red car",
+        "direction": "up-right",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 82,
+        "yPercent": 55,
+        "purpose": "Move the red car up-right through the open corner to begin clearing the red head layer.",
+        "parkingCheck": "Confirm the red car reaches the road while the initial five-slot row retains open space."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "down-right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 86,
+        "yPercent": 85,
+        "purpose": "Move the orange car down-right to clear the lower corner beside the branch colors.",
+        "parkingCheck": "Let the orange car enter the road before selecting another diagonal edge vehicle."
+      },
+      {
+        "order": 3,
+        "color": "green",
+        "vehicle": "green car",
+        "direction": "up-right",
+        "row": 4,
+        "column": 6,
+        "region": "middle-right",
+        "xPercent": 86,
+        "yPercent": 74,
+        "purpose": "Send the green car up-right to start removing the body and leaf colors on the right.",
+        "parkingCheck": "Keep at least one early slot free while green waits for its matching layer."
+      },
+      {
+        "order": 4,
+        "color": "red",
+        "vehicle": "red car",
+        "direction": "up-left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 11,
+        "yPercent": 63,
+        "purpose": "Move the left red car up-left to open the opposite diagonal edge.",
+        "parkingCheck": "Check that a red section is exposed or that red can wait without filling the row."
+      },
+      {
+        "order": 5,
+        "color": "green",
+        "vehicle": "green car",
+        "direction": "up-left",
+        "row": 3,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 19,
+        "yPercent": 67,
+        "purpose": "Send the adjacent green car up-left through the lane opened by the red car.",
+        "parkingCheck": "Do not add cyan until green has either matched or left enough recovery space."
+      },
+      {
+        "order": 6,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up-left",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 59,
+        "yPercent": 86,
+        "purpose": "Move the lower orange car up-left to complete the verified diagonal opening.",
+        "parkingCheck": "Confirm the corner route is clear before beginning the longer cyan and blue phase."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Right-corner opening",
+        "moveRange": "Checkpoints 1-3",
+        "boardState": "Red, orange, and green leave through the right corners and expose more of the wing and branch routes.",
+        "parkingRule": "Use only the initial five slots and leave one open during the diagonal opening."
+      },
+      {
+        "phase": "Left-corner opening",
+        "moveRange": "Checkpoints 4-6",
+        "boardState": "Red, green, and orange leave toward the upper-left, completing the route preparation for cyan and blue.",
+        "parkingRule": "Resolve the current edge color before staging the dense cyan group."
+      },
+      {
+        "phase": "Wing, body, and background finish",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Cyan and blue dominate the middle phase; the last vehicles clear the branch and shrinking background.",
+        "parkingRule": "The row expands to eight, but every late vehicle still needs a clear diagonal exit."
+      }
+    ]
+  },
+  "25": {
+    "objective": "Clear the fruit bowl and its layered background through a dense rectangular vehicle grid.",
+    "keyChallenge": "The opening uses six separate left-edge exits before the central white queue becomes safe.",
+    "quickAnswer": "Move the blue bus at x 14%, y 66% left, then the white bus at x 14%, y 51% left. Continue with the bottom-left green car left, the lower-left red vehicle down, the white bus at x 19%, y 79% right, and the top-left white bus left. This opening preserves the center while the fruit bowl's blue, green, red, and white edge layers clear.",
+    "overallStrategy": [
+      "The fruit bowl contains large orange and purple areas surrounded by white, blue, red, green, pink, and yellow details. The first safe exits are concentrated on the left edge, not in the central white columns.",
+      "Use the verified left-side vehicles to create space before touching long white buses in the middle. A central move may look open but can close the only route for the bottom green, red, or blue group.",
+      "The source video reaches the Congratulations screen. Follow its late orange, purple, pink, yellow, green, red, white, and blue order instead of treating the remaining small grid as interchangeable."
+    ],
+    "startingBoard": "A fruit bowl contains pink fruit, green rings, yellow pieces, a large purple cluster, an orange bowl, and blue, red, green, and white base layers. The vehicle field is a dense rectangle led by white, orange, blue, green, red, purple, pink, and yellow vehicles under five initial parking slots.",
+    "steps": [
+      {
+        "title": "Clear the six left-edge exits",
+        "instruction": "Use blue left, white left, green left, red down, white right, and white left at the listed coordinates. This removes edge blockers without disturbing the central queue.",
+        "image": "/levels/25/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 25 fruit bowl opening"
+      },
+      {
+        "title": "Work through orange and purple layers",
+        "instruction": "After the edge opens, use white and orange to release the central vehicles, then preserve routes for the long purple and pink groups as their fruit colors appear.",
+        "image": "/levels/25/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 25 middle fruit bowl layers"
+      },
+      {
+        "title": "Finish the small base groups",
+        "instruction": "The last field contains isolated orange, green, purple, yellow, red, white, and blue vehicles. Match the shrinking base layers until the Congratulations screen appears.",
+        "image": "/levels/25/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 25 late fruit bowl solution"
+      }
+    ],
+    "beforeMove": [
+      "The vehicle's full arrow route reaches an open screen edge.",
+      "The left-side opening sequence has not been interrupted by a central bus.",
+      "The selected color is visible or has space in the five-slot starting row.",
+      "A long purple, pink, or white bus will still have a later exit."
+    ],
+    "stuckPoint": "The central white vehicles look more obvious than the small left-edge cars. Moving those white buses first collapses the lower-left escape routes and leaves blue, green, or red trapped while the wrong colors occupy parking.",
+    "faqs": [
+      {
+        "question": "What picture is Jam Bus:Sandfall Level 25?",
+        "answer": "Level 25 shows a colorful fruit bowl with pink, green, yellow, purple, orange, blue, red, and white sections."
+      },
+      {
+        "question": "What is the first move in Level 25?",
+        "answer": "Move the blue horizontal vehicle near x 14%, y 66% toward the left edge."
+      },
+      {
+        "question": "Why should the central white buses wait?",
+        "answer": "They share routes with lower-left vehicles; moving them early can close the only exit for blue, green, or red."
+      },
+      {
+        "question": "Does the Level 25 video show a complete solution?",
+        "answer": "Yes. The embedded source reaches the Congratulations screen after the board is fully cleared."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "8:09",
+      "criticalRoute": "Clear six verified left-edge exits before releasing the central white and orange vehicle queues."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 14,
+        "yPercent": 66,
+        "purpose": "Move the blue bus left to open the first route along the fruit bowl's blue base layer.",
+        "parkingCheck": "Confirm the blue bus reaches the road and only one of the initial five slots is used."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 14,
+        "yPercent": 51,
+        "purpose": "Move the upper-left white bus left to open the side column above the blue route.",
+        "parkingCheck": "Let white match or wait without using the final recovery slot."
+      },
+      {
+        "order": 3,
+        "color": "green",
+        "vehicle": "green car",
+        "direction": "left",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 11,
+        "yPercent": 89,
+        "purpose": "Move the bottom-left green car left before another lower vehicle occupies its edge route.",
+        "parkingCheck": "Green may wait briefly; keep enough space for the red vehicle that follows."
+      },
+      {
+        "order": 4,
+        "color": "red",
+        "vehicle": "red vehicle",
+        "direction": "down",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 9,
+        "yPercent": 83,
+        "purpose": "Move the red vehicle down through the lower edge to clear the next left-side route.",
+        "parkingCheck": "Wait for red or green to leave parking before committing a central vehicle."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "right",
+        "row": 5,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 19,
+        "yPercent": 79,
+        "purpose": "Move the lower-left white bus right after the red exit opens its horizontal lane.",
+        "parkingCheck": "Confirm the white bus can enter the road without filling all five starting slots."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "left",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 17,
+        "yPercent": 46,
+        "purpose": "Move the top-left white bus left to complete the verified edge-opening sequence.",
+        "parkingCheck": "Check the left edge is clear before moving into the central white and orange phase."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Left-edge release",
+        "moveRange": "Checkpoints 1-3",
+        "boardState": "Blue, white, and green leave from three left-side heights and open the lower side routes.",
+        "parkingRule": "Use the five starting slots conservatively while the edge colors resolve."
+      },
+      {
+        "phase": "Lower and upper white exits",
+        "moveRange": "Checkpoints 4-6",
+        "boardState": "Red clears downward, then two white buses leave through opposite horizontal routes.",
+        "parkingRule": "Do not release a central bus until the left-side white vehicles are gone."
+      },
+      {
+        "phase": "Fruit and bowl finish",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Orange and purple dominate the middle; smaller pink, yellow, green, red, blue, and white groups finish the base.",
+        "parkingRule": "Match each shrinking layer and preserve exits for the long purple and pink vehicles."
+      }
+    ]
   }
 }

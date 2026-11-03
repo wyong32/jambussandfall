@@ -61,7 +61,7 @@ export default async function LevelDetailPage({ params }: Props) {
             </p>
 
             <div className="mt-7 flex flex-col gap-4 border-t border-border pt-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated November 2, 2026</p>
+              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated November 3, 2026</p>
               <CompactShare title={`Jam Bus:Sandfall Level ${id} Walkthrough`} url={shareUrl} />
             </div>
 
@@ -142,7 +142,7 @@ export default async function LevelDetailPage({ params }: Props) {
                 <h2 id="level-glance" className="text-3xl font-bold text-foreground">Level {id} at a Glance</h2>
                 <dl className="mt-6 grid border border-border sm:grid-cols-2 lg:grid-cols-4">
                   <div className="border-b border-border p-5 sm:border-r lg:border-b-0">
-                    <dt className="text-xs font-bold uppercase text-muted-foreground">Parking capacity</dt>
+                    <dt className="text-xs font-bold uppercase text-muted-foreground">Initial parking slots</dt>
                     <dd className="mt-2 text-lg font-bold text-foreground">{guide.stats.parkingCapacity} spaces</dd>
                   </div>
                   <div className="border-b border-border p-5 lg:border-b-0 lg:border-r">

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "fingerprintVersion": "jambussandfall-content-v1",
+  "siteUrl": "https://jambussandfall.org",
+  "generatedAt": "2026-11-03T03:08:25.571Z",
+  "entries": [
+    {
+      "path": "/",
+      "canonicalUrl": "https://jambussandfall.org/",
+      "indexable": true,
+      "contentFingerprint": "sha256:1870b8b24b53bff8709239f6a8e277b99184bca6c6aac1b56d9e624d0fd5786e",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "daily",
+      "priority": 1
+    },
+    {
+      "path": "/about-us/",
+      "canonicalUrl": "https://jambussandfall.org/about-us/",
+      "indexable": true,
+      "contentFingerprint": "sha256:56d96ea9a5ccfd2f2a53a572ddcf2dab79fe88c40db1d0cd5d31696c633dcc0e",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.5
+    },
+    {
+      "path": "/blog/",
+      "canonicalUrl": "https://jambussandfall.org/blog/",
+      "indexable": true,
+      "contentFingerprint": "sha256:767f9afb2e62232b8e41665fe86c04b6c56793d2450460a306f9ed07579f2841",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "daily",
+      "priority": 0.9
+    },
+    {
+      "path": "/blog/find-jam-bus-sandfall-level-by-screenshot/",
+      "canonicalUrl": "https://jambussandfall.org/blog/find-jam-bus-sandfall-level-by-screenshot/",
+      "indexable": true,
+      "contentFingerprint": "sha256:d21a263cf8880368e0ca46d10dde4ee4b7b7bb6edb0e0185f33418f9892ea534",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.7
+    },
+    {
+      "path": "/blog/how-to-play-jam-bus-sandfall/",
+      "canonicalUrl": "https://jambussandfall.org/blog/how-to-play-jam-bus-sandfall/",
+      "indexable": true,
+      "contentFingerprint": "sha256:c078740cd7aa648587153dd257d578a734d7bf7aa94ea5ae6525a279b331fabe",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.7
+    },
+    {
+      "path": "/blog/jam-bus-sandfall-parking-strategy/",
+      "canonicalUrl": "https://jambussandfall.org/blog/jam-bus-sandfall-parking-strategy/",
+      "indexable": true,
+      "contentFingerprint": "sha256:985b95555170355470fec98caa9c77d07a3dd2ed0050dbc236317c42aed9eb54",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.7
+    },
+    {
+      "path": "/contact-us/",
+      "canonicalUrl": "https://jambussandfall.org/contact-us/",
+      "indexable": true,
+      "contentFingerprint": "sha256:dd5d8d489d92b01c81f58f65bcaf6fe7c7dd1610ff219b51f4c8cfb1885c4f18",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.5
+    },
+    {
+      "path": "/download/",
+      "canonicalUrl": "https://jambussandfall.org/download/",
+      "indexable": true,
+      "contentFingerprint": "sha256:faf1eeb5add34bbd945c2d8fb734aff21cc81423106fe85712302654d84afca8",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/find-level/",
+      "canonicalUrl": "https://jambussandfall.org/find-level/",
+      "indexable": true,
+      "contentFingerprint": "sha256:828aa2954b36586e7ac0d83cf5faa2cbaeb58a0a0407f730ce8580e1624eda9b",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.9
+    },
+    {
+      "path": "/levels/",
+      "canonicalUrl": "https://jambussandfall.org/levels/",
+      "indexable": true,
+      "contentFingerprint": "sha256:df89412be3830245c5782972f1e250eb3a59a2f5c3c065738e127191f4e1dda1",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.9
+    },
+    {
+      "path": "/levels/1/",
+      "canonicalUrl": "https://jambussandfall.org/levels/1/",
+      "indexable": true,
+      "contentFingerprint": "sha256:d7aeee89c21bb934d1cbfa65927d358487e94c200a52951ffc779b5c57dbef51",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/10/",
+      "canonicalUrl": "https://jambussandfall.org/levels/10/",
+      "indexable": true,
+      "contentFingerprint": "sha256:836b76ad92c9db0a99ce0867c8bbbdee36fdf3c3a4d29054c9becc35fffec232",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/11/",
+      "canonicalUrl": "https://jambussandfall.org/levels/11/",
+      "indexable": true,
+      "contentFingerprint": "sha256:478f952721bea96c601bb5887d9a6d8c6b12fea366f95765bbbea78f7bc59918",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/12/",
+      "canonicalUrl": "https://jambussandfall.org/levels/12/",
+      "indexable": true,
+      "contentFingerprint": "sha256:c206c1e2412ff6e8c862b833e9a4d3bdcdacae2b435e6fe46159864bf433a0fa",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/13/",
+      "canonicalUrl": "https://jambussandfall.org/levels/13/",
+      "indexable": true,
+      "contentFingerprint": "sha256:db670bfe5713b39f85d5e6ba63d6afa6c8d0e34c3625b2af4ab75692b8bb8446",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/14/",
+      "canonicalUrl": "https://jambussandfall.org/levels/14/",
+      "indexable": true,
+      "contentFingerprint": "sha256:ed4485d7e28c9a07127be7d8d64d82348b978f1231cea97cb0eaeebf90a96dc7",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/15/",
+      "canonicalUrl": "https://jambussandfall.org/levels/15/",
+      "indexable": true,
+      "contentFingerprint": "sha256:c29fb930ae88a410770825a2559fda7a9533c0f0bab91a1afdd89411172fa43b",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/16/",
+      "canonicalUrl": "https://jambussandfall.org/levels/16/",
+      "indexable": true,
+      "contentFingerprint": "sha256:f1299c0b1c62ec11c7ffb5cfd764c89c94567124c45f7884d1e627f2bdc4b9ac",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/17/",
+      "canonicalUrl": "https://jambussandfall.org/levels/17/",
+      "indexable": true,
+      "contentFingerprint": "sha256:b2745d2acab0ab7b35ec2777b8e0f35ecccf0ca50b49fcc64f82a943fc52247b",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/18/",
+      "canonicalUrl": "https://jambussandfall.org/levels/18/",
+      "indexable": true,
+      "contentFingerprint": "sha256:d32b1059f96cca1ccbb844391f6c47f01d3deb4993c3e955ebaecd60f8f813b7",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/19/",
+      "canonicalUrl": "https://jambussandfall.org/levels/19/",
+      "indexable": true,
+      "contentFingerprint": "sha256:55bf3f9b88fe6b10315da02ecebc30a1c728fb8d2ca0149f104a7415a9f38c96",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/2/",
+      "canonicalUrl": "https://jambussandfall.org/levels/2/",
+      "indexable": true,
+      "contentFingerprint": "sha256:2e909acf23808765ded5939b4128fc75a60db95d995422f2d7445ea9b88c30ee",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/20/",
+      "canonicalUrl": "https://jambussandfall.org/levels/20/",
+      "indexable": true,
+      "contentFingerprint": "sha256:6a93bc23199f1cda131cd94455a1e80e27c1048e1c1f489fa172104586ded1ee",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/21/",
+      "canonicalUrl": "https://jambussandfall.org/levels/21/",
+      "indexable": true,
+      "contentFingerprint": "sha256:227f37d188d9a7ba0ed43523c9bc18c47f2318ccaad9882fdcdedbc22bf65a76",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/22/",
+      "canonicalUrl": "https://jambussandfall.org/levels/22/",
+      "indexable": true,
+      "contentFingerprint": "sha256:72d7f95425e049e76a4722b7192923bd00de1555936f71c8743bc8422615a27d",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/23/",
+      "canonicalUrl": "https://jambussandfall.org/levels/23/",
+      "indexable": true,
+      "contentFingerprint": "sha256:3cfdb59135066f8d911043c472e25ba7b58ff594526b98a1cb802a55e31c0382",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/24/",
+      "canonicalUrl": "https://jambussandfall.org/levels/24/",
+      "indexable": true,
+      "contentFingerprint": "sha256:4b05437e11adf7a20df03aa58eb57c6ead29964dc43d57b1e70b8a71a0e9223f",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/25/",
+      "canonicalUrl": "https://jambussandfall.org/levels/25/",
+      "indexable": true,
+      "contentFingerprint": "sha256:7c76952ffead58e527f38e444c3e37af0165cfe09094eb2cec07a03ffb8c068d",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/3/",
+      "canonicalUrl": "https://jambussandfall.org/levels/3/",
+      "indexable": true,
+      "contentFingerprint": "sha256:ff605c6f04644834b55030f52b04e445d41ae3d77e3e0c0d2956205e61cc1e97",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/4/",
+      "canonicalUrl": "https://jambussandfall.org/levels/4/",
+      "indexable": true,
+      "contentFingerprint": "sha256:295b618e74b798065afefb4d71d604aa592c7f531165cc40c69a3a67dcb3e46c",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/5/",
+      "canonicalUrl": "https://jambussandfall.org/levels/5/",
+      "indexable": true,
+      "contentFingerprint": "sha256:af3e7841229b00457f3c6232777da18e81f4965db23ada3816460052850a31e2",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/6/",
+      "canonicalUrl": "https://jambussandfall.org/levels/6/",
+      "indexable": true,
+      "contentFingerprint": "sha256:27a3f0536e0865e379055e2818a02cbcbe689ef0e85405affd309783f25f0352",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/7/",
+      "canonicalUrl": "https://jambussandfall.org/levels/7/",
+      "indexable": true,
+      "contentFingerprint": "sha256:f030dde4babe3ebced62ed38cf60d677a2b3e5bac6ab59881d425edb5f929946",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/8/",
+      "canonicalUrl": "https://jambussandfall.org/levels/8/",
+      "indexable": true,
+      "contentFingerprint": "sha256:71da3b9b687be449ada9e930d5e51cf0f23d1ca5f5f441a9a048d73515205ed1",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/9/",
+      "canonicalUrl": "https://jambussandfall.org/levels/9/",
+      "indexable": true,
+      "contentFingerprint": "sha256:17e6c1680264d21bab006660307167a2c0211dcec7f57fbe84d9fe47bedaff28",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/privacy-policy/",
+      "canonicalUrl": "https://jambussandfall.org/privacy-policy/",
+      "indexable": true,
+      "contentFingerprint": "sha256:332def34ae28ccf1335f22b7f241f6d105bf5917dbc703648fe4f30b7f37cef8",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    },
+    {
+      "path": "/terms-of-service/",
+      "canonicalUrl": "https://jambussandfall.org/terms-of-service/",
+      "indexable": true,
+      "contentFingerprint": "sha256:2029dab52b5d3fc8401739535a81412811d7a39f77bb08e4dd06e537069481c3",
+      "lastModified": "2026-11-02T16:00:00.000Z",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    }
+  ],
+  "deletedUrls": [],
+  "deletedAt": {},
+  "deployment": {
+    "provider": "vercel",
+    "environment": "local",
+    "gitCommitSha": "local"
+  }
+}

@@ -5,18 +5,16 @@ import test from "node:test";
 const levels = JSON.parse(fs.readFileSync("data/levels.json", "utf8"));
 
 test("level records remain ordered, unique, and limited to source rows", () => {
-  assert.equal(levels.length, 20);
+  assert.equal(levels.length, 25);
   const ids = levels.map((level) => Number(level.id));
   assert.deepEqual(ids, [...ids].sort((a, b) => a - b));
   assert.equal(new Set(ids).size, ids.length);
-  assert.equal(Math.max(...ids), 20);
-  assert.deepEqual(ids, Array.from({ length: 20 }, (_, index) => index + 1));
+  assert.equal(Math.max(...ids), 25);
+  assert.deepEqual(ids, Array.from({ length: 25 }, (_, index) => index + 1));
 });
 
-test("first twenty levels expose workflow v3 assets and video metadata", () => {
-  const pilot = levels.filter((level) => Number(level.id) <= 20);
-  assert.equal(pilot.length, 20);
-  for (const level of pilot) {
+test("published levels expose workflow v3 assets and video metadata", () => {
+  for (const level of levels) {
     assert.equal(level.coverImage, `/levels/${level.id}/cover.webp`);
     assert.ok(Array.isArray(level.guideImages) && level.guideImages.length >= 3);
     assert.match(level.videoUrl || "", /^https:\/\/www\.youtube\.com\/embed\//);

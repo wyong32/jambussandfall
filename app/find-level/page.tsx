@@ -2,6 +2,7 @@ import Script from "next/script";
 import { ScanSearch, ShieldCheck, Shuffle, SlidersHorizontal } from "lucide-react";
 import { ScreenshotFinder } from "@/components/finder/screenshot-finder";
 import { Footer } from "@/components/footer";
+import { MAX_LEVEL } from "@/lib/level-utils";
 import { canonical, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const faqs = [
@@ -124,7 +125,7 @@ export default function FindLevelPage() {
             <SlidersHorizontal className="h-6 w-6 text-primary" />
             <h2 className="mt-3 text-xl font-bold text-foreground">Current coverage</h2>
             <p className="mt-2 text-sm leading-7 text-muted-foreground">
-              The first release compares screenshots with processed Levels 1-20. Results outside that set can be inaccurate until more verified boards are added.
+              The finder compares screenshots with processed Levels 1-{MAX_LEVEL}. Results outside that set can be inaccurate until more verified boards are added.
             </p>
           </aside>
         </div>
