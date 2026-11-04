@@ -8,7 +8,7 @@ export const DOWNLOAD_COUNT = "100K+";
 export const RATING_VALUE = "4.5";
 export const RATING_COUNT = "7320";
 export const OG_IMAGE = "/images/jam-bus-sandfall-og.webp";
-export const LAST_SITE_UPDATE = "2026-11-03T00:00:00+08:00";
+export const LAST_SITE_UPDATE = "2026-11-04T00:00:00+08:00";
 
 export const gameDescription =
   "Jam Bus:Sandfall is a color-matching traffic puzzle. Send each bus along its marked route, collect matching sand, and clear layered pictures without blocking another vehicle.";

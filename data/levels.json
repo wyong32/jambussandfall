@@ -798,5 +798,165 @@
     "videoUploadDate": "2026-10-21T00:00:00Z",
     "videoDurationIso": "PT8M9S",
     "assetVersion": 2
+  },
+  {
+    "id": "26",
+    "title": "Jam Bus:Sandfall Level 26 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/26/cover.webp",
+    "coverImage": "/levels/26/cover.webp",
+    "guideImages": [
+      "/levels/26/steps/step-1.webp",
+      "/levels/26/steps/step-2.webp",
+      "/levels/26/steps/step-3.webp"
+    ],
+    "category": "Levels 26-30",
+    "description": "Clear the floral teapot with coordinate-based vehicle checkpoints and full-interface board images.",
+    "guide": [],
+    "tips": [
+      "Do not assume the opening five-space row is the final capacity: this recording expands it to six."
+    ],
+    "tags": [
+      "floral teapot",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "9:41",
+    "videoId": "XdJnxzCdZUI",
+    "videoUrl": "https://www.youtube.com/embed/XdJnxzCdZUI",
+    "videoThumbnail": "https://i.ytimg.com/vi/XdJnxzCdZUI/hqdefault.jpg",
+    "videoDuration": "9:41",
+    "videoTitle": "Jam Bus Sandfall Level 26 Walkthrough Solution",
+    "videoDurationIso": "PT9M41S",
+    "publishedAt": "2026-11-04",
+    "assetVersion": 3
+  },
+  {
+    "id": "27",
+    "title": "Jam Bus:Sandfall Level 27 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/27/cover.webp",
+    "coverImage": "/levels/27/cover.webp",
+    "guideImages": [
+      "/levels/27/steps/step-1.webp",
+      "/levels/27/steps/step-2.webp",
+      "/levels/27/steps/step-3.webp"
+    ],
+    "category": "Levels 26-30",
+    "description": "Clear the red steam train with coordinate-based vehicle checkpoints and full-interface board images.",
+    "guide": [],
+    "tips": [
+      "The train video reaches eight parking spaces later; its late queue is not a five-slot solution."
+    ],
+    "tags": [
+      "red steam train",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "9:31",
+    "videoId": "T083J0YkFeQ",
+    "videoUrl": "https://www.youtube.com/embed/T083J0YkFeQ",
+    "videoThumbnail": "https://i.ytimg.com/vi/T083J0YkFeQ/hqdefault.jpg",
+    "videoDuration": "9:31",
+    "videoTitle": "Jam Bus Sandfall Level 27 Walkthrough Solution",
+    "videoDurationIso": "PT9M31S",
+    "publishedAt": "2026-11-04",
+    "assetVersion": 3
+  },
+  {
+    "id": "28",
+    "title": "Jam Bus:Sandfall Level 28 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/28/cover.webp",
+    "coverImage": "/levels/28/cover.webp",
+    "guideImages": [
+      "/levels/28/steps/step-1.webp",
+      "/levels/28/steps/step-2.webp",
+      "/levels/28/steps/step-3.webp"
+    ],
+    "category": "Levels 26-30",
+    "description": "Clear the red-and-yellow parrot with coordinate-based vehicle checkpoints and full-interface board images.",
+    "guide": [],
+    "tips": [
+      "These are selected checkpoints, not consecutive taps. Follow the video for the white releases between the dark-red and blue checkpoints."
+    ],
+    "tags": [
+      "red-and-yellow parrot",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "9:09",
+    "videoId": "92jUee4OljM",
+    "videoUrl": "https://www.youtube.com/embed/92jUee4OljM",
+    "videoThumbnail": "https://i.ytimg.com/vi/92jUee4OljM/hqdefault.jpg",
+    "videoDuration": "9:09",
+    "videoTitle": "Jam Bus Sandfall Level 28 Walkthrough Solution",
+    "videoDurationIso": "PT9M9S",
+    "publishedAt": "2026-11-04",
+    "assetVersion": 3
+  },
+  {
+    "id": "29",
+    "title": "Jam Bus:Sandfall Level 29 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/29/cover.webp",
+    "coverImage": "/levels/29/cover.webp",
+    "guideImages": [
+      "/levels/29/steps/step-1.webp",
+      "/levels/29/steps/step-2.webp",
+      "/levels/29/steps/step-3.webp"
+    ],
+    "category": "Levels 26-30",
+    "description": "Clear the bitten red apple with coordinate-based vehicle checkpoints and full-interface board images.",
+    "guide": [],
+    "tips": [
+      "Use the coordinates to distinguish the lower-left red checkpoint from the red buses at the top-left; the top-left vehicles remain on the board during this opening."
+    ],
+    "tags": [
+      "bitten red apple",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "10:22",
+    "videoId": "Hq9pkAF1CM4",
+    "videoUrl": "https://www.youtube.com/embed/Hq9pkAF1CM4",
+    "videoThumbnail": "https://i.ytimg.com/vi/Hq9pkAF1CM4/hqdefault.jpg",
+    "videoDuration": "10:22",
+    "videoTitle": "Jam Bus Sandfall Level 29 Walkthrough Solution",
+    "videoDurationIso": "PT10M22S",
+    "publishedAt": "2026-11-04",
+    "assetVersion": 3
+  },
+  {
+    "id": "30",
+    "title": "Jam Bus:Sandfall Level 30 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/30/cover.webp",
+    "coverImage": "/levels/30/cover.webp",
+    "guideImages": [
+      "/levels/30/steps/step-1.webp",
+      "/levels/30/steps/step-2.webp",
+      "/levels/30/steps/step-3.webp"
+    ],
+    "category": "Levels 26-30",
+    "description": "Clear the flowering cactus with coordinate-based vehicle checkpoints and full-interface board images.",
+    "guide": [],
+    "tips": [
+      "Blue appears in two different bottom positions: the right-facing car near x 75% and the downward bus near x 56%. Do not swap these targets."
+    ],
+    "tags": [
+      "flowering cactus",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "12:16",
+    "videoId": "K7sFnR8mUSc",
+    "videoUrl": "https://www.youtube.com/embed/K7sFnR8mUSc",
+    "videoThumbnail": "https://i.ytimg.com/vi/K7sFnR8mUSc/hqdefault.jpg",
+    "videoDuration": "12:16",
+    "videoTitle": "Jam Bus Sandfall Level 30 Walkthrough Solution",
+    "videoDurationIso": "PT12M16S",
+    "publishedAt": "2026-11-04",
+    "assetVersion": 3
   }
 ]

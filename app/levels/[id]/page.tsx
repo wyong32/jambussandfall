@@ -61,7 +61,7 @@ export default async function LevelDetailPage({ params }: Props) {
             </p>
 
             <div className="mt-7 flex flex-col gap-4 border-t border-border pt-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated November 3, 2026</p>
+              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated November {Number(id) >= 26 ? 4 : 3}, 2026</p>
               <CompactShare title={`Jam Bus:Sandfall Level ${id} Walkthrough`} url={shareUrl} />
             </div>
 
@@ -189,7 +189,7 @@ export default async function LevelDetailPage({ params }: Props) {
 
             {guide ? (
               <section className="mt-14" aria-labelledby="move-checkpoints">
-                <h2 id="move-checkpoints" className="text-3xl font-bold text-foreground">Verified Move Checkpoints</h2>
+                <h2 id="move-checkpoints" className="text-3xl font-bold text-foreground">Verified Action Checkpoints</h2>
                 <p className="mt-4 max-w-3xl leading-7 text-muted-foreground">
                   Positions use the complete portrait screen. Rows run from top to bottom, columns run from left to right, and x/y values are percentages of the full image.
                 </p>
@@ -217,7 +217,11 @@ export default async function LevelDetailPage({ params }: Props) {
                           </td>
                           <td className="px-3 py-4 leading-6 text-muted-foreground">
                             <span className="mb-1 block font-semibold capitalize text-foreground">Move {move.direction.replace("-", " ")}</span>
+                            {move.precondition ? <p className="mb-2"><strong>Before: </strong>{move.precondition}</p> : null}
+                            {move.instruction ? <p className="mb-2">{move.instruction}</p> : null}
+                            {move.result ? <p className="mb-2"><strong>Result: </strong>{move.result}</p> : null}
                             {move.purpose}
+                            {move.risk ? <p className="mt-2"><strong>Avoid: </strong>{move.risk}</p> : null}
                           </td>
                           <td className="px-3 py-4 leading-6 text-muted-foreground">{move.parkingCheck}</td>
                         </tr>
@@ -259,7 +263,7 @@ export default async function LevelDetailPage({ params }: Props) {
 
 
             <section className="mt-14" aria-labelledby="step-solution">
-              <h2 id="step-solution" className="text-3xl font-bold text-foreground">Step-by-Step Solution</h2>
+              <h2 id="step-solution" className="text-3xl font-bold text-foreground">{Number(id) >= 26 ? "Board Progress" : "Step-by-Step Solution"}</h2>
               {guide ? (
                 <div className="mt-7 divide-y divide-border border-y border-border">
                   {guide.steps.map((step, index) => (

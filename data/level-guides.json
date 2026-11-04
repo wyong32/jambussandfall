@@ -4053,5 +4053,940 @@
         "parkingRule": "Match each shrinking layer and preserve exits for the long purple and pink vehicles."
       }
     ]
+  },
+  "26": {
+    "objective": "Clear the floral teapot sand picture and empty its vehicle field.",
+    "keyChallenge": "The exposed white background and yellow base need different exits; the long white center buses must wait for the bottom-center lane.",
+    "quickAnswer": "For the floral teapot, select the white bus at x 9%, y 53% toward up, then select the yellow bus at x 83%, y 81% toward right. Do not assume the opening five-space row is the final capacity: this recording expands it to six.",
+    "overallStrategy": [
+      "An orange teapot with a red flower sits between cyan steam, a dark-red handle, blue leaves, and a yellow base. White background sand surrounds it. The vehicle field has a long yellow bus at the lower right and a white vertical bus at the upper left.",
+      "The exposed white background and yellow base need different exits; the long white center buses must wait for the bottom-center lane.",
+      "Do not assume the opening five-space row is the final capacity: this recording expands it to six."
+    ],
+    "startingBoard": "An orange teapot with a red flower sits between cyan steam, a dark-red handle, blue leaves, and a yellow base. White background sand surrounds it. The vehicle field has a long yellow bus at the lower right and a white vertical bus at the upper left.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The white background recedes around the teapot while blue leaves and the yellow base start collecting.",
+        "image": "/levels/26/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 26 floral teapot starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The red flower and orange body remain above a narrow yellow base; the parking row now has six spaces.",
+        "image": "/levels/26/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 26 floral teapot middle board"
+      },
+      {
+        "title": "Clear the final mound",
+        "instruction": "Only a shallow red, orange, and yellow mound remains. The last red and orange vehicles leave before the Congratulations screen.",
+        "image": "/levels/26/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 26 floral teapot late board"
+      }
+    ],
+    "beforeMove": [
+      "Compare the vehicle with its full-screen coordinates.",
+      "Follow the arrow rather than the nearest same-color vehicle.",
+      "Check the current parking denominator before releasing another bus.",
+      "Use the video for intervening releases between the listed checkpoints."
+    ],
+    "stuckPoint": "The exposed white background and yellow base need different exits; the long white center buses must wait for the bottom-center lane.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 26?",
+        "answer": "An orange teapot with a red flower sits between cyan steam, a dark-red handle, blue leaves, and a yellow base. White background sand surrounds it. The vehicle field has a long yellow bus at the lower right and a white vertical bus at the upper left."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 26?",
+        "answer": "Select the white bus at x 9%, y 53% and let it travel up."
+      },
+      {
+        "question": "Does Level 26 use only five parking spaces?",
+        "answer": "No. The recording starts with five and later expands to 6. Its late queue requires the displayed expanded capacity."
+      },
+      {
+        "question": "Is this the complete shortest move list for Level 26?",
+        "answer": "No. The table contains selected action checkpoints in video order. Use the video for the intervening releases; the source reaches the Congratulations screen."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "9:41",
+      "criticalRoute": "The exposed white background and yellow base need different exits; the long white center buses must wait for the bottom-center lane."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "up",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 9,
+        "yPercent": 53,
+        "precondition": "The upper-left vertical white bus has no vehicle above it.",
+        "instruction": "Select the white bus at x 9%, y 53% and let it travel up.",
+        "result": "The white bus leaves the upper-left field and white background sand starts falling.",
+        "purpose": "Open the white background without touching the center columns.",
+        "risk": "Do not select another white vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 2,
+        "color": "yellow",
+        "vehicle": "yellow bus",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 83,
+        "yPercent": 81,
+        "precondition": "The long yellow bus occupies the lower-right horizontal edge.",
+        "instruction": "Select the yellow bus at x 83%, y 81% and let it travel right.",
+        "result": "The yellow bus leaves to the right and begins collecting the yellow base.",
+        "purpose": "Use the clear lower-right exit for the base color.",
+        "risk": "Do not select another yellow vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "down",
+        "row": 5,
+        "column": 6,
+        "region": "middle-right",
+        "xPercent": 89,
+        "yPercent": 75,
+        "precondition": "The lower-right blue car has a downward arrow and a clear bottom exit.",
+        "instruction": "Select the blue car at x 89%, y 75% and let it travel down.",
+        "result": "The blue car leaves the lower-right field and blue sand begins collecting.",
+        "purpose": "Remove blue leaf and base sand after the yellow bus has left.",
+        "risk": "Do not select another blue vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 4,
+        "color": "yellow",
+        "vehicle": "yellow car",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 60,
+        "yPercent": 83,
+        "precondition": "The small yellow car is below the red and cyan center-right vehicles.",
+        "instruction": "Select the yellow car at x 60%, y 83% and let it travel down.",
+        "result": "Its bottom-edge position becomes empty and another yellow collector joins the road.",
+        "purpose": "Continue the yellow base without releasing the central long buses.",
+        "risk": "Do not select another yellow vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white car",
+        "direction": "left",
+        "row": 4,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 12,
+        "yPercent": 71,
+        "precondition": "The white horizontal car is at the left edge between the orange horizontal car and the small downward white car.",
+        "instruction": "Select the white car at x 12%, y 71% and let it travel left.",
+        "result": "The white car exits left and that horizontal footprint clears.",
+        "purpose": "Open the lower-left white route without touching the central white column.",
+        "risk": "Do not select another white vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 6,
+        "color": "red",
+        "vehicle": "red car",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 51,
+        "yPercent": 86,
+        "precondition": "The bottom red car remains below the central white column.",
+        "instruction": "Select the red car at x 51%, y 86% and let it travel down.",
+        "result": "The red car leaves through the bottom edge and the red collection phase starts.",
+        "purpose": "Clear the lowest center vehicle before the remaining white buses.",
+        "risk": "Do not select another red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 6; do not copy a later queue into the initial row."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The white background recedes around the teapot while blue leaves and the yellow base start collecting.",
+        "parkingRule": "Start with the five visible slots; do not add a vehicle when they are full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The red flower and orange body remain above a narrow yellow base; the parking row now has six spaces.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 6 spaces."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Only a shallow red, orange, and yellow mound remains. The last red and orange vehicles leave before the Congratulations screen.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 6 spaces."
+      }
+    ]
+  },
+  "27": {
+    "objective": "Clear the red steam train sand picture and empty its vehicle field.",
+    "keyChallenge": "Several orange vehicles share the left edge. Clear their separate arrows rather than selecting the large white center buses.",
+    "quickAnswer": "For the red steam train, select the orange car at x 10%, y 49% toward up, then select the orange bus at x 10%, y 56% toward up. The train video reaches eight parking spaces later; its late queue is not a five-slot solution.",
+    "overallStrategy": [
+      "A red locomotive has blue wheels, a cyan side panel, a yellow front, orange smoke, and a dark-red track shadow on white sand. The vehicle field has four orange exits down the left side and a dark-red car at the very bottom-left.",
+      "Several orange vehicles share the left edge. Clear their separate arrows rather than selecting the large white center buses.",
+      "The train video reaches eight parking spaces later; its late queue is not a five-slot solution."
+    ],
+    "startingBoard": "A red locomotive has blue wheels, a cyan side panel, a yellow front, orange smoke, and a dark-red track shadow on white sand. The vehicle field has four orange exits down the left side and a dark-red car at the very bottom-left.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "Four orange vehicles leave from the upper and middle left, exposing the train front and track.",
+        "image": "/levels/27/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 27 red steam train starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The red body and blue wheels remain while white background falls inward; the vehicle field is much less crowded.",
+        "image": "/levels/27/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 27 red steam train middle board"
+      },
+      {
+        "title": "Clear the final mound",
+        "instruction": "The wheels and dark-red track shrink to a low mound. Parking has expanded to eight, and the last blue and red vehicles complete the picture.",
+        "image": "/levels/27/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 27 red steam train late board"
+      }
+    ],
+    "beforeMove": [
+      "Compare the vehicle with its full-screen coordinates.",
+      "Follow the arrow rather than the nearest same-color vehicle.",
+      "Check the current parking denominator before releasing another bus.",
+      "Use the video for intervening releases between the listed checkpoints."
+    ],
+    "stuckPoint": "Several orange vehicles share the left edge. Clear their separate arrows rather than selecting the large white center buses.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 27?",
+        "answer": "A red locomotive has blue wheels, a cyan side panel, a yellow front, orange smoke, and a dark-red track shadow on white sand. The vehicle field has four orange exits down the left side and a dark-red car at the very bottom-left."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 27?",
+        "answer": "Select the orange car at x 10%, y 49% and let it travel up."
+      },
+      {
+        "question": "Does Level 27 use only five parking spaces?",
+        "answer": "No. The recording starts with five and later expands to 8. Its late queue requires the displayed expanded capacity."
+      },
+      {
+        "question": "Is this the complete shortest move list for Level 27?",
+        "answer": "No. The table contains selected action checkpoints in video order. Use the video for the intervening releases; the source reaches the Congratulations screen."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "9:31",
+      "criticalRoute": "Several orange vehicles share the left edge. Clear their separate arrows rather than selecting the large white center buses."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "row": 1,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 10,
+        "yPercent": 49,
+        "precondition": "The top-left orange car faces the open upper edge.",
+        "instruction": "Select the orange car at x 10%, y 49% and let it travel up.",
+        "result": "The top-left car disappears and orange sand starts collecting.",
+        "purpose": "Start with the leftmost top exit.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange bus",
+        "direction": "up",
+        "row": 2,
+        "column": 1,
+        "region": "upper-left",
+        "xPercent": 10,
+        "yPercent": 56,
+        "precondition": "The vertical orange bus below the first car now has an open column.",
+        "instruction": "Select the orange bus at x 10%, y 56% and let it travel up.",
+        "result": "The orange bus exits upward through the cleared left column.",
+        "purpose": "Release the second orange vehicle without disturbing the white grid.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange bus",
+        "direction": "left",
+        "row": 3,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 12,
+        "yPercent": 63,
+        "precondition": "The horizontal orange bus sits on the left edge below the cleared column.",
+        "instruction": "Select the orange bus at x 12%, y 63% and let it travel left.",
+        "result": "The bus leaves left and its wide footprint becomes empty.",
+        "purpose": "Clear the third left-side orange route.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 4,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "row": 3,
+        "column": 2,
+        "region": "middle-left",
+        "xPercent": 23,
+        "yPercent": 63,
+        "precondition": "The small orange car beside the vacated horizontal bus points upward.",
+        "instruction": "Select the orange car at x 23%, y 63% and let it travel up.",
+        "result": "The car travels up the opened side lane and joins orange collection.",
+        "purpose": "Finish the orange edge group.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 5,
+        "color": "dark red",
+        "vehicle": "dark red car",
+        "direction": "down",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 10,
+        "yPercent": 85,
+        "precondition": "The small dark-red car is the lowest vehicle in the leftmost column.",
+        "instruction": "Select the dark red car at x 10%, y 85% and let it travel down.",
+        "result": "The bottom-left car leaves downward and dark-red sand is collected.",
+        "purpose": "Start the track-shadow color from a direct exit.",
+        "risk": "Do not select another dark red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 6,
+        "color": "dark red",
+        "vehicle": "dark red car",
+        "direction": "left",
+        "row": 5,
+        "column": 2,
+        "region": "lower-left",
+        "xPercent": 23,
+        "yPercent": 80,
+        "precondition": "The dark-red horizontal car remains just above the cleared bottom row.",
+        "instruction": "Select the dark red car at x 23%, y 80% and let it travel left.",
+        "result": "The car exits left through the edge opened by the orange group.",
+        "purpose": "Continue the train shadow while preserving central white routes.",
+        "risk": "Do not select another dark red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "Four orange vehicles leave from the upper and middle left, exposing the train front and track.",
+        "parkingRule": "Start with the five visible slots; do not add a vehicle when they are full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The red body and blue wheels remain while white background falls inward; the vehicle field is much less crowded.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 8 spaces."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The wheels and dark-red track shrink to a low mound. Parking has expanded to eight, and the last blue and red vehicles complete the picture.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 8 spaces."
+      }
+    ]
+  },
+  "28": {
+    "objective": "Clear the red-and-yellow parrot sand picture and empty its vehicle field.",
+    "keyChallenge": "The paired top dark-red cars and the blue top car need upward exits, while yellow and cyan edge vehicles must leave horizontally.",
+    "quickAnswer": "For the red-and-yellow parrot, select the dark red car at x 53%, y 47% toward up, then select the dark red car at x 46%, y 47% toward up. These are selected checkpoints, not consecutive taps. Follow the video for the white releases between the dark-red and blue checkpoints.",
+    "overallStrategy": [
+      "A yellow-headed parrot has a dark-red beak and branch, red wings, and a blue/cyan tail. White background fills the upper corners. Two dark-red cars stand next to one another near the top center of the vehicle field.",
+      "The paired top dark-red cars and the blue top car need upward exits, while yellow and cyan edge vehicles must leave horizontally.",
+      "These are selected checkpoints, not consecutive taps. Follow the video for the white releases between the dark-red and blue checkpoints."
+    ],
+    "startingBoard": "A yellow-headed parrot has a dark-red beak and branch, red wings, and a blue/cyan tail. White background fills the upper corners. Two dark-red cars stand next to one another near the top center of the vehicle field.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The two top dark-red cars leave and white background starts peeling away from the parrot.",
+        "image": "/levels/28/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 28 red-and-yellow parrot starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The yellow body and red wing remain over the branch while the cyan tail and white edges are reduced.",
+        "image": "/levels/28/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 28 red-and-yellow parrot middle board"
+      },
+      {
+        "title": "Clear the final mound",
+        "instruction": "The remaining red wing and dark-red branch form a shallow mound; seven parking spaces are visible before the final collection.",
+        "image": "/levels/28/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 28 red-and-yellow parrot late board"
+      }
+    ],
+    "beforeMove": [
+      "Compare the vehicle with its full-screen coordinates.",
+      "Follow the arrow rather than the nearest same-color vehicle.",
+      "Check the current parking denominator before releasing another bus.",
+      "Use the video for intervening releases between the listed checkpoints."
+    ],
+    "stuckPoint": "The paired top dark-red cars and the blue top car need upward exits, while yellow and cyan edge vehicles must leave horizontally.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 28?",
+        "answer": "A yellow-headed parrot has a dark-red beak and branch, red wings, and a blue/cyan tail. White background fills the upper corners. Two dark-red cars stand next to one another near the top center of the vehicle field."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 28?",
+        "answer": "Select the dark red car at x 53%, y 47% and let it travel up."
+      },
+      {
+        "question": "Does Level 28 use only five parking spaces?",
+        "answer": "No. The recording starts with five and later expands to 7. Its late queue requires the displayed expanded capacity."
+      },
+      {
+        "question": "Is this the complete shortest move list for Level 28?",
+        "answer": "No. The table contains selected action checkpoints in video order. Use the video for the intervening releases; the source reaches the Congratulations screen."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 7,
+      "solutionDuration": "9:09",
+      "criticalRoute": "The paired top dark-red cars and the blue top car need upward exits, while yellow and cyan edge vehicles must leave horizontally."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "dark red",
+        "vehicle": "dark red car",
+        "direction": "up",
+        "row": 1,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 53,
+        "yPercent": 47,
+        "precondition": "The right-hand car of the two adjacent dark-red top cars faces up.",
+        "instruction": "Select the dark red car at x 53%, y 47% and let it travel up.",
+        "result": "The right-hand dark-red position clears and a dark-red collector enters the road.",
+        "purpose": "Open one of the paired top exits.",
+        "risk": "Do not select another dark red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 2,
+        "color": "dark red",
+        "vehicle": "dark red car",
+        "direction": "up",
+        "row": 1,
+        "column": 3,
+        "region": "upper-center",
+        "xPercent": 46,
+        "yPercent": 47,
+        "precondition": "The left-hand dark-red top car is still present beside the empty position.",
+        "instruction": "Select the dark red car at x 46%, y 47% and let it travel up.",
+        "result": "The second dark-red top position becomes empty.",
+        "purpose": "Remove the other top blocker.",
+        "risk": "Do not select another dark red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "up",
+        "row": 1,
+        "column": 4,
+        "region": "upper-center",
+        "xPercent": 60,
+        "yPercent": 47,
+        "precondition": "After the intervening white releases, the top blue car still points up beside the red car.",
+        "instruction": "Select the blue car at x 60%, y 47% and let it travel up.",
+        "result": "The blue top position clears and blue tail sand starts collecting.",
+        "purpose": "Open the blue tail route without selecting the adjacent red car.",
+        "risk": "Do not select another blue vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 4,
+        "color": "yellow",
+        "vehicle": "yellow car",
+        "direction": "left",
+        "row": 6,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 10,
+        "yPercent": 83,
+        "precondition": "The yellow horizontal car is at the lower-left edge above the long dark-red bus.",
+        "instruction": "Select the yellow car at x 10%, y 83% and let it travel left.",
+        "result": "The yellow car leaves left; its lower-left footprint becomes empty.",
+        "purpose": "Collect the exposed yellow edge after the white phase.",
+        "risk": "Do not select another yellow vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "left",
+        "row": 4,
+        "column": 1,
+        "region": "middle-left",
+        "xPercent": 9,
+        "yPercent": 71,
+        "precondition": "The small cyan car lies on the far-left edge below the upper cyan bus.",
+        "instruction": "Select the cyan car at x 9%, y 71% and let it travel left.",
+        "result": "The small cyan position clears and a cyan collector appears on the road.",
+        "purpose": "Start reducing the tail through an independent side exit.",
+        "risk": "Do not select another cyan vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "left",
+        "row": 1,
+        "column": 2,
+        "region": "upper-left",
+        "xPercent": 27,
+        "yPercent": 47,
+        "precondition": "The top cyan car remains after the lower cyan release and subsequent collection.",
+        "instruction": "Select the cyan car at x 27%, y 47% and let it travel left.",
+        "result": "The top cyan position is empty in the next board phase.",
+        "purpose": "Clear the upper cyan edge before the remaining orange and red top group.",
+        "risk": "Do not select another cyan vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The two top dark-red cars leave and white background starts peeling away from the parrot.",
+        "parkingRule": "Start with the five visible slots; do not add a vehicle when they are full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The yellow body and red wing remain over the branch while the cyan tail and white edges are reduced.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 7 spaces."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The remaining red wing and dark-red branch form a shallow mound; seven parking spaces are visible before the final collection.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 7 spaces."
+      }
+    ]
+  },
+  "29": {
+    "objective": "Clear the bitten red apple sand picture and empty its vehicle field.",
+    "keyChallenge": "Red dominates the picture but several small right-edge colors must leave before the crowded red and white center can move.",
+    "quickAnswer": "For the bitten red apple, select the orange car at x 70%, y 55% toward up, then select the red car at x 14%, y 80% toward left. Use the coordinates to distinguish the lower-left red checkpoint from the red buses at the top-left; the top-left vehicles remain on the board during this opening.",
+    "overallStrategy": [
+      "A large red apple with a yellow bite, green leaf, dark-red shadow, and orange highlight sits above blue and cyan bands. A yellow apple slice is at lower left. The vehicle field is dominated by red and white buses, with orange, green, cyan, and yellow exits on the right.",
+      "Red dominates the picture but several small right-edge colors must leave before the crowded red and white center can move.",
+      "Use the coordinates to distinguish the lower-left red checkpoint from the red buses at the top-left; the top-left vehicles remain on the board during this opening."
+    ],
+    "startingBoard": "A large red apple with a yellow bite, green leaf, dark-red shadow, and orange highlight sits above blue and cyan bands. A yellow apple slice is at lower left. The vehicle field is dominated by red and white buses, with orange, green, cyan, and yellow exits on the right.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The upper orange car leaves first and the apple-slice base begins to clear.",
+        "image": "/levels/29/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 29 bitten red apple starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The apple body remains above a narrowing cyan band. Parking expands beyond five as the red and white vehicles are released.",
+        "image": "/levels/29/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 29 bitten red apple middle board"
+      },
+      {
+        "title": "Clear the final mound",
+        "instruction": "Only a low red/green mound and a few red and white vehicles remain; the recording ends on the Congratulations screen.",
+        "image": "/levels/29/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 29 bitten red apple late board"
+      }
+    ],
+    "beforeMove": [
+      "Compare the vehicle with its full-screen coordinates.",
+      "Follow the arrow rather than the nearest same-color vehicle.",
+      "Check the current parking denominator before releasing another bus.",
+      "Use the video for intervening releases between the listed checkpoints."
+    ],
+    "stuckPoint": "Red dominates the picture but several small right-edge colors must leave before the crowded red and white center can move.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 29?",
+        "answer": "A large red apple with a yellow bite, green leaf, dark-red shadow, and orange highlight sits above blue and cyan bands. A yellow apple slice is at lower left. The vehicle field is dominated by red and white buses, with orange, green, cyan, and yellow exits on the right."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 29?",
+        "answer": "Select the orange car at x 70%, y 55% and let it travel up."
+      },
+      {
+        "question": "Does Level 29 use only five parking spaces?",
+        "answer": "No. The recording starts with five and later expands to 8. Its late queue requires the displayed expanded capacity."
+      },
+      {
+        "question": "Is this the complete shortest move list for Level 29?",
+        "answer": "No. The table contains selected action checkpoints in video order. Use the video for the intervening releases; the source reaches the Congratulations screen."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "10:22",
+      "criticalRoute": "Red dominates the picture but several small right-edge colors must leave before the crowded red and white center can move."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "row": 2,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 70,
+        "yPercent": 55,
+        "precondition": "The small orange car is near the upper-right edge beside the green car.",
+        "instruction": "Select the orange car at x 70%, y 55% and let it travel up.",
+        "result": "The orange car leaves upward and its position clears.",
+        "purpose": "Collect the orange base without staging another large red bus.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 2,
+        "color": "red",
+        "vehicle": "red car",
+        "direction": "left",
+        "row": 5,
+        "column": 1,
+        "region": "lower-left",
+        "xPercent": 14,
+        "yPercent": 80,
+        "precondition": "The lower-left red car sits above the long blue bus and below a white car.",
+        "instruction": "Select the red car at x 14%, y 80% and let it travel left.",
+        "result": "That lower-left red position becomes empty and a red collector enters the road.",
+        "purpose": "Open the lower-left red exit.",
+        "risk": "Do not select another red vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 3,
+        "color": "green",
+        "vehicle": "green car",
+        "direction": "right",
+        "row": 4,
+        "column": 5,
+        "region": "middle-right",
+        "xPercent": 82,
+        "yPercent": 68,
+        "precondition": "The green car is on the right edge beside the upper red center bus.",
+        "instruction": "Select the green car at x 82%, y 68% and let it travel right.",
+        "result": "The green car leaves to the right and green sand starts collecting.",
+        "purpose": "Clear the right-edge leaf color.",
+        "risk": "Do not select another green vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 4,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 86,
+        "yPercent": 59,
+        "precondition": "The rightmost cyan car is in the second vehicle row, above the long red bus.",
+        "instruction": "Select the cyan car at x 86%, y 59% and let it travel right.",
+        "result": "The cyan car leaves right and the matching base band drains.",
+        "purpose": "Reduce the cyan base through the outer exit.",
+        "risk": "Do not select another cyan vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 5,
+        "color": "yellow",
+        "vehicle": "yellow car",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 88,
+        "yPercent": 55,
+        "precondition": "The small yellow top-right car remains after the cyan release.",
+        "instruction": "Select the yellow car at x 88%, y 55% and let it travel right.",
+        "result": "The yellow car leaves the upper-right edge.",
+        "purpose": "Collect the yellow slice and bite without filling parking with red.",
+        "risk": "Do not select another yellow vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white car",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 87,
+        "yPercent": 85,
+        "precondition": "The bottom-right white car points right beneath the red bus.",
+        "instruction": "Select the white car at x 87%, y 85% and let it travel right.",
+        "result": "Its bottom-right position clears and white background collection continues.",
+        "purpose": "Use the direct bottom exit before the central white buses.",
+        "risk": "Do not select another white vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 8; do not copy a later queue into the initial row."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The upper orange car leaves first and the apple-slice base begins to clear.",
+        "parkingRule": "Start with the five visible slots; do not add a vehicle when they are full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The apple body remains above a narrowing cyan band. Parking expands beyond five as the red and white vehicles are released.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 8 spaces."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Only a low red/green mound and a few red and white vehicles remain; the recording ends on the Congratulations screen.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 8 spaces."
+      }
+    ]
+  },
+  "30": {
+    "objective": "Clear the flowering cactus sand picture and empty its vehicle field.",
+    "keyChallenge": "Many cyan buses look similar. The bottom blue car, the far-right cyan bus, and the upper-right white car occupy different routes and must not be confused.",
+    "quickAnswer": "For the flowering cactus, select the blue car at x 75%, y 87% toward right, then select the green bus at x 91%, y 87% toward right. Blue appears in two different bottom positions: the right-facing car near x 75% and the downward bus near x 56%. Do not swap these targets.",
+    "overallStrategy": [
+      "A green cactus with white ribs and a yellow/red flower stands against cyan sand. Pink and orange patches flank a blue base and dark-red pot. Cyan buses dominate the lower vehicle field, with a blue right-facing car and a green bus along the bottom edge.",
+      "Many cyan buses look similar. The bottom blue car, the far-right cyan bus, and the upper-right white car occupy different routes and must not be confused.",
+      "Blue appears in two different bottom positions: the right-facing car near x 75% and the downward bus near x 56%. Do not swap these targets."
+    ],
+    "startingBoard": "A green cactus with white ribs and a yellow/red flower stands against cyan sand. Pink and orange patches flank a blue base and dark-red pot. Cyan buses dominate the lower vehicle field, with a blue right-facing car and a green bus along the bottom edge.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The blue base starts draining before the cactus body; the outer right-side vehicles leave while the cyan grid remains dense.",
+        "image": "/levels/30/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 30 flowering cactus starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The cactus and flower remain above the pink and orange side patches; parking has expanded to six.",
+        "image": "/levels/30/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 30 flowering cactus middle board"
+      },
+      {
+        "title": "Clear the final mound",
+        "instruction": "The cactus shrinks to a green/cyan mound and seven parking spaces are visible. The final collectors clear the board before the Congratulations screen.",
+        "image": "/levels/30/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 30 flowering cactus late board"
+      }
+    ],
+    "beforeMove": [
+      "Compare the vehicle with its full-screen coordinates.",
+      "Follow the arrow rather than the nearest same-color vehicle.",
+      "Check the current parking denominator before releasing another bus.",
+      "Use the video for intervening releases between the listed checkpoints."
+    ],
+    "stuckPoint": "Many cyan buses look similar. The bottom blue car, the far-right cyan bus, and the upper-right white car occupy different routes and must not be confused.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 30?",
+        "answer": "A green cactus with white ribs and a yellow/red flower stands against cyan sand. Pink and orange patches flank a blue base and dark-red pot. Cyan buses dominate the lower vehicle field, with a blue right-facing car and a green bus along the bottom edge."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 30?",
+        "answer": "Select the blue car at x 75%, y 87% and let it travel right."
+      },
+      {
+        "question": "Does Level 30 use only five parking spaces?",
+        "answer": "No. The recording starts with five and later expands to 7. Its late queue requires the displayed expanded capacity."
+      },
+      {
+        "question": "Is this the complete shortest move list for Level 30?",
+        "answer": "No. The table contains selected action checkpoints in video order. Use the video for the intervening releases; the source reaches the Congratulations screen."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 9,
+      "solutionDuration": "12:16",
+      "criticalRoute": "Many cyan buses look similar. The bottom blue car, the far-right cyan bus, and the upper-right white car occupy different routes and must not be confused."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "right",
+        "row": 6,
+        "column": 5,
+        "region": "lower-right",
+        "xPercent": 75,
+        "yPercent": 87,
+        "precondition": "The blue horizontal car is on the bottom row, immediately left of the green bus.",
+        "instruction": "Select the blue car at x 75%, y 87% and let it travel right.",
+        "result": "The blue car leaves right and the blue base begins to drain.",
+        "purpose": "Open the base color from the bottom edge.",
+        "risk": "Do not select another blue vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 2,
+        "color": "green",
+        "vehicle": "green bus",
+        "direction": "right",
+        "row": 6,
+        "column": 6,
+        "region": "lower-right",
+        "xPercent": 91,
+        "yPercent": 87,
+        "precondition": "The long green bus occupies the bottom-right corner.",
+        "instruction": "Select the green bus at x 91%, y 87% and let it travel right.",
+        "result": "The green bus leaves through the right edge and green collection begins.",
+        "purpose": "Free the bottom-right route.",
+        "risk": "Do not select another green vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "up",
+        "row": 1,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 93,
+        "yPercent": 49,
+        "precondition": "The tall cyan bus occupies the far upper-right column.",
+        "instruction": "Select the cyan bus at x 93%, y 49% and let it travel up.",
+        "result": "The upper-right vertical cyan footprint becomes empty.",
+        "purpose": "Open the rightmost column without touching the central cyan stack.",
+        "risk": "Do not select another cyan vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 4,
+        "color": "orange",
+        "vehicle": "orange bus",
+        "direction": "right",
+        "row": 2,
+        "column": 6,
+        "region": "upper-right",
+        "xPercent": 88,
+        "yPercent": 56,
+        "precondition": "The orange horizontal bus is just below the vacated upper-right cyan bus.",
+        "instruction": "Select the orange bus at x 88%, y 56% and let it travel right.",
+        "result": "The orange bus leaves right and the orange side patch starts draining.",
+        "purpose": "Clear the next outer-right color.",
+        "risk": "Do not select another orange vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 5,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "down",
+        "row": 6,
+        "column": 4,
+        "region": "lower-center",
+        "xPercent": 56,
+        "yPercent": 87,
+        "precondition": "The blue vertical bus remains at bottom center, below the pink upward car.",
+        "instruction": "Select the blue bus at x 56%, y 87% and let it travel down.",
+        "result": "The bottom-center blue footprint clears and the road gains another blue collector.",
+        "purpose": "Open the central bottom lane.",
+        "risk": "Do not select another blue vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      },
+      {
+        "order": 6,
+        "color": "white",
+        "vehicle": "white car",
+        "direction": "right",
+        "row": 1,
+        "column": 5,
+        "region": "upper-right",
+        "xPercent": 82,
+        "yPercent": 48,
+        "precondition": "The white horizontal car is on the top row, just right of the green bus.",
+        "instruction": "Select the white car at x 82%, y 48% and let it travel right.",
+        "result": "The top white car leaves right and white rib/background sand is collected.",
+        "purpose": "Clear the remaining small top-right exit.",
+        "risk": "Do not select another white vehicle elsewhere in the field; confirm this arrow and edge route first.",
+        "parkingCheck": "Check for an available parking space before this release. The recording starts with five spaces and later uses 7; do not copy a later queue into the initial row."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The blue base starts draining before the cactus body; the outer right-side vehicles leave while the cyan grid remains dense.",
+        "parkingRule": "Start with the five visible slots; do not add a vehicle when they are full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The cactus and flower remain above the pink and orange side patches; parking has expanded to six.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 7 spaces."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The cactus shrinks to a green/cyan mound and seven parking spaces are visible. The final collectors clear the board before the Congratulations screen.",
+        "parkingRule": "Follow the displayed capacity; the recording later reaches 7 spaces."
+      }
+    ]
   }
 }

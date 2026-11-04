@@ -42,6 +42,10 @@ export interface LevelMoveCheckpoint {
   yPercent: number;
   purpose: string;
   parkingCheck: string;
+  precondition?: string;
+  instruction?: string;
+  result?: string;
+  risk?: string;
 }
 
 export interface LevelPhaseMetric {
