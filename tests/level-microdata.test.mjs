@@ -36,8 +36,10 @@ test("every published guide contains useful coordinate-based move checkpoints", 
       assert.ok(move.color.length > 0, `Level ${id} move ${move.order} color`);
       assert.ok(move.vehicle.length > 0, `Level ${id} move ${move.order} vehicle`);
       assert.ok(directions.has(move.direction), `Level ${id} move ${move.order} direction`);
-      assert.ok(move.row >= 1 && move.row <= 6, `Level ${id} move ${move.order} row`);
-      assert.ok(move.column >= 1 && move.column <= 6, `Level ${id} move ${move.order} column`);
+      if (guide.positionSystem !== 'full-frame') {
+        assert.ok(move.row >= 1 && move.row <= 6, `Level ${id} move ${move.order} row`);
+        assert.ok(move.column >= 1 && move.column <= 6, `Level ${id} move ${move.order} column`);
+      }
       assert.ok(move.xPercent >= 0 && move.xPercent <= 100, `Level ${id} move ${move.order} x`);
       assert.ok(move.yPercent >= 0 && move.yPercent <= 100, `Level ${id} move ${move.order} y`);
       assert.ok(move.region.length > 0, `Level ${id} move ${move.order} region`);

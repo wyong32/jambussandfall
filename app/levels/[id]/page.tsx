@@ -191,7 +191,9 @@ export default async function LevelDetailPage({ params }: Props) {
               <section className="mt-14" aria-labelledby="move-checkpoints">
                 <h2 id="move-checkpoints" className="text-3xl font-bold text-foreground">Verified Action Checkpoints</h2>
                 <p className="mt-4 max-w-3xl leading-7 text-muted-foreground">
-                  Positions use the complete portrait screen. Rows run from top to bottom, columns run from left to right, and x/y values are percentages of the full image.
+                  {guide.positionSystem === 'full-frame'
+                    ? 'Positions use x/y percentages of the complete portrait screen, measured from its top-left corner.'
+                    : 'Positions use the complete portrait screen. Rows run from top to bottom, columns run from left to right, and x/y values are percentages of the full image.'}
                 </p>
                 <div className="mt-6 overflow-x-auto border border-border">
                   <table className="w-full min-w-[820px] table-fixed text-left text-sm">
@@ -211,7 +213,7 @@ export default async function LevelDetailPage({ params }: Props) {
                           <td className="px-3 py-4 font-bold text-primary">{move.order}</td>
                           <td className="px-3 py-4 font-semibold capitalize text-foreground">{move.vehicle}</td>
                           <td className="px-3 py-4 leading-6 text-muted-foreground">
-                            <span className="block font-semibold capitalize text-foreground">Row {move.row}, column {move.column}</span>
+                            {guide.positionSystem !== 'full-frame' ? <span className="block font-semibold capitalize text-foreground">Row {move.row}, column {move.column}</span> : null}
                             <span className="block capitalize">{move.region}</span>
                             <span className="block">x {move.xPercent}% · y {move.yPercent}%</span>
                           </td>

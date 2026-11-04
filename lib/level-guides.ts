@@ -35,8 +35,8 @@ export interface LevelMoveCheckpoint {
   color: string;
   vehicle: string;
   direction: LevelMoveDirection;
-  row: number;
-  column: number;
+  row?: number;
+  column?: number;
   region: string;
   xPercent: number;
   yPercent: number;
@@ -56,6 +56,7 @@ export interface LevelPhaseMetric {
 }
 
 export interface VerifiedLevelGuide {
+  positionSystem?: 'full-frame';
   objective: string;
   keyChallenge: string;
   quickAnswer: string;

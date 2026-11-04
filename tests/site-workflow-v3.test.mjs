@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { prepareManifest } from '../scripts/seo-manifest-lib.mjs';
 
 const root = new URL("../", import.meta.url);
 
@@ -62,7 +63,14 @@ test("sitemap uses stable dates and publishes the screenshot finder", async () =
 
   assert.match(sitemap, /seoManifest\.entries/);
   assert.ok(manifest.entries.some((entry) => entry.path === "/find-level/"));
-  assert.ok(manifest.entries.every((entry) => entry.lastModified === expectedLastModified));
+  assert.ok(manifest.entries.every((entry) =>
+    Date.parse(entry.lastModified) >= Date.parse(expectedLastModified) &&
+    Date.parse(entry.lastModified) <= Date.parse(manifest.generatedAt)));
+  const repeat = prepareManifest({ ...manifest,
+    generatedAt: new Date(Date.parse(manifest.generatedAt) + 1000).toISOString(),
+  }, manifest);
+  assert.deepEqual(repeat.entries.map(entry => entry.lastModified),
+    manifest.entries.map(entry => entry.lastModified));
   assert.doesNotMatch(sitemap, /lastModified:\s*new Date\(\)/);
 });
 
