@@ -8,12 +8,16 @@ const manifest = JSON.parse(fs.readFileSync("public/seo-manifest.json", "utf8"))
 const key = fs.readFileSync("public/31f106bf49733ffad3e10177719671d2.txt", "utf8").trim();
 const workflow = fs.readFileSync(".github/workflows/indexnow.yml", "utf8");
 const sitemap = fs.readFileSync("app/sitemap.ts", "utf8");
+const levels = JSON.parse(fs.readFileSync("data/levels.json", "utf8"));
+const blogSource = fs.readFileSync("data/blog-posts.ts", "utf8");
+const blogCount = [...blogSource.matchAll(/\bslug:\s*["']([^"']+)["']/g)].length;
+const expectedRouteCount = 9 + levels.length + blogCount;
 
 test("SEO manifest lists every public canonical route once", () => {
   assert.deepEqual(validateManifest(manifest), []);
-  assert.equal(manifest.entries.length, 37);
-  assert.equal(new Set(manifest.entries.map((entry) => entry.canonicalUrl)).size, 37);
-  assert.ok(manifest.entries.some((entry) => entry.canonicalUrl === "https://jambussandfall.org/levels/25/"));
+  assert.equal(manifest.entries.length, expectedRouteCount);
+  assert.equal(new Set(manifest.entries.map((entry) => entry.canonicalUrl)).size, expectedRouteCount);
+  assert.ok(manifest.entries.some((entry) => entry.canonicalUrl === "https://jambussandfall.org/levels/30/"));
   assert.ok(manifest.entries.some((entry) => entry.canonicalUrl === "https://jambussandfall.org/find-level/"));
 });
 
@@ -32,5 +36,5 @@ test("Sitemap and IndexNow share the same route manifest", async () => {
   assert.match(sitemap, /seoManifest\.entries/);
   const dryRun = await notifyIndexNow({ current: manifest, checkpoint: null });
   assert.equal(dryRun.mode, "dry-run");
-  assert.equal(dryRun.urls, 37);
+  assert.equal(dryRun.urls, expectedRouteCount);
 });

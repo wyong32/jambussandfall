@@ -51,12 +51,18 @@ test("site scripts include the configured analytics tag without advertising", as
 });
 
 test("sitemap uses stable dates and publishes the screenshot finder", async () => {
-  const sitemap = await source("app/sitemap.ts");
+  const [sitemap, site] = await Promise.all([
+    source("app/sitemap.ts"),
+    source("lib/site.ts"),
+  ]);
   const manifest = JSON.parse(await source("public/seo-manifest.json"));
+  const siteUpdatedAt = site.match(/LAST_SITE_UPDATE\s*=\s*["']([^"']+)/)?.[1];
+  assert.ok(siteUpdatedAt);
+  const expectedLastModified = new Date(siteUpdatedAt).toISOString();
 
   assert.match(sitemap, /seoManifest\.entries/);
   assert.ok(manifest.entries.some((entry) => entry.path === "/find-level/"));
-  assert.ok(manifest.entries.every((entry) => entry.lastModified.startsWith("2026-11-02T16:00:00")));
+  assert.ok(manifest.entries.every((entry) => entry.lastModified === expectedLastModified));
   assert.doesNotMatch(sitemap, /lastModified:\s*new Date\(\)/);
 });
 
