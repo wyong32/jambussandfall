@@ -568,5 +568,100 @@
       "width": 576,
       "height": 480
     }
+  },
+  {
+    "levelId": "31",
+    "videoId": "VnGz-uqz118",
+    "coverTime": "0",
+    "guideTimes": [
+      "0",
+      "300",
+      "550"
+    ],
+    "matchTimes": [
+      "0"
+    ],
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 480
+    }
+  },
+  {
+    "levelId": "32",
+    "videoId": "SV7gqvjhVZ0",
+    "coverTime": "0",
+    "guideTimes": [
+      "0",
+      "300",
+      "550"
+    ],
+    "matchTimes": [
+      "0"
+    ],
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 480
+    }
+  },
+  {
+    "levelId": "33",
+    "videoId": "i4RRoFuSReo",
+    "coverTime": "0",
+    "guideTimes": [
+      "0",
+      "350",
+      "620"
+    ],
+    "matchTimes": [
+      "0"
+    ],
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 480
+    }
+  },
+  {
+    "levelId": "34",
+    "videoId": "Z21VUASTIjk",
+    "coverTime": "0",
+    "guideTimes": [
+      "0",
+      "380",
+      "700"
+    ],
+    "matchTimes": [
+      "0"
+    ],
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 480
+    }
+  },
+  {
+    "levelId": "35",
+    "videoId": "FMTde56ACjc",
+    "coverTime": "0",
+    "guideTimes": [
+      "0",
+      "350",
+      "650"
+    ],
+    "matchTimes": [
+      "0"
+    ],
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 480
+    }
   }
 ]

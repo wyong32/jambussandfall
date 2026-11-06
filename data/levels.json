@@ -958,5 +958,170 @@
     "videoDurationIso": "PT12M16S",
     "publishedAt": "2026-11-04",
     "assetVersion": 3
+  },
+  {
+    "id": "31",
+    "title": "Jam Bus:Sandfall Level 31 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/31/cover.webp",
+    "coverImage": "/levels/31/cover.webp",
+    "guideImages": [
+      "/levels/31/steps/step-1.webp",
+      "/levels/31/steps/step-2.webp",
+      "/levels/31/steps/step-3.webp"
+    ],
+    "category": "Levels 31-35",
+    "description": "Clear the red flower with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "Do not confuse the orange top car at x 52% with the orange right-edge car at x 91%; their arrows and routes are different."
+    ],
+    "tags": [
+      "red flower",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "9:54",
+    "videoId": "VnGz-uqz118",
+    "videoUrl": "https://www.youtube.com/embed/VnGz-uqz118",
+    "videoThumbnail": "https://i.ytimg.com/vi/VnGz-uqz118/hqdefault.jpg",
+    "videoDuration": "9:54",
+    "videoTitle": "Jam Bus Sandfall Level 31 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T00:00:00Z",
+    "videoDurationIso": "PT9M54S",
+    "publishedAt": "2026-11-06",
+    "assetVersion": 2
+  },
+  {
+    "id": "32",
+    "title": "Jam Bus:Sandfall Level 32 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/32/cover.webp",
+    "coverImage": "/levels/32/cover.webp",
+    "guideImages": [
+      "/levels/32/steps/step-1.webp",
+      "/levels/32/steps/step-2.webp",
+      "/levels/32/steps/step-3.webp"
+    ],
+    "category": "Levels 31-35",
+    "description": "Clear the green chameleon with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The two diagonal pink cars and the vertical pink car are separate checkpoints. Match both position and arrow before selecting one."
+    ],
+    "tags": [
+      "green chameleon",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "10:01",
+    "videoId": "SV7gqvjhVZ0",
+    "videoUrl": "https://www.youtube.com/embed/SV7gqvjhVZ0",
+    "videoThumbnail": "https://i.ytimg.com/vi/SV7gqvjhVZ0/hqdefault.jpg",
+    "videoDuration": "10:01",
+    "videoTitle": "Jam Bus Sandfall Level 32 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T00:00:00Z",
+    "videoDurationIso": "PT10M1S",
+    "publishedAt": "2026-11-06",
+    "assetVersion": 2
+  },
+  {
+    "id": "33",
+    "title": "Jam Bus:Sandfall Level 33 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/33/cover.webp",
+    "coverImage": "/levels/33/cover.webp",
+    "guideImages": [
+      "/levels/33/steps/step-1.webp",
+      "/levels/33/steps/step-2.webp",
+      "/levels/33/steps/step-3.webp"
+    ],
+    "category": "Levels 31-35",
+    "description": "Clear the iced spiral cake with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The dark-red bus at x 89%, y 74% leaves before the smaller red car at x 92%, y 70%. Use the vehicle size and y-coordinate to separate them."
+    ],
+    "tags": [
+      "iced spiral cake",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "11:41",
+    "videoId": "i4RRoFuSReo",
+    "videoUrl": "https://www.youtube.com/embed/i4RRoFuSReo",
+    "videoThumbnail": "https://i.ytimg.com/vi/i4RRoFuSReo/hqdefault.jpg",
+    "videoDuration": "11:41",
+    "videoTitle": "Jam Bus Sandfall Level 33 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T00:00:00Z",
+    "videoDurationIso": "PT11M41S",
+    "publishedAt": "2026-11-06",
+    "assetVersion": 2
+  },
+  {
+    "id": "34",
+    "title": "Jam Bus:Sandfall Level 34 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/34/cover.webp",
+    "coverImage": "/levels/34/cover.webp",
+    "guideImages": [
+      "/levels/34/steps/step-1.webp",
+      "/levels/34/steps/step-2.webp",
+      "/levels/34/steps/step-3.webp"
+    ],
+    "category": "Levels 31-35",
+    "description": "Clear the flower basket with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The yellow and orange horizontal checkpoints are at the same y-coordinate but opposite sides. Confirm x 88% versus x 10% before tapping."
+    ],
+    "tags": [
+      "flower basket",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "12:51",
+    "videoId": "Z21VUASTIjk",
+    "videoUrl": "https://www.youtube.com/embed/Z21VUASTIjk",
+    "videoThumbnail": "https://i.ytimg.com/vi/Z21VUASTIjk/hqdefault.jpg",
+    "videoDuration": "12:51",
+    "videoTitle": "Jam Bus Sandfall Level 34 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T00:00:00Z",
+    "videoDurationIso": "PT12M51S",
+    "publishedAt": "2026-11-06",
+    "assetVersion": 2
+  },
+  {
+    "id": "35",
+    "title": "Jam Bus:Sandfall Level 35 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/35/cover.webp",
+    "coverImage": "/levels/35/cover.webp",
+    "guideImages": [
+      "/levels/35/steps/step-1.webp",
+      "/levels/35/steps/step-2.webp",
+      "/levels/35/steps/step-3.webp"
+    ],
+    "category": "Levels 31-35",
+    "description": "Clear the blue bird in a flowerpot with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The two yellow cars share y 71% but sit at x 78% and x 9%. Their arrows point up-right and down-left respectively."
+    ],
+    "tags": [
+      "blue bird in a flowerpot",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "12:14",
+    "videoId": "FMTde56ACjc",
+    "videoUrl": "https://www.youtube.com/embed/FMTde56ACjc",
+    "videoThumbnail": "https://i.ytimg.com/vi/FMTde56ACjc/hqdefault.jpg",
+    "videoDuration": "12:14",
+    "videoTitle": "Jam Bus Sandfall Level 35 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T00:00:00Z",
+    "videoDurationIso": "PT12M14S",
+    "publishedAt": "2026-11-06",
+    "assetVersion": 2
   }
 ]
