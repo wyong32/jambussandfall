@@ -1123,5 +1123,170 @@
     "videoDurationIso": "PT12M14S",
     "publishedAt": "2026-11-06",
     "assetVersion": 2
+  },
+  {
+    "id": "36",
+    "title": "Jam Bus:Sandfall Level 36 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/36/cover.webp",
+    "coverImage": "/levels/36/cover.webp",
+    "guideImages": [
+      "/levels/36/steps/step-1.webp",
+      "/levels/36/steps/step-2.webp",
+      "/levels/36/steps/step-3.webp"
+    ],
+    "category": "Levels 36-40",
+    "description": "Clear the wind-up toy beside a red spool with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The cyan checkpoints are at x 90%, x 63%, and x 87%. Use their arrows and vehicle lengths to distinguish them."
+    ],
+    "tags": [
+      "wind-up toy beside a red spool",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "7:39",
+    "videoId": "lYTB-261m9E",
+    "videoUrl": "https://www.youtube.com/embed/lYTB-261m9E",
+    "videoThumbnail": "https://i.ytimg.com/vi/lYTB-261m9E/hqdefault.jpg",
+    "videoDuration": "7:39",
+    "videoTitle": "Jam Bus Sandfall Level 36 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T14:21:24Z",
+    "videoDurationIso": "PT7M39S",
+    "publishedAt": "2026-11-10",
+    "assetVersion": 3
+  },
+  {
+    "id": "37",
+    "title": "Jam Bus:Sandfall Level 37 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/37/cover.webp",
+    "coverImage": "/levels/37/cover.webp",
+    "guideImages": [
+      "/levels/37/steps/step-1.webp",
+      "/levels/37/steps/step-2.webp",
+      "/levels/37/steps/step-3.webp"
+    ],
+    "category": "Levels 36-40",
+    "description": "Clear the golden pastry on a blue and red plate with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "Do not confuse the blue bus at x 78%, y 51% with the one at x 12%, y 80%; they exit in opposite directions."
+    ],
+    "tags": [
+      "golden pastry on a blue and red plate",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "10:20",
+    "videoId": "v4rjrbgLcbM",
+    "videoUrl": "https://www.youtube.com/embed/v4rjrbgLcbM",
+    "videoThumbnail": "https://i.ytimg.com/vi/v4rjrbgLcbM/hqdefault.jpg",
+    "videoDuration": "10:20",
+    "videoTitle": "Jam Bus Sandfall Level 37 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T14:24:03Z",
+    "videoDurationIso": "PT10M20S",
+    "publishedAt": "2026-11-10",
+    "assetVersion": 3
+  },
+  {
+    "id": "38",
+    "title": "Jam Bus:Sandfall Level 38 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/38/cover.webp",
+    "coverImage": "/levels/38/cover.webp",
+    "guideImages": [
+      "/levels/38/steps/step-1.webp",
+      "/levels/38/steps/step-2.webp",
+      "/levels/38/steps/step-3.webp"
+    ],
+    "category": "Levels 36-40",
+    "description": "Clear the red hibiscus with a yellow stamen with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "Five checkpoints sit between x 83% and x 91%. Confirm y-position, arrow, and vehicle length before each release."
+    ],
+    "tags": [
+      "red hibiscus with a yellow stamen",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "8:51",
+    "videoId": "XVSPfkq1t3o",
+    "videoUrl": "https://www.youtube.com/embed/XVSPfkq1t3o",
+    "videoThumbnail": "https://i.ytimg.com/vi/XVSPfkq1t3o/hqdefault.jpg",
+    "videoDuration": "8:51",
+    "videoTitle": "Jam Bus Sandfall Level 38 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T14:22:47Z",
+    "videoDurationIso": "PT8M51S",
+    "publishedAt": "2026-11-10",
+    "assetVersion": 3
+  },
+  {
+    "id": "39",
+    "title": "Jam Bus:Sandfall Level 39 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/39/cover.webp",
+    "coverImage": "/levels/39/cover.webp",
+    "guideImages": [
+      "/levels/39/steps/step-1.webp",
+      "/levels/39/steps/step-2.webp",
+      "/levels/39/steps/step-3.webp"
+    ],
+    "category": "Levels 36-40",
+    "description": "Clear the orange rooster with a green tail with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The blue bus at x 68% and red bus at x 76% share nearly the same y-coordinate. Check the color and column before tapping."
+    ],
+    "tags": [
+      "orange rooster with a green tail",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "7:13",
+    "videoId": "rhSd-IOjxl4",
+    "videoUrl": "https://www.youtube.com/embed/rhSd-IOjxl4",
+    "videoThumbnail": "https://i.ytimg.com/vi/rhSd-IOjxl4/hqdefault.jpg",
+    "videoDuration": "7:13",
+    "videoTitle": "Jam Bus Sandfall Level 39 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T14:21:45Z",
+    "videoDurationIso": "PT7M13S",
+    "publishedAt": "2026-11-10",
+    "assetVersion": 3
+  },
+  {
+    "id": "40",
+    "title": "Jam Bus:Sandfall Level 40 Walkthrough",
+    "difficulty": "Expert",
+    "thumbnail": "/levels/40/cover.webp",
+    "coverImage": "/levels/40/cover.webp",
+    "guideImages": [
+      "/levels/40/steps/step-1.webp",
+      "/levels/40/steps/step-2.webp",
+      "/levels/40/steps/step-3.webp"
+    ],
+    "category": "Levels 36-40",
+    "description": "Clear the dragonfly over green leaves with verified vehicle coordinates, directions, parking checks, and full-interface screenshots.",
+    "guide": [],
+    "tips": [
+      "The first three checkpoints are all left of x 25%. Match the yellow, white, and orange arrows before moving to the green bus at x 70%."
+    ],
+    "tags": [
+      "dragonfly over green leaves",
+      "vehicle routes",
+      "parking checks"
+    ],
+    "completionTime": "9:44",
+    "videoId": "YsnvgNbMAYE",
+    "videoUrl": "https://www.youtube.com/embed/YsnvgNbMAYE",
+    "videoThumbnail": "https://i.ytimg.com/vi/YsnvgNbMAYE/hqdefault.jpg",
+    "videoDuration": "9:44",
+    "videoTitle": "Jam Bus Sandfall Level 40 Walkthrough Solution",
+    "videoUploadDate": "2026-10-18T14:23:23Z",
+    "videoDurationIso": "PT9M44S",
+    "publishedAt": "2026-11-10",
+    "assetVersion": 3
   }
 ]

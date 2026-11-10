@@ -16,7 +16,7 @@ const directions = new Set([
 const guides = JSON.parse(await readFile("data/level-guides.json", "utf8"));
 
 test("every published guide contains verified board statistics", () => {
-  assert.equal(Object.keys(guides).length, 35);
+  assert.equal(Object.keys(guides).length, 40);
 
   for (const [id, guide] of Object.entries(guides)) {
     assert.ok(guide.stats.parkingCapacity >= 5, `Level ${id} initial parking slots`);

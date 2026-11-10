@@ -28,10 +28,10 @@ test("verified Level 1 guide is specific and omits internal production labels", 
 });
 
 test("all published guides contain board-specific copy and three screenshots", () => {
-  assert.equal(Object.keys(guides).length, 35);
+  assert.equal(Object.keys(guides).length, 40);
   const quickAnswers = new Set();
 
-  for (let id = 1; id <= 35; id += 1) {
+  for (let id = 1; id <= 40; id += 1) {
     const guide = guides[String(id)];
     assert.ok(guide, `missing Level ${id} guide`);
     assert.ok(guide.objective.length > 20);
@@ -45,5 +45,5 @@ test("all published guides contain board-specific copy and three screenshots", (
     quickAnswers.add(guide.quickAnswer);
   }
 
-  assert.equal(quickAnswers.size, 35);
+  assert.equal(quickAnswers.size, 40);
 });

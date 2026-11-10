@@ -5,13 +5,13 @@ import test from "node:test";
 const levels = JSON.parse(fs.readFileSync("data/levels.json", "utf8"));
 
 test("level records remain ordered, unique, and limited to source rows", () => {
-  assert.equal(levels.length, 35);
+  assert.equal(levels.length, 40);
   assert.ok(levels.every((level) => typeof level.id === "string"));
   const ids = levels.map((level) => Number(level.id));
   assert.deepEqual(ids, [...ids].sort((a, b) => a - b));
   assert.equal(new Set(ids).size, ids.length);
-  assert.equal(Math.max(...ids), 35);
-  assert.deepEqual(ids, Array.from({ length: 35 }, (_, index) => index + 1));
+  assert.equal(Math.max(...ids), 40);
+  assert.deepEqual(ids, Array.from({ length: 40 }, (_, index) => index + 1));
 });
 
 test("published levels expose workflow v3 assets and video metadata", () => {

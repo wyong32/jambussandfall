@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "fingerprintVersion": "jambussandfall-content-v1",
   "siteUrl": "https://jambussandfall.org",
-  "generatedAt": "2026-11-06T05:22:54.343Z",
+  "generatedAt": "2026-11-10T09:14:07.722Z",
   "entries": [
     {
       "path": "/",
       "canonicalUrl": "https://jambussandfall.org/",
       "indexable": true,
-      "contentFingerprint": "sha256:3bd10fabb793cce1b35f99c5d9b263ca378e46169e270c3ff125b44d3f7b8ec6",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:6b2f3b9c15274bda9d79174ade3d8f9d9fd8560e52bab1b08d9f593594efcbca",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "daily",
       "priority": 1
     },
@@ -80,8 +80,8 @@
       "path": "/find-level/",
       "canonicalUrl": "https://jambussandfall.org/find-level/",
       "indexable": true,
-      "contentFingerprint": "sha256:f10a58d42213b4d0435c1b0f7851c5f7b9e4a66b978d73be8e1a1ec16e19f383",
-      "lastModified": "2026-11-06T05:12:11.719Z",
+      "contentFingerprint": "sha256:509de807c273ed46137edf1b3deb175a394eecb2d1f24e07feb53b1edc2ef666",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "weekly",
       "priority": 0.9
     },
@@ -89,8 +89,8 @@
       "path": "/levels/",
       "canonicalUrl": "https://jambussandfall.org/levels/",
       "indexable": true,
-      "contentFingerprint": "sha256:5f9aa8f2d80275dea56ac0ed99975a47da54acf10c96c8a3c9e11231f3dc386e",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:202c704afdfabcdfdda9ed31dc49e48df55e31988f05a9e5f2a5037c62e07bea",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "weekly",
       "priority": 0.9
     },
@@ -323,8 +323,8 @@
       "path": "/levels/32/",
       "canonicalUrl": "https://jambussandfall.org/levels/32/",
       "indexable": true,
-      "contentFingerprint": "sha256:40b2ac984660057b0b910a09eb41174d47b844219664b97b551d39c2cb283117",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:ac7db0bc4649c6b7bc2361a3e17c02aa87f6f48dbc0a056ad5491df8f7e498ce",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "weekly",
       "priority": 0.8
     },
@@ -332,8 +332,8 @@
       "path": "/levels/33/",
       "canonicalUrl": "https://jambussandfall.org/levels/33/",
       "indexable": true,
-      "contentFingerprint": "sha256:9bd456fa3a3496c29790d11e1680d49bc026db114eb501dddfff9f7371fca545",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:0fd6145c3d68c90d0ae5d2d38c42b6e61530052723aac8f372425966629f5ead",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "weekly",
       "priority": 0.8
     },
@@ -341,8 +341,8 @@
       "path": "/levels/34/",
       "canonicalUrl": "https://jambussandfall.org/levels/34/",
       "indexable": true,
-      "contentFingerprint": "sha256:af139e6fde697f41a01205bc213cf9e12ae907c1666c31681bcb66fe5a55bf27",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:423909c7e875d8229d850d2ea295ab99064c38c45cdde4dab3d30978f01089b7",
+      "lastModified": "2026-11-10T09:13:36.945Z",
       "changeFrequency": "weekly",
       "priority": 0.8
     },
@@ -350,8 +350,44 @@
       "path": "/levels/35/",
       "canonicalUrl": "https://jambussandfall.org/levels/35/",
       "indexable": true,
-      "contentFingerprint": "sha256:73afb048c12091baf3fbd424e2fa0a84f2640bfed48286d5fe12d2eb162e187f",
-      "lastModified": "2026-11-06T05:16:43.368Z",
+      "contentFingerprint": "sha256:67b790daf83d81ef0bacb301584a42f25beecf7d60e2a30ebd6ae90f99a7fb3d",
+      "lastModified": "2026-11-10T09:13:36.945Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/36/",
+      "canonicalUrl": "https://jambussandfall.org/levels/36/",
+      "indexable": true,
+      "contentFingerprint": "sha256:5a91736559f05570451b0c473747460bccc08366530528b58385c20560673ef5",
+      "lastModified": "2026-11-03T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/37/",
+      "canonicalUrl": "https://jambussandfall.org/levels/37/",
+      "indexable": true,
+      "contentFingerprint": "sha256:18ac68c4f4c196b28feca630b11774264bb4518f8ff751cbebc59cdfb29444d7",
+      "lastModified": "2026-11-03T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/38/",
+      "canonicalUrl": "https://jambussandfall.org/levels/38/",
+      "indexable": true,
+      "contentFingerprint": "sha256:65b280ac9e99f7745d1562aa5357cf7f408b6423124a34fc6c69bcdf0c9929ab",
+      "lastModified": "2026-11-03T16:00:00.000Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/39/",
+      "canonicalUrl": "https://jambussandfall.org/levels/39/",
+      "indexable": true,
+      "contentFingerprint": "sha256:39bff559100c884b0e3fcb4e897771d1bd162c46431180870bed57a87d3c2e08",
+      "lastModified": "2026-11-03T16:00:00.000Z",
       "changeFrequency": "weekly",
       "priority": 0.8
     },
@@ -361,6 +397,15 @@
       "indexable": true,
       "contentFingerprint": "sha256:e9a9a6d3703a7a16465e92a900dc9b1bcb2112f6759fafc09b0fa3d05dd00ec4",
       "lastModified": "2026-11-04T10:08:08.419Z",
+      "changeFrequency": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/levels/40/",
+      "canonicalUrl": "https://jambussandfall.org/levels/40/",
+      "indexable": true,
+      "contentFingerprint": "sha256:27f6a8bd6167f049979ab7ca9de3407cfad2c3c9dffe25a4b8f7c5f1cef38cac",
+      "lastModified": "2026-11-03T16:00:00.000Z",
       "changeFrequency": "weekly",
       "priority": 0.8
     },

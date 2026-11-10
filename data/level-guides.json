@@ -5813,5 +5813,885 @@
       }
     ],
     "positionSystem": "full-frame"
+  },
+  "36": {
+    "objective": "Clear the wind-up toy beside a red spool sand picture and empty its vehicle field.",
+    "keyChallenge": "Several cyan vehicles can use different edges, while the opening white and orange vehicles sit in a tight left-side cluster. Match the arrow and coordinates before releasing a same-color vehicle.",
+    "quickAnswer": "For the wind-up toy beside a red spool, select the white bus at x 30%, y 48% toward up, then select the orange car at x 10%, y 69% toward left. The cyan checkpoints are at x 90%, x 63%, and x 87%. Use their arrows and vehicle lengths to distinguish them.",
+    "overallStrategy": [
+      "A yellow and orange wind-up toy stands beside a red spool on a cyan background. White clouds, a red cap, blue shadows, and small orange details divide the picture into several close color groups.",
+      "Several cyan vehicles can use different edges, while the opening white and orange vehicles sit in a tight left-side cluster. Match the arrow and coordinates before releasing a same-color vehicle.",
+      "The cyan checkpoints are at x 90%, x 63%, and x 87%. Use their arrows and vehicle lengths to distinguish them."
+    ],
+    "startingBoard": "A yellow and orange wind-up toy stands beside a red spool on a cyan background. White clouds, a red cap, blue shadows, and small orange details divide the picture into several close color groups.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The first white and orange routes open the upper-left side while most of the toy and cyan background remain intact.",
+        "image": "/levels/36/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 36 wind-up toy beside a red spool starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "Cyan and blue collectors reduce the outer background and expose more of the center vehicle field.",
+        "image": "/levels/36/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 36 wind-up toy beside a red spool middle board"
+      },
+      {
+        "title": "Clear the final color groups",
+        "instruction": "The remaining red, yellow, orange, and blue groups clear after the side routes have created enough parking turnover.",
+        "image": "/levels/36/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 36 wind-up toy beside a red spool late board"
+      }
+    ],
+    "beforeMove": [
+      "Match the vehicle to its full-screen percentage coordinates.",
+      "Confirm the printed arrow and vehicle length before selecting it.",
+      "Start with five parking spaces. Keep one space available.",
+      "Use the video for releases between the selected checkpoints."
+    ],
+    "stuckPoint": "Several cyan vehicles can use different edges, while the opening white and orange vehicles sit in a tight left-side cluster. Match the arrow and coordinates before releasing a same-color vehicle.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 36?",
+        "answer": "A yellow and orange wind-up toy stands beside a red spool on a cyan background. White clouds, a red cap, blue shadows, and small orange details divide the picture into several close color groups."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 36?",
+        "answer": "Select the white bus at x 30%, y 48% and let it travel up."
+      },
+      {
+        "question": "How many parking spaces does Level 36 use?",
+        "answer": "The verified recording uses five parking spaces. Stop releasing vehicles whenever all five are occupied."
+      },
+      {
+        "question": "Does the checkpoint table list every tap in Level 36?",
+        "answer": "No. It records selected actions in video order. The embedded video shows every intervening release and the completed board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "7:39",
+      "criticalRoute": "Several cyan vehicles can use different edges, while the opening white and orange vehicles sit in a tight left-side cluster. Match the arrow and coordinates before releasing a same-color vehicle."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "up",
+        "region": "upper-left",
+        "xPercent": 30,
+        "yPercent": 48,
+        "precondition": "The vertical white bus is exposed near the upper-left edge.",
+        "instruction": "Select the white bus at x 30%, y 48% and let it travel up.",
+        "result": "The white bus leaves upward and its tall footprint becomes empty.",
+        "purpose": "Open the first upper route and begin clearing the white cloud group.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 2,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "left",
+        "region": "middle-left",
+        "xPercent": 10,
+        "yPercent": 69,
+        "precondition": "The orange horizontal car is exposed at the middle-left edge.",
+        "instruction": "Select the orange car at x 10%, y 69% and let it travel left.",
+        "result": "The orange car exits left and the adjacent left lane opens.",
+        "purpose": "Start orange collection through a direct side exit.",
+        "risk": "Do not substitute another orange vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "right",
+        "region": "upper-right",
+        "xPercent": 90,
+        "yPercent": 55,
+        "precondition": "The cyan horizontal bus is the outermost vehicle on the upper-right edge.",
+        "instruction": "Select the cyan bus at x 90%, y 55% and let it travel right.",
+        "result": "The cyan bus leaves right and removes a wide right-edge blocker.",
+        "purpose": "Open the first cyan route on the right side.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "right",
+        "region": "upper-right",
+        "xPercent": 76,
+        "yPercent": 55,
+        "precondition": "The blue horizontal bus now has a clear right route beside the cyan vacancy.",
+        "instruction": "Select the blue bus at x 76%, y 55% and let it travel right.",
+        "result": "The blue bus exits right and the upper-right row opens further.",
+        "purpose": "Begin removing the blue shadow group without using a parking detour.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 5,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "region": "upper-center",
+        "xPercent": 63,
+        "yPercent": 50,
+        "precondition": "The short cyan vertical car is exposed near the top-center edge.",
+        "instruction": "Select the cyan car at x 63%, y 50% and let it travel up.",
+        "result": "The cyan car leaves upward and another cyan collector reaches the picture.",
+        "purpose": "Continue cyan collection from a different edge.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "right",
+        "region": "middle-right",
+        "xPercent": 87,
+        "yPercent": 64,
+        "precondition": "A second cyan horizontal bus is exposed on the middle-right edge.",
+        "instruction": "Select the cyan bus at x 87%, y 64% and let it travel right.",
+        "result": "The bus exits right and clears the next wide cyan footprint.",
+        "purpose": "Keep the cyan group moving after the top-center car.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The first white and orange routes open the upper-left side while most of the toy and cyan background remain intact.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Cyan and blue collectors reduce the outer background and expose more of the center vehicle field.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The remaining red, yellow, orange, and blue groups clear after the side routes have created enough parking turnover.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      }
+    ],
+    "positionSystem": "full-frame"
+  },
+  "37": {
+    "objective": "Clear the golden pastry on a blue and red plate sand picture and empty its vehicle field.",
+    "keyChallenge": "The board uses both top and bottom exits before the middle rows loosen. Two blue buses leave through opposite lower edges, so position and direction matter more than color.",
+    "quickAnswer": "For the golden pastry on a blue and red plate, select the blue car at x 40%, y 78% toward down, then select the white bus at x 89%, y 49% toward up. Do not confuse the blue bus at x 78%, y 51% with the one at x 12%, y 80%; they exit in opposite directions.",
+    "overallStrategy": [
+      "A golden loaf or pastry rests on a blue and red plate against a white background. Yellow highlights and brown crust sections create several similar warm-color regions above a very dense vehicle field.",
+      "The board uses both top and bottom exits before the middle rows loosen. Two blue buses leave through opposite lower edges, so position and direction matter more than color.",
+      "Do not confuse the blue bus at x 78%, y 51% with the one at x 12%, y 80%; they exit in opposite directions."
+    ],
+    "startingBoard": "A golden loaf or pastry rests on a blue and red plate against a white background. Yellow highlights and brown crust sections create several similar warm-color regions above a very dense vehicle field.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "The lower blue car and upper white bus open opposite edges without disturbing the dense center.",
+        "image": "/levels/37/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 37 golden pastry on a blue and red plate starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "The right blue bus and left white bus remove tall blockers, exposing the long yellow route.",
+        "image": "/levels/37/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 37 golden pastry on a blue and red plate middle board"
+      },
+      {
+        "title": "Clear the final color groups",
+        "instruction": "The final plate and pastry colors drain after the bottom-left blue bus releases the lower row.",
+        "image": "/levels/37/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 37 golden pastry on a blue and red plate late board"
+      }
+    ],
+    "beforeMove": [
+      "Match the vehicle to its full-screen percentage coordinates.",
+      "Confirm the printed arrow and vehicle length before selecting it.",
+      "Start with five parking spaces and follow the displayed expansion to 6. Keep one space available.",
+      "Use the video for releases between the selected checkpoints."
+    ],
+    "stuckPoint": "The board uses both top and bottom exits before the middle rows loosen. Two blue buses leave through opposite lower edges, so position and direction matter more than color.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 37?",
+        "answer": "A golden loaf or pastry rests on a blue and red plate against a white background. Yellow highlights and brown crust sections create several similar warm-color regions above a very dense vehicle field."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 37?",
+        "answer": "Select the blue car at x 40%, y 78% and let it travel down."
+      },
+      {
+        "question": "How many parking spaces does Level 37 use?",
+        "answer": "The recording starts with five parking spaces and later expands to 6. Follow the denominator shown on the current board."
+      },
+      {
+        "question": "Does the checkpoint table list every tap in Level 37?",
+        "answer": "No. It records selected actions in video order. The embedded video shows every intervening release and the completed board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 6,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "10:20",
+      "criticalRoute": "The board uses both top and bottom exits before the middle rows loosen. Two blue buses leave through opposite lower edges, so position and direction matter more than color."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "down",
+        "region": "lower-center",
+        "xPercent": 40,
+        "yPercent": 78,
+        "precondition": "The small blue vertical car is exposed near the lower-left center.",
+        "instruction": "Select the blue car at x 40%, y 78% and let it travel down.",
+        "result": "The blue car leaves downward and its lower footprint clears.",
+        "purpose": "Start the plate color through a direct bottom exit.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 89,
+        "yPercent": 49,
+        "precondition": "The tall white vehicle is exposed on the upper-right edge.",
+        "instruction": "Select the white bus at x 89%, y 49% and let it travel up.",
+        "result": "The white bus exits upward and opens the upper-right column.",
+        "purpose": "Reduce the white background and remove a tall edge blocker.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 3,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "right",
+        "region": "upper-right",
+        "xPercent": 78,
+        "yPercent": 51,
+        "precondition": "The long blue bus has a clear route along the upper-right row.",
+        "instruction": "Select the blue bus at x 78%, y 51% and let it travel right.",
+        "result": "The blue bus leaves right and creates a wide opening below the white vacancy.",
+        "purpose": "Continue the plate color from the right edge.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 4,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "up",
+        "region": "upper-left",
+        "xPercent": 12,
+        "yPercent": 49,
+        "precondition": "The second tall white bus is exposed on the upper-left edge.",
+        "instruction": "Select the white bus at x 12%, y 49% and let it travel up.",
+        "result": "The white bus leaves upward and clears the opposite top column.",
+        "purpose": "Balance the white exits before releasing central warm colors.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 5,
+        "color": "yellow",
+        "vehicle": "yellow bus",
+        "direction": "left",
+        "region": "upper-left",
+        "xPercent": 15,
+        "yPercent": 55,
+        "precondition": "The long yellow bus is now exposed on the upper-left side.",
+        "instruction": "Select the yellow bus at x 15%, y 55% and let it travel left.",
+        "result": "The yellow bus exits left and yellow pastry sand begins to drain.",
+        "purpose": "Open the first warm-color route after both white columns move.",
+        "risk": "Do not substitute another yellow vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 6,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "left",
+        "region": "lower-left",
+        "xPercent": 12,
+        "yPercent": 80,
+        "precondition": "The long blue bus is exposed at the lower-left edge.",
+        "instruction": "Select the blue bus at x 12%, y 80% and let it travel left.",
+        "result": "The blue bus leaves left and clears the lower-left row.",
+        "purpose": "Finish the selected blue edge routes and improve parking turnover.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "The lower blue car and upper white bus open opposite edges without disturbing the dense center.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The right blue bus and left white bus remove tall blockers, exposing the long yellow route.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The final plate and pastry colors drain after the bottom-left blue bus releases the lower row.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      }
+    ],
+    "positionSystem": "full-frame"
+  },
+  "38": {
+    "objective": "Clear the red hibiscus with a yellow stamen sand picture and empty its vehicle field.",
+    "keyChallenge": "Several vehicles occupy the far-right edge at different heights. The first five selected checkpoints all use that side, but their directions alternate between up, right, and down.",
+    "quickAnswer": "For the red hibiscus with a yellow stamen, select the yellow car at x 91%, y 52% toward up, then select the red bus at x 91%, y 70% toward right. Five checkpoints sit between x 83% and x 91%. Confirm y-position, arrow, and vehicle length before each release.",
+    "overallStrategy": [
+      "A red hibiscus with orange side petals and a yellow stamen fills the picture. Cyan, white, and blue background bands surround the flower above a field with many long white and red vehicles.",
+      "Several vehicles occupy the far-right edge at different heights. The first five selected checkpoints all use that side, but their directions alternate between up, right, and down.",
+      "Five checkpoints sit between x 83% and x 91%. Confirm y-position, arrow, and vehicle length before each release."
+    ],
+    "startingBoard": "A red hibiscus with orange side petals and a yellow stamen fills the picture. Cyan, white, and blue background bands surround the flower above a field with many long white and red vehicles.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "Yellow and red routes begin removing the stamen and outer petal sections from the right edge.",
+        "image": "/levels/38/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 38 red hibiscus with a yellow stamen starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "Cyan and blue vehicles open the right column while the central red flower remains visible.",
+        "image": "/levels/38/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 38 red hibiscus with a yellow stamen middle board"
+      },
+      {
+        "title": "Clear the final color groups",
+        "instruction": "White and cyan exits reduce the background before the final red and orange groups clear.",
+        "image": "/levels/38/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 38 red hibiscus with a yellow stamen late board"
+      }
+    ],
+    "beforeMove": [
+      "Match the vehicle to its full-screen percentage coordinates.",
+      "Confirm the printed arrow and vehicle length before selecting it.",
+      "Start with five parking spaces. Keep one space available.",
+      "Use the video for releases between the selected checkpoints."
+    ],
+    "stuckPoint": "Several vehicles occupy the far-right edge at different heights. The first five selected checkpoints all use that side, but their directions alternate between up, right, and down.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 38?",
+        "answer": "A red hibiscus with orange side petals and a yellow stamen fills the picture. Cyan, white, and blue background bands surround the flower above a field with many long white and red vehicles."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 38?",
+        "answer": "Select the yellow car at x 91%, y 52% and let it travel up."
+      },
+      {
+        "question": "How many parking spaces does Level 38 use?",
+        "answer": "The verified recording uses five parking spaces. Stop releasing vehicles whenever all five are occupied."
+      },
+      {
+        "question": "Does the checkpoint table list every tap in Level 38?",
+        "answer": "No. It records selected actions in video order. The embedded video shows every intervening release and the completed board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 5,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "8:51",
+      "criticalRoute": "Several vehicles occupy the far-right edge at different heights. The first five selected checkpoints all use that side, but their directions alternate between up, right, and down."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "yellow",
+        "vehicle": "yellow car",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 91,
+        "yPercent": 52,
+        "precondition": "The short yellow vertical car is exposed at the upper-right edge.",
+        "instruction": "Select the yellow car at x 91%, y 52% and let it travel up.",
+        "result": "The yellow car leaves upward and the top-right footprint clears.",
+        "purpose": "Start removing the yellow stamen color.",
+        "risk": "Do not substitute another yellow vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 2,
+        "color": "red",
+        "vehicle": "red bus",
+        "direction": "right",
+        "region": "middle-right",
+        "xPercent": 91,
+        "yPercent": 70,
+        "precondition": "The long red horizontal bus is exposed on the middle-right edge.",
+        "instruction": "Select the red bus at x 91%, y 70% and let it travel right.",
+        "result": "The red bus exits right and opens a wide middle-right lane.",
+        "purpose": "Begin draining the large red flower group.",
+        "risk": "Do not substitute another red vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 3,
+        "color": "cyan",
+        "vehicle": "cyan car",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 83,
+        "yPercent": 52,
+        "precondition": "The cyan vertical car is exposed near the upper-right after the yellow exit.",
+        "instruction": "Select the cyan car at x 83%, y 52% and let it travel up.",
+        "result": "The cyan car leaves upward and cyan background collection starts.",
+        "purpose": "Open the next top route without selecting a white neighbor.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue car",
+        "direction": "down",
+        "region": "lower-right",
+        "xPercent": 83,
+        "yPercent": 78,
+        "precondition": "The blue vertical car is exposed near the lower-right edge.",
+        "instruction": "Select the blue car at x 83%, y 78% and let it travel down.",
+        "result": "The blue car exits downward and its lower footprint clears.",
+        "purpose": "Start the blue background band through the bottom edge.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 5,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 90,
+        "yPercent": 57,
+        "precondition": "The tall white bus now has a clear route on the far-right edge.",
+        "instruction": "Select the white bus at x 90%, y 57% and let it travel up.",
+        "result": "The white bus leaves upward and removes a large right-column blocker.",
+        "purpose": "Reduce the white background after the colored edge routes open.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "up",
+        "region": "upper-left",
+        "xPercent": 11,
+        "yPercent": 51,
+        "precondition": "The tall cyan bus is exposed on the upper-left edge.",
+        "instruction": "Select the cyan bus at x 11%, y 51% and let it travel up.",
+        "result": "The cyan bus exits upward and opens the opposite top column.",
+        "purpose": "Continue cyan collection from the left side.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces. Confirm a space is free before this release."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "Yellow and red routes begin removing the stamen and outer petal sections from the right edge.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Cyan and blue vehicles open the right column while the central red flower remains visible.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "White and cyan exits reduce the background before the final red and orange groups clear.",
+        "parkingRule": "Use the five visible spaces and wait for a collector to free a space before another release."
+      }
+    ],
+    "positionSystem": "full-frame"
+  },
+  "39": {
+    "objective": "Clear the orange rooster with a green tail sand picture and empty its vehicle field.",
+    "keyChallenge": "The layout looks open, but white and green horizontal vehicles use opposite sides. The top-right dark-red, blue, and red vertical vehicles must be separated by x-coordinate.",
+    "quickAnswer": "For the orange rooster with a green tail, select the white bus at x 11%, y 52% toward right, then select the green bus at x 25%, y 52% toward left. The blue bus at x 68% and red bus at x 76% share nearly the same y-coordinate. Check the color and column before tapping.",
+    "overallStrategy": [
+      "An orange rooster has a red comb, yellow body highlights, and a green tail. Blue and green ground bands sit below it, while white background sections separate several similar side vehicles.",
+      "The layout looks open, but white and green horizontal vehicles use opposite sides. The top-right dark-red, blue, and red vertical vehicles must be separated by x-coordinate.",
+      "The blue bus at x 68% and red bus at x 76% share nearly the same y-coordinate. Check the color and column before tapping."
+    ],
+    "startingBoard": "An orange rooster has a red comb, yellow body highlights, and a green tail. Blue and green ground bands sit below it, while white background sections separate several similar side vehicles.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "White and green side buses open the upper row while the rooster picture stays mostly complete.",
+        "image": "/levels/39/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 39 orange rooster with a green tail starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "Dark-red, blue, and red top routes remove the comb and background bands in sequence.",
+        "image": "/levels/39/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 39 orange rooster with a green tail middle board"
+      },
+      {
+        "title": "Clear the final color groups",
+        "instruction": "The remaining orange, yellow, green, and blue sections clear after the second green side route opens.",
+        "image": "/levels/39/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 39 orange rooster with a green tail late board"
+      }
+    ],
+    "beforeMove": [
+      "Match the vehicle to its full-screen percentage coordinates.",
+      "Confirm the printed arrow and vehicle length before selecting it.",
+      "Start with five parking spaces and follow the displayed expansion to 8. Keep one space available.",
+      "Use the video for releases between the selected checkpoints."
+    ],
+    "stuckPoint": "The layout looks open, but white and green horizontal vehicles use opposite sides. The top-right dark-red, blue, and red vertical vehicles must be separated by x-coordinate.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 39?",
+        "answer": "An orange rooster has a red comb, yellow body highlights, and a green tail. Blue and green ground bands sit below it, while white background sections separate several similar side vehicles."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 39?",
+        "answer": "Select the white bus at x 11%, y 52% and let it travel right."
+      },
+      {
+        "question": "How many parking spaces does Level 39 use?",
+        "answer": "The recording starts with five parking spaces and later expands to 8. Follow the denominator shown on the current board."
+      },
+      {
+        "question": "Does the checkpoint table list every tap in Level 39?",
+        "answer": "No. It records selected actions in video order. The embedded video shows every intervening release and the completed board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 8,
+      "verifiedMoveCount": 6,
+      "colorCount": 8,
+      "solutionDuration": "7:13",
+      "criticalRoute": "The layout looks open, but white and green horizontal vehicles use opposite sides. The top-right dark-red, blue, and red vertical vehicles must be separated by x-coordinate."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "right",
+        "region": "upper-left",
+        "xPercent": 11,
+        "yPercent": 52,
+        "precondition": "The long white bus is exposed on the upper-left edge.",
+        "instruction": "Select the white bus at x 11%, y 52% and let it travel right.",
+        "result": "The white bus moves right and its left footprint becomes empty.",
+        "purpose": "Open the white background route across the top row.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      },
+      {
+        "order": 2,
+        "color": "green",
+        "vehicle": "green bus",
+        "direction": "left",
+        "region": "upper-left",
+        "xPercent": 25,
+        "yPercent": 52,
+        "precondition": "The long green bus has a clear route toward the left edge.",
+        "instruction": "Select the green bus at x 25%, y 52% and let it travel left.",
+        "result": "The green bus leaves left and green tail collection begins.",
+        "purpose": "Use the vacancy created by the white bus to open green.",
+        "risk": "Do not substitute another green vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      },
+      {
+        "order": 3,
+        "color": "dark red",
+        "vehicle": "dark red car",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 91,
+        "yPercent": 52,
+        "precondition": "The dark-red vertical car is exposed at the upper-right edge.",
+        "instruction": "Select the dark red car at x 91%, y 52% and let it travel up.",
+        "result": "The car exits upward and the top-right red footprint clears.",
+        "purpose": "Start removing the rooster comb color.",
+        "risk": "Do not substitute another dark red vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      },
+      {
+        "order": 4,
+        "color": "blue",
+        "vehicle": "blue bus",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 68,
+        "yPercent": 54,
+        "precondition": "The tall blue bus is exposed near the upper-right center.",
+        "instruction": "Select the blue bus at x 68%, y 54% and let it travel up.",
+        "result": "The blue bus leaves upward and blue ground collection starts.",
+        "purpose": "Open the first tall top-center route.",
+        "risk": "Do not substitute another blue vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      },
+      {
+        "order": 5,
+        "color": "red",
+        "vehicle": "red bus",
+        "direction": "up",
+        "region": "upper-right",
+        "xPercent": 76,
+        "yPercent": 54,
+        "precondition": "The tall red bus beside the blue vacancy now has a clear top route.",
+        "instruction": "Select the red bus at x 76%, y 54% and let it travel up.",
+        "result": "The red bus exits upward and opens the adjacent column.",
+        "purpose": "Continue the red group without using the dark-red car position.",
+        "risk": "Do not substitute another red vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      },
+      {
+        "order": 6,
+        "color": "green",
+        "vehicle": "green bus",
+        "direction": "right",
+        "region": "upper-center",
+        "xPercent": 39,
+        "yPercent": 57,
+        "precondition": "A second green horizontal bus is exposed in the upper-middle field.",
+        "instruction": "Select the green bus at x 39%, y 57% and let it travel right.",
+        "result": "The green bus leaves right and clears a wide center footprint.",
+        "purpose": "Continue green collection from the opposite direction.",
+        "risk": "Do not substitute another green vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 8. Confirm a space is free before this release."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "White and green side buses open the upper row while the rooster picture stays mostly complete.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 8. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Dark-red, blue, and red top routes remove the comb and background bands in sequence.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 8. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The remaining orange, yellow, green, and blue sections clear after the second green side route opens.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 8. Wait when the current capacity is full."
+      }
+    ],
+    "positionSystem": "full-frame"
+  },
+  "40": {
+    "objective": "Clear the dragonfly over green leaves sand picture and empty its vehicle field.",
+    "keyChallenge": "The left side contains several short yellow, white, and orange vehicles close together. Later checkpoints move to the center and right, so a matching color in the wrong region can block the intended route.",
+    "quickAnswer": "For the dragonfly over green leaves, select the yellow car at x 18%, y 50% toward up, then select the white bus at x 11%, y 58% toward left. The first three checkpoints are all left of x 25%. Match the yellow, white, and orange arrows before moving to the green bus at x 70%.",
+    "overallStrategy": [
+      "A dragonfly spreads cyan wings with purple spots above green leaves. Its red body, yellow abdomen, white highlights, and orange details create many small color regions around a dense vehicle cluster.",
+      "The left side contains several short yellow, white, and orange vehicles close together. Later checkpoints move to the center and right, so a matching color in the wrong region can block the intended route.",
+      "The first three checkpoints are all left of x 25%. Match the yellow, white, and orange arrows before moving to the green bus at x 70%."
+    ],
+    "startingBoard": "A dragonfly spreads cyan wings with purple spots above green leaves. Its red body, yellow abdomen, white highlights, and orange details create many small color regions around a dense vehicle cluster.",
+    "steps": [
+      {
+        "title": "Open the outer routes",
+        "instruction": "Yellow, white, and orange releases open the crowded left side and begin clearing the wing highlights.",
+        "image": "/levels/40/steps/step-1.webp",
+        "imageAlt": "Jam Bus Sandfall Level 40 dragonfly over green leaves starting board"
+      },
+      {
+        "title": "Reduce the central picture",
+        "instruction": "Green and yellow routes reduce the leaves and body accents while the central rows loosen.",
+        "image": "/levels/40/steps/step-2.webp",
+        "imageAlt": "Jam Bus Sandfall Level 40 dragonfly over green leaves middle board"
+      },
+      {
+        "title": "Clear the final color groups",
+        "instruction": "The cyan wing group and remaining purple, red, and green sections clear after the side lanes stay open.",
+        "image": "/levels/40/steps/step-3.webp",
+        "imageAlt": "Jam Bus Sandfall Level 40 dragonfly over green leaves late board"
+      }
+    ],
+    "beforeMove": [
+      "Match the vehicle to its full-screen percentage coordinates.",
+      "Confirm the printed arrow and vehicle length before selecting it.",
+      "Start with five parking spaces and follow the displayed expansion to 6. Keep one space available.",
+      "Use the video for releases between the selected checkpoints."
+    ],
+    "stuckPoint": "The left side contains several short yellow, white, and orange vehicles close together. Later checkpoints move to the center and right, so a matching color in the wrong region can block the intended route.",
+    "faqs": [
+      {
+        "question": "What picture appears in Level 40?",
+        "answer": "A dragonfly spreads cyan wings with purple spots above green leaves. Its red body, yellow abdomen, white highlights, and orange details create many small color regions around a dense vehicle cluster."
+      },
+      {
+        "question": "Which vehicle should I select first in Level 40?",
+        "answer": "Select the yellow car at x 18%, y 50% and let it travel up."
+      },
+      {
+        "question": "How many parking spaces does Level 40 use?",
+        "answer": "The recording starts with five parking spaces and later expands to 6. Follow the denominator shown on the current board."
+      },
+      {
+        "question": "Does the checkpoint table list every tap in Level 40?",
+        "answer": "No. It records selected actions in video order. The embedded video shows every intervening release and the completed board."
+      }
+    ],
+    "stats": {
+      "parkingCapacity": 6,
+      "verifiedMoveCount": 6,
+      "colorCount": 9,
+      "solutionDuration": "9:44",
+      "criticalRoute": "The left side contains several short yellow, white, and orange vehicles close together. Later checkpoints move to the center and right, so a matching color in the wrong region can block the intended route."
+    },
+    "moveCheckpoints": [
+      {
+        "order": 1,
+        "color": "yellow",
+        "vehicle": "yellow car",
+        "direction": "up",
+        "region": "upper-left",
+        "xPercent": 18,
+        "yPercent": 50,
+        "precondition": "The short yellow vertical car is exposed near the upper-left edge.",
+        "instruction": "Select the yellow car at x 18%, y 50% and let it travel up.",
+        "result": "The yellow car leaves upward and clears its top footprint.",
+        "purpose": "Open the first yellow accent route.",
+        "risk": "Do not substitute another yellow vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 2,
+        "color": "white",
+        "vehicle": "white bus",
+        "direction": "left",
+        "region": "upper-left",
+        "xPercent": 11,
+        "yPercent": 58,
+        "precondition": "The long white bus is exposed on the middle-left edge.",
+        "instruction": "Select the white bus at x 11%, y 58% and let it travel left.",
+        "result": "The white bus exits left and opens a wide left-side lane.",
+        "purpose": "Start removing white wing highlights.",
+        "risk": "Do not substitute another white vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 3,
+        "color": "orange",
+        "vehicle": "orange car",
+        "direction": "up",
+        "region": "upper-left",
+        "xPercent": 24,
+        "yPercent": 58,
+        "precondition": "The short orange vertical car is exposed beside the white vacancy.",
+        "instruction": "Select the orange car at x 24%, y 58% and let it travel up.",
+        "result": "The orange car leaves upward and its small footprint clears.",
+        "purpose": "Open the orange detail group without using a center vehicle.",
+        "risk": "Do not substitute another orange vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 4,
+        "color": "green",
+        "vehicle": "green bus",
+        "direction": "right",
+        "region": "upper-right",
+        "xPercent": 70,
+        "yPercent": 53,
+        "precondition": "The long green bus is exposed on the upper-right side.",
+        "instruction": "Select the green bus at x 70%, y 53% and let it travel right.",
+        "result": "The green bus exits right and opens the right lane.",
+        "purpose": "Begin removing the green leaf sections.",
+        "risk": "Do not substitute another green vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 5,
+        "color": "yellow",
+        "vehicle": "yellow bus",
+        "direction": "up",
+        "region": "upper-center",
+        "xPercent": 50,
+        "yPercent": 51,
+        "precondition": "The tall yellow bus is exposed at the top-center edge.",
+        "instruction": "Select the yellow bus at x 50%, y 51% and let it travel up.",
+        "result": "The yellow bus leaves upward and clears the center column.",
+        "purpose": "Continue the yellow abdomen group from the center.",
+        "risk": "Do not substitute another yellow vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      },
+      {
+        "order": 6,
+        "color": "cyan",
+        "vehicle": "cyan bus",
+        "direction": "left",
+        "region": "upper-center",
+        "xPercent": 36,
+        "yPercent": 49,
+        "precondition": "The cyan horizontal bus has a clear route along the upper-left row.",
+        "instruction": "Select the cyan bus at x 36%, y 49% and let it travel left.",
+        "result": "The cyan bus exits left and cyan wing collection begins.",
+        "purpose": "Open the large cyan color group after the neighboring columns move.",
+        "risk": "Do not substitute another cyan vehicle. Match its arrow, size, and full-screen coordinates.",
+        "parkingCheck": "The recording starts with five spaces and later expands to 6. Confirm a space is free before this release."
+      }
+    ],
+    "phaseMetrics": [
+      {
+        "phase": "Opening",
+        "moveRange": "Checkpoints 1-6 and intervening releases",
+        "boardState": "Yellow, white, and orange releases open the crowded left side and begin clearing the wing highlights.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Middle board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "Green and yellow routes reduce the leaves and body accents while the central rows loosen.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      },
+      {
+        "phase": "Late board",
+        "moveRange": "After checkpoint 6",
+        "boardState": "The cyan wing group and remaining purple, red, and green sections clear after the side lanes stay open.",
+        "parkingRule": "Start with five spaces and follow the displayed expansion to 6. Wait when the current capacity is full."
+      }
+    ],
+    "positionSystem": "full-frame"
   }
 }
