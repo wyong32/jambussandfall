@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
 import { ArrowRight, BusFront, ChevronLeft, ChevronRight, ScanSearch, Search, Waypoints } from "lucide-react";
 import { getLevelById } from "@/lib/data";
-import { MAX_LEVEL } from "@/lib/level-utils";
+import { MAX_LEVEL, TOTAL_GUIDES } from "@/lib/level-utils";
 
 const gameplayImages = [
   {
@@ -76,7 +76,7 @@ export function HeroSection() {
           </form>
 
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#31515b]">
-            <span className="inline-flex items-center gap-2"><BusFront className="h-4 w-4 text-[#d9480f]" />20 verified guides</span>
+            <span className="inline-flex items-center gap-2"><BusFront className="h-4 w-4 text-[#d9480f]" />{TOTAL_GUIDES} verified guides</span>
             <span className="inline-flex items-center gap-2"><Waypoints className="h-4 w-4 text-[#0b7285]" />Board-specific routing notes</span>
             <Link href="/find-level/" className="inline-flex items-center gap-2 text-[#b93d0d] hover:underline">
               <ScanSearch className="h-4 w-4" aria-hidden="true" />

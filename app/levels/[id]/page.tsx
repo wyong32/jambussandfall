@@ -16,7 +16,7 @@ import { Footer } from "@/components/footer";
 import { YouTubePlayer } from "@/components/youtube-player";
 import { getAllLevels, getLevelById, getLevelCover } from "@/lib/data";
 import { getLevelFaqs, getVerifiedLevelGuide } from "@/lib/level-guides";
-import { APP_STORE_URL, GAME_NAME, GOOGLE_PLAY_URL } from "@/lib/site";
+import { APP_STORE_URL, GAME_NAME, GOOGLE_PLAY_URL, LAST_SITE_UPDATE } from "@/lib/site";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -37,6 +37,12 @@ export default async function LevelDetailPage({ params }: Props) {
   const faqs = getLevelFaqs(id, guide);
   const cover = getLevelCover(level);
   const shareUrl = `https://jambussandfall.org/levels/${id}/`;
+  const updatedDate = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(level.publishedAt ? `${level.publishedAt}T00:00:00Z` : LAST_SITE_UPDATE));
 
   return (
     <div>
@@ -61,7 +67,7 @@ export default async function LevelDetailPage({ params }: Props) {
             </p>
 
             <div className="mt-7 flex flex-col gap-4 border-t border-border pt-5 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated November {Number(id) >= 26 ? 4 : 3}, 2026</p>
+              <p>By <strong className="text-foreground">JamBusSandfall.org Guide Team</strong> · Updated {updatedDate}</p>
               <CompactShare title={`Jam Bus:Sandfall Level ${id} Walkthrough`} url={shareUrl} />
             </div>
 

@@ -59,14 +59,14 @@ const shared = sourceBundle([
 ]);
 const pageDate = new Date(siteUpdatedAt).toISOString();
 
-function entry(pathname, content, changeFrequency, priority) {
+function entry(pathname, content, changeFrequency, priority, lastModified = pageDate) {
   const normalizedPath = pathname.endsWith("/") ? pathname : `${pathname}/`;
   return {
     path: normalizedPath,
     canonicalUrl: new URL(normalizedPath, siteUrl).href,
     indexable: true,
     contentFingerprint: fingerprint(shared, content),
-    lastModified: pageDate,
+    lastModified,
     changeFrequency,
     priority,
   };
@@ -91,7 +91,10 @@ for (const level of levels) {
     .sort((left, right) => Math.abs(Number(left.id) - Number(level.id)) - Math.abs(Number(right.id) - Number(level.id)))
     .slice(0, 8)
     .map(({ id, coverImage, title }) => ({ id, coverImage, title }));
-  entries.push(entry(`/levels/${level.id}/`, [levelTemplate, level, guides[level.id], related], "weekly", 0.8));
+  const levelDate = level.publishedAt
+    ? new Date(`${level.publishedAt}T00:00:00+08:00`).toISOString()
+    : pageDate;
+  entries.push(entry(`/levels/${level.id}/`, [levelTemplate, level, guides[level.id], related], "weekly", 0.8, levelDate));
 }
 
 const blogTemplate = sourceBundle(["app/blog/[slug]/page.tsx", "app/blog/[slug]/layout.tsx"]);

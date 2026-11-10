@@ -33,6 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `Jam Bus:Sandfall Level ${id} Walkthrough & Solution`;
   const description = `Solve Jam Bus:Sandfall Level ${id} with the complete video walkthrough, board comparison, related levels, and checked written steps when available.`;
   const image = absoluteImage(getLevelCover(level));
+  const publicationTime = level.publishedAt
+    ? `${level.publishedAt}T00:00:00+08:00`
+    : LAST_SITE_UPDATE;
 
   return {
     title,
@@ -52,8 +55,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: SITE_NAME,
       title,
       description,
-      publishedTime: LAST_SITE_UPDATE,
-      modifiedTime: LAST_SITE_UPDATE,
+      publishedTime: publicationTime,
+      modifiedTime: publicationTime,
       images: [{ url: image, width: 600, height: 500, alt: `Jam Bus:Sandfall Level ${id} board and walkthrough` }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
@@ -74,6 +77,9 @@ export default async function LevelLayout({ params, children }: Props) {
   const guide = getVerifiedLevelGuide(id);
   const faqs = getLevelFaqs(id, guide);
   const thumbnail = absoluteImage(getLevelCover(level));
+  const publicationTime = level.publishedAt
+    ? `${level.publishedAt}T00:00:00+08:00`
+    : LAST_SITE_UPDATE;
   const videoObject = level.videoUrl && level.videoUploadDate && level.videoDurationIso
     ? {
         "@type": "VideoObject",
@@ -97,8 +103,8 @@ export default async function LevelLayout({ params, children }: Props) {
         headline: `Jam Bus:Sandfall Level ${id} Walkthrough and Solution`,
         description: guide?.quickAnswer || `Complete video solution and board guide for Jam Bus:Sandfall Level ${id}.`,
         image: [thumbnail],
-        datePublished: LAST_SITE_UPDATE,
-        dateModified: LAST_SITE_UPDATE,
+        datePublished: publicationTime,
+        dateModified: publicationTime,
         mainEntityOfPage: url,
         author: { "@type": "Organization", name: "JamBusSandfall.org Guide Team", url: canonical("/about-us/") },
         publisher: { "@type": "Organization", name: SITE_NAME, url: canonical() },

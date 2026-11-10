@@ -48,6 +48,14 @@ export default function LevelsPage() {
         <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground"><CalendarDays className="h-4 w-4" />First published November 2, 2026</div>
         <div className="mt-8"><LevelGrid levels={filtered} /></div>
 
+        <section className="mt-14 border-t border-border pt-10" aria-labelledby="all-published-levels">
+          <h2 id="all-published-levels" className="text-3xl font-bold">All Published Level Guides</h2>
+          <p className="mt-4 max-w-3xl leading-7 text-muted-foreground">
+            Open any published walkthrough directly. New verified levels are added here after their video, board images, and route notes pass review.
+          </p>
+          <div className="mt-7"><LevelGrid levels={levels} variant="button" /></div>
+        </section>
+
         <section className="mx-auto mt-14 max-w-4xl border-t border-border pt-10">
           <h2 className="text-3xl font-bold">How to Use These Walkthroughs</h2>
           <p className="mt-4 leading-7 text-muted-foreground">Start by comparing the opening board image with your game. Watch the video when you need the exact route order, then use the written checkpoints to confirm which sand colors and bus groups should remain. If your numbered level shows a different picture, use the screenshot finder.</p>

@@ -28,4 +28,5 @@ export interface Level {
   assetVersion?: number;
   videoUploadDate?: string;
   videoDurationIso?: string;
+  publishedAt?: string;
 }
